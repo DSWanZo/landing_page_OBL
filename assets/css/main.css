@@ -2723,6 +2723,14 @@ section,
   padding-bottom: 80px;
 }
 
+.contact-2 .section-title {
+  padding-bottom: 0;
+}
+
+.contact-2 .contact-cta {
+  margin-top: 15px;
+}
+
 .contact-2 .contact-info {
   display: flex;
   flex-direction: column;
