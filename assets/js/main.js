@@ -91,10 +91,40 @@
       duration: 600,
       easing: 'ease-in-out',
       once: true,
-      mirror: false
+      mirror: false,
+      offset: 50, // Déclenche l'animation plus tôt
+      anchorPlacement: 'top-bottom', // Améliore le déclenchement
+      disable: false, // Ne jamais désactiver AOS
+      startEvent: 'DOMContentLoaded', // Démarre dès que le DOM est chargé
     });
   }
   window.addEventListener('load', aosInit);
+
+  /**
+   * Garantir que les sections critiques (FAQ et Contact) sont toujours visibles
+   */
+  window.addEventListener('load', function() {
+    // Rafraîchir AOS après un court délai pour s'assurer que tout est chargé
+    setTimeout(function() {
+      AOS.refresh();
+    }, 100);
+
+    // Vérification de secours : s'assurer que FAQ et Contact sont visibles
+    setTimeout(function() {
+      const criticalSections = document.querySelectorAll('#faq, #contact-2');
+      criticalSections.forEach(function(section) {
+        if (section) {
+          // Forcer la visibilité si l'élément n'est pas visible
+          const computedStyle = window.getComputedStyle(section);
+          if (computedStyle.opacity === '0' || computedStyle.visibility === 'hidden') {
+            section.style.opacity = '1';
+            section.style.visibility = 'visible';
+            section.style.transform = 'none';
+          }
+        }
+      });
+    }, 500);
+  });
 
   /**
    * Initiate glightbox
