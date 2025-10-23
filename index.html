@@ -921,14 +921,14 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <div class="contact-info">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="contact-info text-center">
               <div class="contact-card">
                 <h3>Informations :</h3>
 
-                <div class="contact-details">
-                  <div class="contact-item">
+                <div class="contact-details d-flex flex-column align-items-center gap-3">
+                  <div class="contact-item justify-content-center align-items-center">
                     <i class="bi bi-envelope"></i>
                     <div>
                       <h4>Email :</h4>
@@ -936,43 +936,12 @@
                     </div>
                   </div>
 
+                  <a class="btn btn-primary d-inline-flex align-items-center gap-2" href="mailto:Onebooklab@gmail.com">
+                    <i class="bi bi-envelope-fill"></i>
+                    <span>Nous écrire</span>
+                  </a>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="contact-form-wrapper">
-              <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <label for="name">Nom</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required="">
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <label for="email">Mail</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="john@example.com" required="">
-                  </div>
-                </div>
-                <div class="form-group mt-3">
-                  <label for="subject">Objet</label>
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="J'adore votre application !" required="">
-                </div>
-                <div class="form-group mt-3">
-                  <label for="message">Message</label>
-                  <textarea class="form-control" name="message" rows="4" placeholder="Votre message..." required=""></textarea>
-                </div>
-
-                <div class="my-3">
-                  <div class="loading">Chargement</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Votre message a été envoyé, merci !</div>
-                </div>
-
-                <div class="text-center">
-                  <button type="submit">Envoyer</button>
-                </div>
-              </form>
             </div>
           </div>
         </div>
