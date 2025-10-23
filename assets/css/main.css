@@ -2727,8 +2727,12 @@ section,
   padding-bottom: 0;
 }
 
+.contact-2 .section-title p {
+  margin-bottom: 15px;
+}
+
 .contact-2 .contact-cta {
-  margin-top: 15px;
+  margin-top: 0;
 }
 
 .contact-2 .contact-info {
