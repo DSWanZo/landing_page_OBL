@@ -41,6 +41,31 @@
   });
 
   /**
+   * Logo click handler - scroll to top and clean URL
+   */
+  document.querySelectorAll('.logo-home').forEach(logo => {
+    logo.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      // Scroll to top smoothly
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+
+      // Clean URL - remove hash if present
+      if (window.location.hash) {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+
+      // Close mobile nav if open
+      if (document.querySelector('.mobile-nav-active')) {
+        mobileNavToogle();
+      }
+    });
+  });
+
+  /**
    * Toggle mobile nav dropdowns
    */
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
