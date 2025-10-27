@@ -159,6 +159,7 @@ h6 {
 
 .header .brand {
   gap: 8px;
+  flex-wrap: nowrap;
 }
 
 .header .logo img {
@@ -203,8 +204,12 @@ h6 {
     padding: 10px 5px 10px 15px;
   }
 
-  .header .logo {
+  .header .brand {
     order: 1;
+  }
+
+  .header .brand .logo {
+    order: 0;
   }
 
   .header .btn-getstarted {
