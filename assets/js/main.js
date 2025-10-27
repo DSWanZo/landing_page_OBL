@@ -91,40 +91,10 @@
       duration: 600,
       easing: 'ease-in-out',
       once: true,
-      mirror: false,
-      offset: 50, // Déclenche l'animation plus tôt
-      anchorPlacement: 'top-bottom', // Améliore le déclenchement
-      disable: false, // Ne jamais désactiver AOS
-      startEvent: 'DOMContentLoaded', // Démarre dès que le DOM est chargé
+      mirror: false
     });
   }
   window.addEventListener('load', aosInit);
-
-  /**
-   * Garantir que les sections critiques (FAQ et Contact) sont toujours visibles
-   */
-  window.addEventListener('load', function() {
-    // Rafraîchir AOS après un court délai pour s'assurer que tout est chargé
-    setTimeout(function() {
-      AOS.refresh();
-    }, 100);
-
-    // Vérification de secours : s'assurer que FAQ et Contact sont visibles
-    setTimeout(function() {
-      const criticalSections = document.querySelectorAll('#faq, #contact-2');
-      criticalSections.forEach(function(section) {
-        if (section) {
-          // Forcer la visibilité si l'élément n'est pas visible
-          const computedStyle = window.getComputedStyle(section);
-          if (computedStyle.opacity === '0' || computedStyle.visibility === 'hidden') {
-            section.style.opacity = '1';
-            section.style.visibility = 'visible';
-            section.style.transform = 'none';
-          }
-        }
-      });
-    }, 500);
-  });
 
   /**
    * Initiate glightbox
@@ -153,6 +123,36 @@
       backDelay: 2000
     });
   }
+
+  /*
+   * Pricing Toggle
+   */
+
+  const pricingContainers = document.querySelectorAll('.pricing-toggle-container');
+
+  pricingContainers.forEach(function(container) {
+    const pricingSwitch = container.querySelector('.pricing-toggle input[type="checkbox"]');
+    const monthlyText = container.querySelector('.monthly');
+    const yearlyText = container.querySelector('.yearly');
+
+    pricingSwitch.addEventListener('change', function() {
+      const pricingItems = container.querySelectorAll('.pricing-item');
+
+      if (this.checked) {
+        monthlyText.classList.remove('active');
+        yearlyText.classList.add('active');
+        pricingItems.forEach(item => {
+          item.classList.add('yearly-active');
+        });
+      } else {
+        monthlyText.classList.add('active');
+        yearlyText.classList.remove('active');
+        pricingItems.forEach(item => {
+          item.classList.remove('yearly-active');
+        });
+      }
+    });
+  });
 
   /**
    * Frequently Asked Questions Toggle
