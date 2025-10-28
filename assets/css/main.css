@@ -977,16 +977,6 @@ section,
   aspect-ratio: 16 / 9;
   display: flex;
   overflow: hidden;
-  width: 100%;
-}
-
-.hero-2 .hero-image-showcase .image-wrapper picture {
-  display: flex;
-  width: 100%;
-}
-
-.hero-2 .hero-image-showcase .image-wrapper picture img {
-  flex: 1 1 auto;
 }
 
 .hero-2 .hero-image-showcase .image-wrapper img {
@@ -1000,7 +990,6 @@ section,
 .hero-2 .hero-image-showcase .image-wrapper .hero-main-image {
   aspect-ratio: 16 / 9;
   flex: 1 1 auto;
-  display: flex;
 }
 
 .hero-2 .hero-image-showcase .floating-card {
