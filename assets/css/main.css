@@ -3214,7 +3214,8 @@ section,
 .contact-2 .contact-mail-link {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
+  justify-content: center;
+  width: 100%;
   color: var(--heading-color);
   font-weight: 600;
   font-size: 1.1rem;
