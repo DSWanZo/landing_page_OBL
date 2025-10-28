@@ -1542,6 +1542,10 @@ section,
   font-weight: 500;
 }
 
+.about .content .features-list li span {
+  font-size: 1.1rem;
+}
+
 .about .content .features-list li i {
   font-size: 1.25rem;
   color: var(--accent-color);
@@ -1572,6 +1576,26 @@ section,
 @media (max-width: 768px) {
   .about .image-composition {
     padding: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .about .row.align-items-center {
+    align-items: stretch !important;
+  }
+
+  .about .image-composition {
+    height: 100%;
+  }
+
+  .about .image-composition .image-main,
+  .about .image-composition .image-main img {
+    height: 100%;
+  }
+
+  .about .image-composition .image-main img {
+    width: 100%;
+    object-fit: cover;
   }
 }
 
