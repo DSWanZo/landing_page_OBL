@@ -3180,13 +3180,17 @@ section,
   background-color: var(--surface-color);
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  padding: 40px 35px;
+  padding: 30px;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-2 .contact-form-wrapper:before {
@@ -3203,22 +3207,23 @@ section,
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
+  width: 100%;
 }
 
 .contact-2 .contact-mail-link {
   display: inline-flex;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
   color: var(--heading-color);
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .contact-2 .contact-mail-link i {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--accent-color);
 }
 
@@ -3230,7 +3235,7 @@ section,
 .contact-2 .contact-mail-text {
   margin: 0;
   color: var(--default-color);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 992px) {
@@ -3239,6 +3244,7 @@ section,
   .contact-2 .newsletter-card,
   .contact-2 .contact-form-wrapper {
     padding: 25px;
+    max-width: none;
   }
 }
 
