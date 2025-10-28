@@ -2392,6 +2392,9 @@ section,
   font-size: 1.125rem;
   line-height: 1.6;
   opacity: 0.9;
+  text-align: justify;
+  text-align-last: left;
+  text-justify: inter-word;
 }
 
 .call-to-action-2 .features .feature-item {
