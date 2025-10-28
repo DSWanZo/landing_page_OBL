@@ -1588,14 +1588,15 @@ section,
     height: 100%;
   }
 
-  .about .image-composition .image-main,
-  .about .image-composition .image-main img {
+  .about .image-composition .image-main {
     height: 100%;
   }
 
   .about .image-composition .image-main img {
     width: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
   }
 }
 
