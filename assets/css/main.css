@@ -799,6 +799,10 @@ section,
   margin-bottom: 15px;
 }
 
+.pricing .section-title h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
 .section-title p {
   margin-bottom: 0;
 }
