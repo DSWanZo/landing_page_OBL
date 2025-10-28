@@ -2112,7 +2112,8 @@ section,
 
 .pricing .pricing-toggle .save-badge {
   position: absolute;
-  right: -15px;
+  left: -15px;
+  right: auto;
   top: -15px;
   background-color: var(--accent-color);
   color: var(--contrast-color);
