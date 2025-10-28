@@ -1542,6 +1542,10 @@ section,
   font-weight: 500;
 }
 
+.about .content .features-list li span {
+  font-size: 1.1rem;
+}
+
 .about .content .features-list li i {
   font-size: 1.25rem;
   color: var(--accent-color);
