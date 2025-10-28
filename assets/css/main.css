@@ -1578,6 +1578,7 @@ section,
 
 .about .image-composition .image-main img {
   border-radius: 8px;
+  border: 6px solid var(--surface-color);
   box-shadow: 0 15px 40px color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
