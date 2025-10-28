@@ -3180,9 +3180,17 @@ section,
   background-color: var(--surface-color);
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  padding: 20px 35px;
+  padding: 30px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-2 .contact-form-wrapper:before {
@@ -3195,82 +3203,40 @@ section,
   background-color: var(--accent-color);
 }
 
-.contact-2 .contact-form-wrapper .php-email-form .form-group {
-  margin-bottom: 15px;
+.contact-2 .contact-mail-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
 }
 
-.contact-2 .contact-form-wrapper .php-email-form .form-group label {
-  font-weight: 500;
+.contact-2 .contact-mail-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   color: var(--heading-color);
-  margin-bottom: 8px;
-  font-size: 14px;
-  display: block;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.contact-2 .contact-form-wrapper .php-email-form .form-group .form-control {
-  height: auto;
-  border-radius: 8px;
-  padding: 12px 20px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
-  color: var(--default-color);
-  background-color: var(--surface-color);
-  font-size: 14px;
+.contact-2 .contact-mail-link i {
+  font-size: 3rem;
+  color: var(--accent-color);
 }
 
-.contact-2 .contact-form-wrapper .php-email-form .form-group .form-control:focus {
-  border-color: var(--accent-color);
-  outline: none;
-  box-shadow: none;
-}
-
-.contact-2 .contact-form-wrapper .php-email-form .form-group .form-control::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.contact-2 .contact-form-wrapper .php-email-form .form-group textarea.form-control {
-  min-height: 120px;
-  resize: vertical;
-}
-
-.contact-2 .contact-form-wrapper .php-email-form .form-check {
-  margin-bottom: 20px;
-}
-
-.contact-2 .contact-form-wrapper .php-email-form .form-check .form-check-input {
-  margin-top: 0.3em;
-}
-
-.contact-2 .contact-form-wrapper .php-email-form .form-check .form-check-input:checked {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
-.contact-2 .contact-form-wrapper .php-email-form .form-check .form-check-input:focus {
-  box-shadow: none;
-  border-color: color-mix(in srgb, var(--accent-color), transparent 50%);
-}
-
-.contact-2 .contact-form-wrapper .php-email-form .form-check .form-check-label {
-  color: var(--default-color);
-  font-size: 14px;
-  padding-left: 5px;
-}
-
-.contact-2 .contact-form-wrapper .php-email-form button {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  border: none;
-  padding: 12px 30px;
-  border-radius: 50px;
-  font-weight: 500;
-  font-size: 16px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.contact-2 .contact-form-wrapper .php-email-form button:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+.contact-2 .contact-mail-link:hover {
+  color: var(--accent-color);
   transform: translateY(-3px);
+}
+
+.contact-2 .contact-mail-text {
+  margin: 0;
+  color: var(--default-color);
+  font-size: 0.9rem;
 }
 
 @media (max-width: 992px) {
@@ -3279,6 +3245,7 @@ section,
   .contact-2 .newsletter-card,
   .contact-2 .contact-form-wrapper {
     padding: 25px;
+    max-width: none;
   }
 }
 
