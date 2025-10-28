@@ -44,9 +44,9 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Produit</a></li>
+          <li><a href="#hero-2" class="active">Produit</a></li>
 
-          <li><a href="#pricing-2">Tarifs</a></li>
+          <li><a href="#pricing">Tarifs</a></li>
           <li><a href="#steps-2">A venir</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact-2">Contact</a></li>
@@ -985,36 +985,12 @@
 
           <div class="col-lg-7">
             <div class="contact-form-wrapper">
-              <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <label for="name">Nom</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required="">
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <label for="email">Mail</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="john@example.com" required="">
-                  </div>
-                </div>
-                <div class="form-group mt-3">
-                  <label for="subject">Objet</label>
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="J'adore votre application !" required="">
-                </div>
-                <div class="form-group mt-3">
-                  <label for="message">Message</label>
-                  <textarea class="form-control" name="message" rows="4" placeholder="Votre message..." required=""></textarea>
-                </div>
-
-                <div class="my-3">
-                  <div class="loading">Chargement</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Votre message a été envoyé, merci !</div>
-                </div>
-
-                <div class="text-center">
-                  <button type="submit">Envoyer</button>
-                </div>
-              </form>
+              <div class="contact-mail-card">
+                <a class="contact-mail-link" href="mailto:onebooklab@gmail.com" aria-label="Envoyer un email à OneBookLab">
+                  <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                </a>
+                <p class="contact-mail-text">Cliquez pour ouvrir votre messagerie et nous écrire directement.</p>
+              </div>
             </div>
           </div>
         </div>
