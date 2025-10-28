@@ -1579,6 +1579,26 @@ section,
   }
 }
 
+@media (min-width: 992px) {
+  .about .row.align-items-center {
+    align-items: stretch !important;
+  }
+
+  .about .image-composition {
+    height: 100%;
+  }
+
+  .about .image-composition .image-main,
+  .about .image-composition .image-main img {
+    height: 100%;
+  }
+
+  .about .image-composition .image-main img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
 .about .image-composition .image-main {
   position: relative;
   z-index: 2;
