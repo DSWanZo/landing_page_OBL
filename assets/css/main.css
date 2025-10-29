@@ -1597,7 +1597,8 @@ section,
   }
 
   .about .image-composition .image-main img {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     height: auto;
     object-fit: contain;
     object-position: center;
@@ -1610,6 +1611,8 @@ section,
 }
 
 .about .image-composition .image-main img {
+  width: 90%;
+  margin: 0 auto;
   border-radius: 8px;
   border: 6px solid var(--surface-color);
   box-shadow: 0 15px 40px color-mix(in srgb, var(--default-color), transparent 85%);
