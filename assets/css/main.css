@@ -1968,6 +1968,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   margin: 0;
   letter-spacing: 0.01em;
+  padding-left: calc(48px + 20px);
 }
 
 .features-2 .feature-card:hover .feature-icon {
@@ -2044,6 +2045,7 @@ section,
 
   .features-2 .feature-card p {
     font-size: 15px;
+    padding-left: calc(48px + 16px);
   }
 
   .features-2 .cta-container {
