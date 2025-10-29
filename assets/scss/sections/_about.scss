@@ -37,6 +37,10 @@
         padding-bottom: 1rem;
         font-weight: 500;
 
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+
         i {
           font-size: 1.25rem;
           color: var(--accent-color);
