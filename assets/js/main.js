@@ -65,23 +65,24 @@
   /**
    * Scroll top button
    */
-  let scrollTop = document.querySelector('.scroll-top');
+  const scrollTop = document.querySelector('.scroll-top');
 
-  function toggleScrollTop() {
-    if (scrollTop) {
+  if (scrollTop) {
+    const toggleScrollTop = () => {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
-    }
-  }
-  scrollTop.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
+    };
 
-  window.addEventListener('load', toggleScrollTop);
-  document.addEventListener('scroll', toggleScrollTop);
+    scrollTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    window.addEventListener('load', toggleScrollTop);
+    document.addEventListener('scroll', toggleScrollTop);
+  }
 
   /**
    * Animation on scroll function and init
@@ -177,20 +178,28 @@
       return;
     }
 
-    let currentIndex = 0;
+    let currentIndex = slides.findIndex(slide => slide.classList.contains('is-active'));
+    if (currentIndex === -1) {
+      currentIndex = 0;
+    }
     const prevButton = viewer.querySelector('[data-image-viewer-prev]');
     const nextButton = viewer.querySelector('[data-image-viewer-next]');
     const controls = viewer.querySelectorAll('[data-image-viewer-prev], [data-image-viewer-next]');
 
-    const setActiveSlide = (newIndex) => {
-      slides[currentIndex].classList.remove('is-active');
-      currentIndex = (newIndex + slides.length) % slides.length;
-      slides[currentIndex].classList.add('is-active');
+    const syncSlides = () => {
+      slides.forEach((slide, index) => {
+        const isActive = index === currentIndex;
+        slide.classList.toggle('is-active', isActive);
+        slide.toggleAttribute('hidden', !isActive);
+      });
     };
 
-    slides.forEach((slide, index) => {
-      slide.classList.toggle('is-active', index === currentIndex);
-    });
+    const setActiveSlide = (newIndex) => {
+      currentIndex = (newIndex + slides.length) % slides.length;
+      syncSlides();
+    };
+
+    syncSlides();
 
     if (slides.length <= 1) {
       controls.forEach((control) => control.setAttribute('hidden', ''));
