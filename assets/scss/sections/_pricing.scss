@@ -136,6 +136,22 @@
         transform: translateY(-10px) scale(1.03);
       }
 
+      .card-price {
+        background-color: var(--accent-color);
+
+        h4 {
+          color: var(--contrast-color);
+
+          .currency {
+            color: var(--contrast-color);
+          }
+
+          .period {
+            color: color-mix(in srgb, var(--contrast-color), transparent 35%);
+          }
+        }
+      }
+
       .card-action .btn-pricing {
         background-color: var(--accent-color);
         color: var(--contrast-color);
