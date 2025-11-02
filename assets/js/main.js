@@ -169,6 +169,48 @@
   });
 
   /**
+   * Simple image viewer toggles
+   */
+  document.querySelectorAll('[data-image-viewer]').forEach((viewer) => {
+    const slides = viewer.querySelectorAll('[data-image-viewer-slide]');
+    if (!slides.length) {
+      return;
+    }
+
+    let currentIndex = 0;
+    const prevButton = viewer.querySelector('[data-image-viewer-prev]');
+    const nextButton = viewer.querySelector('[data-image-viewer-next]');
+    const controls = viewer.querySelectorAll('[data-image-viewer-prev], [data-image-viewer-next]');
+
+    const setActiveSlide = (newIndex) => {
+      slides[currentIndex].classList.remove('is-active');
+      currentIndex = (newIndex + slides.length) % slides.length;
+      slides[currentIndex].classList.add('is-active');
+    };
+
+    slides.forEach((slide, index) => {
+      slide.classList.toggle('is-active', index === currentIndex);
+    });
+
+    if (slides.length <= 1) {
+      controls.forEach((control) => control.setAttribute('hidden', ''));
+      return;
+    }
+
+    if (prevButton) {
+      prevButton.addEventListener('click', () => {
+        setActiveSlide(currentIndex - 1);
+      });
+    }
+
+    if (nextButton) {
+      nextButton.addEventListener('click', () => {
+        setActiveSlide(currentIndex + 1);
+      });
+    }
+  });
+
+  /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
   window.addEventListener('load', function(e) {

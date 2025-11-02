@@ -1608,6 +1608,66 @@ section,
   z-index: 2;
 }
 
+.about .image-composition .image-viewer {
+  position: relative;
+}
+
+.about .image-composition .image-viewer-slide {
+  display: none;
+  width: 100%;
+}
+
+.about .image-composition .image-viewer-slide.is-active {
+  display: block;
+}
+
+.about .image-composition .image-viewer-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--surface-color), transparent 20%);
+  color: var(--default-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 85%);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.about .image-composition .image-viewer-control i {
+  font-size: 1.25rem;
+}
+
+.about .image-composition .image-viewer-control:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 70%);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.about .image-composition .image-viewer-control:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.about .image-composition .image-viewer-control.prev {
+  left: 1rem;
+}
+
+.about .image-composition .image-viewer-control.next {
+  right: 1rem;
+}
+
+@media (max-width: 576px) {
+  .about .image-composition .image-viewer-control {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
 .about .image-composition .image-main img {
   width: 100%;
   height: auto;
