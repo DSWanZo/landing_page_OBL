@@ -1584,10 +1584,6 @@ section,
 }
 
 @media (min-width: 992px) {
-  .about .row.align-items-center {
-    align-items: flex-start !important;
-  }
-
   .about .image-composition {
     height: 100%;
   }
