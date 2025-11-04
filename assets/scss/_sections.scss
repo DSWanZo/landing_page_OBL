@@ -4,7 +4,8 @@
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+  /* Transparent background to let body gradient show through */
+  background-color: transparent;
   padding: 60px 0;
   scroll-margin-top: 90px;
   overflow: clip;
