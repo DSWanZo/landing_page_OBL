@@ -1443,6 +1443,92 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Image Viewer Component
+--------------------------------------------------------------*/
+.image-viewer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-viewer-slide {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.image-viewer-slide.is-active {
+  opacity: 1;
+}
+
+.image-viewer-slide[hidden] {
+  display: none;
+}
+
+.image-viewer-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.image-viewer-control:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.image-viewer-control:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.image-viewer-control.prev {
+  left: 20px;
+}
+
+.image-viewer-control.next {
+  right: 20px;
+}
+
+.image-viewer-control i {
+  font-size: 24px;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .image-viewer-control {
+    width: 40px;
+    height: 40px;
+  }
+
+  .image-viewer-control i {
+    font-size: 20px;
+  }
+
+  .image-viewer-control.prev {
+    left: 10px;
+  }
+
+  .image-viewer-control.next {
+    right: 10px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
 .features .features-intro {
