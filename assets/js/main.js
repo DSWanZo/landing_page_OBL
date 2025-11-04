@@ -173,7 +173,7 @@
    * Simple image viewer toggles
    */
   document.querySelectorAll('[data-image-viewer]').forEach((viewer) => {
-    const slides = viewer.querySelectorAll('[data-image-viewer-slide]');
+    const slides = Array.from(viewer.querySelectorAll('[data-image-viewer-slide]'));
     if (!slides.length) {
       return;
     }
