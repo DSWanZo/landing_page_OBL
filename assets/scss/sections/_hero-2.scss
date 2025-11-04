@@ -8,10 +8,8 @@
   display: flex;
   align-items: center;
   position: relative;
-  background: linear-gradient(135deg,
-      color-mix(in srgb, var(--accent-color), transparent 96%) 0%,
-      var(--background-color) 40%,
-      color-mix(in srgb, var(--accent-color), transparent 98%) 100%);
+  /* Transparent background to let body gradient show through for visual continuity */
+  background: transparent;
 
   &::before {
     content: '';
