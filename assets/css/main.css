@@ -1613,12 +1613,16 @@ section,
 }
 
 .about .image-composition .image-viewer-slide {
-  display: none;
+  display: none !important;
   width: 100%;
 }
 
 .about .image-composition .image-viewer-slide.is-active {
-  display: block;
+  display: block !important;
+}
+
+.about .image-composition .image-viewer-slide[hidden] {
+  display: none !important;
 }
 
 .about .image-composition .image-viewer-control {
