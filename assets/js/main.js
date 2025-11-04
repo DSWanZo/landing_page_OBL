@@ -193,17 +193,17 @@
         if (isActive) {
           // Show the slide immediately by removing hidden attribute
           slide.removeAttribute('hidden');
-          // Use a small delay to ensure the transition triggers
-          setTimeout(() => {
+          // Use requestAnimationFrame to ensure the transition triggers smoothly
+          requestAnimationFrame(() => {
             slide.classList.add('is-active');
-          }, 10);
+          });
         } else {
           // Remove active class to trigger fade out
           slide.classList.remove('is-active');
-          // Wait for transition to complete before hiding
+          // Wait for transition to complete before hiding (300ms to match CSS)
           setTimeout(() => {
             slide.setAttribute('hidden', '');
-          }, 800); // Match the CSS transition duration
+          }, 300); // Match the CSS transition duration
         }
       });
     };
