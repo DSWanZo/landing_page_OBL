@@ -1585,7 +1585,7 @@ section,
 
 @media (min-width: 992px) {
   .about .row.align-items-center {
-    align-items: stretch !important;
+    align-items: flex-start !important;
   }
 
   .about .image-composition {
