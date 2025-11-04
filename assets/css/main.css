@@ -1450,6 +1450,7 @@ section,
   overflow: hidden;
   border-radius: 8px;
   width: 100%;
+  transition: height 0.3s ease-in-out;
 }
 
 .image-viewer img {
@@ -1471,7 +1472,7 @@ section,
 }
 
 .image-viewer-slide.is-active {
-  position: relative;
+  position: absolute;
   opacity: 1;
   pointer-events: auto;
 }
