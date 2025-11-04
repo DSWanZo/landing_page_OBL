@@ -52,16 +52,23 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
-body {
-  color: var(--default-color);
+html {
+  /* Apply gradient to html element for full coverage */
   background-color: var(--background-color);
-  /* Gradient matching Vibrant theme for visual continuity */
   background-image: linear-gradient(180deg, hsl(213, 30%, 13%) 0%, hsl(213, 28%, 11%) 40%, hsl(213, 26%, 9%) 100%);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100%;
+}
+
+body {
+  color: var(--default-color);
+  background: transparent; /* Let html gradient show through */
   font-family: var(--default-font);
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 a {
