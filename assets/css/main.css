@@ -3213,6 +3213,9 @@ section,
   flex-direction: column;
   gap: 30px;
   margin-bottom: 30px;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 992px) {
@@ -3397,7 +3400,8 @@ section,
 
   .contact-2 .contact-card,
   .contact-2 .newsletter-card,
-  .contact-2 .contact-form-wrapper {
+  .contact-2 .contact-form-wrapper,
+  .contact-2 .contact-info {
     padding: 25px;
     max-width: none;
   }
