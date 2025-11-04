@@ -3,44 +3,44 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
-/* Fonts */
+/* Fonts - Harmonized with Vibrant theme */
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Quicksand", sans-serif;
-  --nav-font: "Poppins", sans-serif;
+  --default-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Playfair Display", serif;
+  --nav-font: "Inter", sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* Global Colors - Harmonized with Vibrant theme from Material-UI */
 :root {
-  --background-color: #05071e; /* Background color for the entire website, including individual sections */
-  --default-color: #e8e7f7; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #524dd3; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #131428; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #0b1218; /* Background color matching Vibrant theme default background */
+  --default-color: #F1F5FA; /* Default text color from Vibrant theme (text.primary) */
+  --heading-color: #ffffff; /* Color for headings - white for maximum contrast */
+  --accent-color: #6AA9FF; /* Primary accent color from Vibrant theme (primary.main) */
+  --surface-color: #111a23; /* Surface/paper color from Vibrant theme */
+  --contrast-color: #ffffff; /* Contrast color for text on accent backgrounds */
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Nav Menu Colors - Harmonized with Vibrant theme */
 :root {
-  --nav-color: #c8c6e3; /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #03051f; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #1f2240; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #c8c6e3; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: rgba(241, 245, 250, 0.78); /* Navigation text using Vibrant text.secondary */
+  --nav-hover-color: #6AA9FF; /* Hover color using Vibrant primary accent */
+  --nav-mobile-background-color: #0b1218; /* Mobile nav background matching Vibrant background.default */
+  --nav-dropdown-background-color: #111a23; /* Dropdown background matching Vibrant background.paper */
+  --nav-dropdown-color: rgba(241, 245, 250, 0.78); /* Dropdown text color */
+  --nav-dropdown-hover-color: #6AA9FF; /* Dropdown hover color using Vibrant primary accent */
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+/* Color Presets - Harmonized with Vibrant theme variants */
 .light-background {
-  --background-color: #0c114a;
-  --surface-color: #131b76;
+  --background-color: #111a23;
+  --surface-color: rgba(255, 255, 255, 0.045);
 }
 
 .dark-background {
-  --background-color: #01020e;
-  --default-color: #ffffff;
+  --background-color: #0b1218;
+  --default-color: #F1F5FA;
   --heading-color: #ffffff;
-  --surface-color: #252525;
+  --surface-color: #111a23;
   --contrast-color: #ffffff;
 }
 
@@ -1440,106 +1440,6 @@ section,
   background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
   border-radius: 12px;
   z-index: 1;
-}
-
-/*--------------------------------------------------------------
-# Image Viewer Component
---------------------------------------------------------------*/
-.image-viewer {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  width: 100%;
-  transition: height 0.3s ease-in-out;
-}
-
-.image-viewer img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.image-viewer-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  display: block;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none;
-}
-
-.image-viewer-slide.is-active {
-  position: absolute;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.image-viewer-slide[hidden] {
-  display: none;
-}
-
-.image-viewer-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 10;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(5px);
-}
-
-.image-viewer-control:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-  border-color: rgba(255, 255, 255, 0.4);
-  transform: translateY(-50%) scale(1.1);
-}
-
-.image-viewer-control:active {
-  transform: translateY(-50%) scale(0.95);
-}
-
-.image-viewer-control.prev {
-  left: 20px;
-}
-
-.image-viewer-control.next {
-  right: 20px;
-}
-
-.image-viewer-control i {
-  font-size: 24px;
-  line-height: 1;
-}
-
-@media (max-width: 768px) {
-  .image-viewer-control {
-    width: 40px;
-    height: 40px;
-  }
-
-  .image-viewer-control i {
-    font-size: 20px;
-  }
-
-  .image-viewer-control.prev {
-    left: 10px;
-  }
-
-  .image-viewer-control.next {
-    right: 10px;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -3287,69 +3187,6 @@ section,
     font-size: 1.3rem;
   }
 }
-.privacy .tos-contact {
-  margin-top: 60px;
-}
-.privacy .tos-contact .contact-box {
-  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 95%) 0%, color-mix(in srgb, var(--accent-color), transparent 98%) 100%);
-  border-radius: 20px;
-  padding: 40px;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-@media (max-width: 576px) {
-  .privacy .tos-contact .contact-box {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-.privacy .tos-contact .contact-box .contact-icon {
-  width: 60px;
-  height: 60px;
-  background-color: var(--accent-color);
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.privacy .tos-contact .contact-box .contact-icon i {
-  font-size: 1.8rem;
-  color: var(--contrast-color);
-}
-.privacy .tos-contact .contact-box .contact-content {
-  flex: 1;
-}
-.privacy .tos-contact .contact-box .contact-content h4 {
-  font-size: 1.4rem;
-  margin-bottom: 8px;
-}
-.privacy .tos-contact .contact-box .contact-content p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin-bottom: 15px;
-}
-.privacy .tos-contact .contact-box .contact-content .contact-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 25px;
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s;
-}
-.privacy .tos-contact .contact-box .contact-content .contact-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-@media print {
-  .privacy .tos-contact {
-    display: none;
-  }
-}
 
 /*--------------------------------------------------------------
 # Error 404 Section
@@ -3673,69 +3510,6 @@ section,
   }
   .privacy-2 .privacy-content .content-section h3 {
     font-size: 1.3rem;
-  }
-}
-.privacy-2 .tos-contact {
-  margin-top: 60px;
-}
-.privacy-2 .tos-contact .contact-box {
-  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 95%) 0%, color-mix(in srgb, var(--accent-color), transparent 98%) 100%);
-  border-radius: 20px;
-  padding: 40px;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-@media (max-width: 576px) {
-  .privacy-2 .tos-contact .contact-box {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-.privacy-2 .tos-contact .contact-box .contact-icon {
-  width: 60px;
-  height: 60px;
-  background-color: var(--accent-color);
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.privacy-2 .tos-contact .contact-box .contact-icon i {
-  font-size: 1.8rem;
-  color: var(--contrast-color);
-}
-.privacy-2 .tos-contact .contact-box .contact-content {
-  flex: 1;
-}
-.privacy-2 .tos-contact .contact-box .contact-content h4 {
-  font-size: 1.4rem;
-  margin-bottom: 8px;
-}
-.privacy-2 .tos-contact .contact-box .contact-content p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin-bottom: 15px;
-}
-.privacy-2 .tos-contact .contact-box .contact-content .contact-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 25px;
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s;
-}
-.privacy-2 .tos-contact .contact-box .contact-content .contact-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-@media print {
-  .privacy-2 .tos-contact {
-    display: none;
   }
 }
 
