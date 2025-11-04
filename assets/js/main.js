@@ -92,10 +92,39 @@
       duration: 600,
       easing: 'ease-in-out',
       once: true,
-      mirror: false
+      mirror: false,
+      startEvent: 'DOMContentLoaded',
+      disable: false,
+      anchorPlacement: 'top-bottom',
+      offset: 120
     });
+
+    // Force immediate refresh to ensure visible elements animate on page load
+    setTimeout(() => {
+      AOS.refresh();
+    }, 100);
   }
-  window.addEventListener('load', aosInit);
+
+  // Initialize AOS as early as possible
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', aosInit);
+  } else {
+    aosInit();
+  }
+
+  // Additional refresh on full page load to catch any late-loading elements
+  window.addEventListener('load', () => {
+    AOS.refresh();
+  });
+
+  // Reset scroll position and refresh AOS when navigating to page (including from cache)
+  window.addEventListener('pageshow', (event) => {
+    // If page is loaded from bfcache (back-forward cache), refresh AOS
+    if (event.persisted) {
+      window.scrollTo(0, 0);
+      AOS.refresh();
+    }
+  });
 
   /**
    * Initiate glightbox
