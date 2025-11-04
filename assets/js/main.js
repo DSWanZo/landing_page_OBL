@@ -137,18 +137,18 @@
     const yearlyText = container.querySelector('.yearly');
     const pricingItems = container.querySelectorAll('.pricing-item');
 
-    const updatePricingDisplay = (showMonthly) => {
-      if (showMonthly) {
-        monthlyText.classList.add('active');
-        yearlyText.classList.remove('active');
-        pricingItems.forEach(item => {
-          item.classList.remove('yearly-active');
-        });
-      } else {
-        monthlyText.classList.remove('active');
+    const updatePricingDisplay = (showYearly) => {
+      if (showYearly) {
         yearlyText.classList.add('active');
+        monthlyText.classList.remove('active');
         pricingItems.forEach(item => {
           item.classList.add('yearly-active');
+        });
+      } else {
+        yearlyText.classList.remove('active');
+        monthlyText.classList.add('active');
+        pricingItems.forEach(item => {
+          item.classList.remove('yearly-active');
         });
       }
     };
