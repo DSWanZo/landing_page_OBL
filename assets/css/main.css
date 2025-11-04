@@ -1449,14 +1449,20 @@ section,
   position: relative;
   overflow: hidden;
   border-radius: 8px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
 }
 
 .image-viewer-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   opacity: 0;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  object-fit: contain;
 }
 
 .image-viewer-slide.is-active {
