@@ -186,6 +186,13 @@
     const nextButton = viewer.querySelector('[data-image-viewer-next]');
     const controls = viewer.querySelectorAll('[data-image-viewer-prev], [data-image-viewer-next]');
 
+    const updateViewerHeight = () => {
+      const activeSlide = slides[currentIndex];
+      if (activeSlide && activeSlide.complete) {
+        viewer.style.height = `${activeSlide.offsetHeight}px`;
+      }
+    };
+
     const syncSlides = () => {
       slides.forEach((slide, index) => {
         const isActive = index === currentIndex;
@@ -196,6 +203,7 @@
           // Use requestAnimationFrame to ensure the transition triggers smoothly
           requestAnimationFrame(() => {
             slide.classList.add('is-active');
+            updateViewerHeight();
           });
         } else {
           // Remove active class to trigger fade out
@@ -212,6 +220,19 @@
       currentIndex = (newIndex + slides.length) % slides.length;
       syncSlides();
     };
+
+    // Initialize height when images are loaded
+    slides.forEach((slide) => {
+      if (slide.complete) {
+        updateViewerHeight();
+      } else {
+        slide.addEventListener('load', () => {
+          if (slides[currentIndex] === slide) {
+            updateViewerHeight();
+          }
+        });
+      }
+    });
 
     syncSlides();
 

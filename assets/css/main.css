@@ -1450,13 +1450,13 @@ section,
   overflow: hidden;
   border-radius: 8px;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  transition: height 0.3s ease-in-out;
 }
 
 .image-viewer img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .image-viewer-slide {
