@@ -14,14 +14,14 @@
   &::before {
     content: '';
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     background: radial-gradient(circle,
         color-mix(in srgb, var(--accent-color), transparent 85%) 0%,
         transparent 70%);
     border-radius: 50%;
-    top: -20%;
-    right: -10%;
+    top: -60%;
+    right: -5%;
     animation: float 6s ease-in-out infinite;
     z-index: 1;
   }
