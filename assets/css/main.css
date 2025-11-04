@@ -1610,15 +1610,30 @@ section,
 
 .about .image-composition .image-viewer {
   position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-color);
+  border-radius: 8px;
 }
 
 .about .image-composition .image-viewer-slide {
-  display: none !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
 }
 
 .about .image-composition .image-viewer-slide.is-active {
-  display: block !important;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .about .image-composition .image-viewer-slide[hidden] {
@@ -1671,6 +1686,10 @@ section,
     width: 2.5rem;
     height: 2.5rem;
   }
+
+  .about .image-composition .image-viewer {
+    min-height: 350px;
+  }
 }
 
 .about .image-composition .image-main img {
@@ -1681,6 +1700,10 @@ section,
   border-radius: 8px;
   border: 6px solid var(--surface-color);
   box-shadow: 0 15px 40px color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.about .image-composition .image-viewer-slide {
+  border-radius: 8px;
 }
 
 .about .image-composition .image-secondary {
