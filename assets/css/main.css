@@ -924,6 +924,14 @@ section,
   font-size: 0.85rem;
   white-space: nowrap;
 }
+.hero-2 .hero-extra-text {
+  max-width: 680px;
+  margin: 40px auto 0;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
 @keyframes float {
   0%, 100% {
     transform: translateY(0px);
