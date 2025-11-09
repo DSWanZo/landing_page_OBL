@@ -1880,6 +1880,12 @@ section,
   position: relative;
   z-index: 1;
 }
+.pricing .section-title {
+  padding-bottom: 40px;
+}
+.pricing .pricing-toggle-wrapper {
+  margin: 0 auto 40px;
+}
 .pricing .pricing-toggle {
   position: relative;
   display: flex;
@@ -2151,6 +2157,12 @@ section,
   }
 }
 @media (max-width: 768px) {
+  .pricing .section-title {
+    padding-bottom: 32px;
+  }
+  .pricing .pricing-toggle-wrapper {
+    margin-bottom: 32px;
+  }
   .pricing .pricing-toggle .monthly,
   .pricing .pricing-toggle .yearly {
     font-size: 14px;
