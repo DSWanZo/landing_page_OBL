@@ -2026,6 +2026,13 @@ section,
   transform: rotate(45deg);
   z-index: 10;
 }
+.pricing .token-equivalence {
+  text-align: center;
+}
+.pricing .token-equivalence p {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
 .pricing .card-header {
   padding: 35px 30px 20px;
   text-align: center;
