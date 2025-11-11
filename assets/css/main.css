@@ -930,7 +930,7 @@ section,
   text-align: center;
   font-size: 1.05rem;
   line-height: 1.6;
-  color: #fff;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 @keyframes float {
   0%, 100% {
