@@ -4,45 +4,45 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 
-/* Fonts */
+/* Fonts - Harmonized with Vibrant theme */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Quicksand",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Inter",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Playfair Display",  serif;
+  --nav-font: "Inter",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #05071e; /* Background color for the entire website, including individual sections */
-  --default-color: #e8e7f7; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #524dd3; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #131428; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-}
-
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Global Colors - Harmonized with Vibrant theme from Material-UI */
 :root {
-  --nav-color: #c8c6e3;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #03051f; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #1f2240; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #c8c6e3; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --background-color: #0b1218; /* Background color matching Vibrant theme default background */
+  --default-color: #F1F5FA; /* Default text color from Vibrant theme (text.primary) */
+  --heading-color: #ffffff; /* Color for headings - white for maximum contrast */
+  --accent-color: #6AA9FF; /* Primary accent color from Vibrant theme (primary.main) */
+  --surface-color: #111a23; /* Surface/paper color from Vibrant theme */
+  --contrast-color: #ffffff; /* Contrast color for text on accent backgrounds */
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+/* Nav Menu Colors - Harmonized with Vibrant theme */
+:root {
+  --nav-color: rgba(241, 245, 250, 0.78);  /* Navigation text using Vibrant text.secondary */
+  --nav-hover-color: #6AA9FF; /* Hover color using Vibrant primary accent */
+  --nav-mobile-background-color: #0b1218; /* Mobile nav background matching Vibrant background.default */
+  --nav-dropdown-background-color: #111a23; /* Dropdown background matching Vibrant background.paper */
+  --nav-dropdown-color: rgba(241, 245, 250, 0.78); /* Dropdown text color */
+  --nav-dropdown-hover-color: #6AA9FF; /* Dropdown hover color using Vibrant primary accent */
+}
+
+/* Color Presets - Harmonized with Vibrant theme variants */
 
 .light-background {
-  --background-color: #0c114a;
-  --surface-color: #131b76;
+  --background-color: #111a23;
+  --surface-color: rgba(255, 255, 255, 0.045);
 }
 
 .dark-background {
-  --background-color: #01020e;
-  --default-color: #ffffff;
+  --background-color: #0b1218;
+  --default-color: #F1F5FA;
   --heading-color: #ffffff;
-  --surface-color: #252525;
+  --surface-color: #111a23;
   --contrast-color: #ffffff;
 }
 
