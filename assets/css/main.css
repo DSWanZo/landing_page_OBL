@@ -1883,6 +1883,16 @@ section,
 .pricing .section-title {
   padding-bottom: 40px;
 }
+.pricing .upcoming-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  margin: 32px auto;
+}
+.pricing .upcoming-title h2 {
+  margin: 0;
+}
 .pricing .pricing-toggle-wrapper {
   margin: 0 auto 40px;
 }
