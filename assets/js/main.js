@@ -280,27 +280,54 @@
   });
 
   /**
-   * YouTube Facade - Click to load iframe
+   * Steps video hover autoplay
    */
-  document.querySelectorAll('.youtube-facade').forEach((facade) => {
-    facade.addEventListener('click', function() {
-      const videoId = this.getAttribute('data-video-id');
-      if (!videoId) return;
+  const stepsVideoFrames = document.querySelectorAll('[data-steps-video]');
 
-      const iframe = document.createElement('iframe');
-      iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
-      iframe.setAttribute('title', this.getAttribute('title') || 'YouTube video');
-      iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
-      iframe.setAttribute('allowfullscreen', '');
-      iframe.style.width = '100%';
-      iframe.style.height = '100%';
-      iframe.style.position = 'absolute';
-      iframe.style.top = '0';
-      iframe.style.left = '0';
-      iframe.style.border = 'none';
+  if (stepsVideoFrames.length) {
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    const existingApi = document.querySelector('script[src="https://www.youtube.com/iframe_api"]');
 
-      this.replaceWith(iframe);
-    });
-  });
+    if (!existingApi) {
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+
+    const previousApiReady = window.onYouTubeIframeAPIReady;
+
+    window.onYouTubeIframeAPIReady = function() {
+      if (typeof previousApiReady === 'function') {
+        previousApiReady();
+      }
+
+      stepsVideoFrames.forEach((frame) => {
+        if (!frame.id) {
+          return;
+        }
+
+        new YT.Player(frame.id, {
+          events: {
+            onReady: (event) => {
+              const stepImage = frame.closest('.step-image');
+              if (!stepImage) return;
+
+              const handleEnter = () => {
+                event.target.mute();
+                event.target.playVideo();
+              };
+
+              const handleLeave = () => {
+                event.target.pauseVideo();
+              };
+
+              stepImage.addEventListener('mouseenter', handleEnter);
+              stepImage.addEventListener('mouseleave', handleLeave);
+            }
+          }
+        });
+      });
+    };
+  }
 
 })();
