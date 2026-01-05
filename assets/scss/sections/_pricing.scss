@@ -2,7 +2,6 @@
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
-
 .pricing {
   padding-top: 80px;
   position: relative;
@@ -12,26 +11,6 @@
   .container {
     position: relative;
     z-index: 1;
-  }
-
-  .section-title {
-    padding-bottom: 40px;
-  }
-
-  .upcoming-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 140px;
-    margin: 32px auto;
-
-    h2 {
-      margin: 0;
-    }
-  }
-
-  .pricing-toggle-wrapper {
-    margin: 0 auto 40px;
   }
 
   .pricing-toggle {
@@ -162,14 +141,10 @@
 
         h4 {
           color: var(--contrast-color);
+        }
 
-          .currency {
-            color: var(--contrast-color);
-          }
-
-          .period {
-            color: color-mix(in srgb, var(--contrast-color), transparent 35%);
-          }
+        .period {
+          color: color-mix(in srgb, var(--contrast-color), transparent 20%);
         }
       }
 
@@ -336,6 +311,15 @@
     }
   }
 
+  .token-equivalence {
+    margin-top: 30px;
+    text-align: center;
+
+    p {
+      margin-bottom: 8px;
+    }
+  }
+
   @media (max-width: 991px) {
     .pricing-item.featured {
       transform: scale(1);
@@ -347,14 +331,6 @@
   }
 
   @media (max-width: 768px) {
-    .section-title {
-      padding-bottom: 32px;
-    }
-
-    .pricing-toggle-wrapper {
-      margin-bottom: 32px;
-    }
-
     .pricing-toggle {
 
       .monthly,
@@ -374,15 +350,6 @@
       .currency {
         font-size: 20px;
       }
-    }
-  }
-
-  .token-equivalence {
-    text-align: center;
-
-    p {
-      font-weight: 700;
-      margin-bottom: 0.25rem;
     }
   }
 }

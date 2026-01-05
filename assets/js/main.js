@@ -65,24 +65,23 @@
   /**
    * Scroll top button
    */
-  const scrollTop = document.querySelector('.scroll-top');
+  let scrollTop = document.querySelector('.scroll-top');
 
-  if (scrollTop) {
-    const toggleScrollTop = () => {
+  function toggleScrollTop() {
+    if (scrollTop) {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
-    };
-
-    scrollTop.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-
-    window.addEventListener('load', toggleScrollTop);
-    document.addEventListener('scroll', toggleScrollTop);
+    }
   }
+  scrollTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  window.addEventListener('load', toggleScrollTop);
+  document.addEventListener('scroll', toggleScrollTop);
 
   /**
    * Animation on scroll function and init
@@ -92,46 +91,10 @@
       duration: 600,
       easing: 'ease-in-out',
       once: true,
-      mirror: false,
-      startEvent: 'DOMContentLoaded',
-      disable: false,
-      anchorPlacement: 'top-bottom',
-      offset: 120
+      mirror: false
     });
-
-    // Force immediate refresh to ensure visible elements animate on page load
-    setTimeout(() => {
-      AOS.refresh();
-    }, 100);
   }
-
-  // Initialize AOS as early as possible
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', aosInit);
-  } else {
-    aosInit();
-  }
-
-  // Additional refresh on full page load to catch any late-loading elements
-  window.addEventListener('load', () => {
-    AOS.refresh();
-  });
-
-  // Reset scroll position and refresh AOS when navigating to page (including from cache)
-  window.addEventListener('pageshow', (event) => {
-    // If page is loaded from bfcache (back-forward cache), refresh AOS
-    if (event.persisted) {
-      window.scrollTo(0, 0);
-      AOS.refresh();
-    }
-  });
-
-  /**
-   * Initiate glightbox
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  window.addEventListener('load', aosInit);
 
   /**
    * Initiate Pure Counter
@@ -139,20 +102,13 @@
   new PureCounter();
 
   /**
-   * Init typed.js
+   * Frequently Asked Questions Toggle
    */
-  const selectTyped = document.querySelector('.typed');
-  if (selectTyped) {
-    let typed_strings = selectTyped.getAttribute('data-typed-items');
-    typed_strings = typed_strings.split(',');
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
+  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle, .faq-item .faq-header').forEach((faqItem) => {
+    faqItem.addEventListener('click', () => {
+      faqItem.parentNode.classList.toggle('faq-active');
     });
-  }
+  });
 
   /*
    * Pricing Toggle
@@ -166,121 +122,35 @@
     const yearlyText = container.querySelector('.yearly');
     const pricingItems = container.querySelectorAll('.pricing-item');
 
-    const updatePricingDisplay = (showYearly) => {
-      if (showYearly) {
-        yearlyText.classList.add('active');
+    if (pricingSwitch.checked) {
+      monthlyText.classList.remove('active');
+      yearlyText.classList.add('active');
+      pricingItems.forEach(item => {
+        item.classList.add('yearly-active');
+      });
+    } else {
+      monthlyText.classList.add('active');
+      yearlyText.classList.remove('active');
+      pricingItems.forEach(item => {
+        item.classList.remove('yearly-active');
+      });
+    }
+
+    pricingSwitch.addEventListener('change', function() {
+      if (this.checked) {
         monthlyText.classList.remove('active');
+        yearlyText.classList.add('active');
         pricingItems.forEach(item => {
           item.classList.add('yearly-active');
         });
       } else {
-        yearlyText.classList.remove('active');
         monthlyText.classList.add('active');
+        yearlyText.classList.remove('active');
         pricingItems.forEach(item => {
           item.classList.remove('yearly-active');
         });
       }
-    };
-
-    updatePricingDisplay(pricingSwitch.checked);
-
-    pricingSwitch.addEventListener('change', function() {
-      updatePricingDisplay(this.checked);
     });
-  });
-
-  /**
-   * Frequently Asked Questions Toggle
-   */
-  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle, .faq-item .faq-header').forEach((faqItem) => {
-    faqItem.addEventListener('click', () => {
-      faqItem.parentNode.classList.toggle('faq-active');
-    });
-  });
-
-  /**
-   * Simple image viewer toggles
-   */
-  document.querySelectorAll('[data-image-viewer]').forEach((viewer) => {
-    const slides = Array.from(viewer.querySelectorAll('[data-image-viewer-slide]'));
-    if (!slides.length) {
-      return;
-    }
-
-    let currentIndex = slides.findIndex(slide => slide.classList.contains('is-active'));
-    if (currentIndex === -1) {
-      currentIndex = 0;
-    }
-    const prevButton = viewer.querySelector('[data-image-viewer-prev]');
-    const nextButton = viewer.querySelector('[data-image-viewer-next]');
-    const controls = viewer.querySelectorAll('[data-image-viewer-prev], [data-image-viewer-next]');
-
-    const updateViewerHeight = () => {
-      const activeSlide = slides[currentIndex];
-      if (activeSlide && activeSlide.complete) {
-        viewer.style.height = `${activeSlide.offsetHeight}px`;
-      }
-    };
-
-    const syncSlides = () => {
-      slides.forEach((slide, index) => {
-        const isActive = index === currentIndex;
-
-        if (isActive) {
-          // Show the slide immediately by removing hidden attribute
-          slide.removeAttribute('hidden');
-          // Use requestAnimationFrame to ensure the transition triggers smoothly
-          requestAnimationFrame(() => {
-            slide.classList.add('is-active');
-            updateViewerHeight();
-          });
-        } else {
-          // Remove active class to trigger fade out
-          slide.classList.remove('is-active');
-          // Wait for transition to complete before hiding (300ms to match CSS)
-          setTimeout(() => {
-            slide.setAttribute('hidden', '');
-          }, 300); // Match the CSS transition duration
-        }
-      });
-    };
-
-    const setActiveSlide = (newIndex) => {
-      currentIndex = (newIndex + slides.length) % slides.length;
-      syncSlides();
-    };
-
-    // Initialize height when images are loaded
-    slides.forEach((slide) => {
-      if (slide.complete) {
-        updateViewerHeight();
-      } else {
-        slide.addEventListener('load', () => {
-          if (slides[currentIndex] === slide) {
-            updateViewerHeight();
-          }
-        });
-      }
-    });
-
-    syncSlides();
-
-    if (slides.length <= 1) {
-      controls.forEach((control) => control.setAttribute('hidden', ''));
-      return;
-    }
-
-    if (prevButton) {
-      prevButton.addEventListener('click', () => {
-        setActiveSlide(currentIndex - 1);
-      });
-    }
-
-    if (nextButton) {
-      nextButton.addEventListener('click', () => {
-        setActiveSlide(currentIndex + 1);
-      });
-    }
   });
 
   /**
@@ -322,5 +192,142 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+
+  /**
+   * Demo modal video handling
+   */
+  const demoModal = document.getElementById('demoModal');
+  if (demoModal) {
+    const videoFrame = demoModal.querySelector('[data-demo-video]');
+    const videoSrc = videoFrame ? videoFrame.getAttribute('data-video-src') : '';
+
+    demoModal.addEventListener('shown.bs.modal', () => {
+      if (videoFrame && videoSrc) {
+        videoFrame.setAttribute('src', videoSrc);
+      }
+    });
+
+    demoModal.addEventListener('hidden.bs.modal', () => {
+      if (videoFrame) {
+        videoFrame.setAttribute('src', '');
+      }
+    });
+  }
+
+  /**
+   * Hero typed animation
+   */
+  const typedElement = document.querySelector('.typed');
+
+  if (typedElement) {
+    const typedItems = typedElement.getAttribute('data-typed-items');
+
+    if (typedItems) {
+      const items = typedItems.split(',').map(item => item.trim()).filter(item => item.length > 0);
+
+      if (items.length > 0 && typeof Typed !== 'undefined') {
+        new Typed('.typed', {
+          strings: items,
+          loop: true,
+          typeSpeed: 80,
+          backSpeed: 30,
+          backDelay: 2000
+        });
+      }
+    }
+  }
+
+  /**
+   * Image viewer carousel
+   */
+  document.querySelectorAll('[data-image-viewer]').forEach((viewer) => {
+    const slides = Array.from(viewer.querySelectorAll('[data-image-viewer-slide]'));
+    if (!slides.length) {
+      return;
+    }
+
+    let activeIndex = slides.findIndex((slide) => slide.classList.contains('is-active') || !slide.hasAttribute('hidden'));
+    if (activeIndex === -1) {
+      activeIndex = 0;
+    }
+
+    const setActiveSlide = (nextIndex) => {
+      slides.forEach((slide, index) => {
+        const isActive = index === nextIndex;
+        slide.classList.toggle('is-active', isActive);
+        slide.setAttribute('aria-hidden', (!isActive).toString());
+      });
+    };
+
+    setActiveSlide(activeIndex);
+
+    const prevButton = viewer.querySelector('[data-image-viewer-prev]');
+    const nextButton = viewer.querySelector('[data-image-viewer-next]');
+
+    if (prevButton) {
+      prevButton.addEventListener('click', () => {
+        activeIndex = (activeIndex - 1 + slides.length) % slides.length;
+        setActiveSlide(activeIndex);
+      });
+    }
+
+    if (nextButton) {
+      nextButton.addEventListener('click', () => {
+        activeIndex = (activeIndex + 1) % slides.length;
+        setActiveSlide(activeIndex);
+      });
+    }
+  });
+
+  /**
+   * Steps video hover autoplay
+   */
+  const stepsVideoFrames = document.querySelectorAll('[data-steps-video]');
+
+  if (stepsVideoFrames.length) {
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    const existingApi = document.querySelector('script[src="https://www.youtube.com/iframe_api"]');
+
+    if (!existingApi) {
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+
+    const previousApiReady = window.onYouTubeIframeAPIReady;
+
+    window.onYouTubeIframeAPIReady = function() {
+      if (typeof previousApiReady === 'function') {
+        previousApiReady();
+      }
+
+      stepsVideoFrames.forEach((frame) => {
+        if (!frame.id) {
+          return;
+        }
+
+        new YT.Player(frame.id, {
+          events: {
+            onReady: (event) => {
+              const stepImage = frame.closest('.step-image');
+              if (!stepImage) return;
+
+              const handleEnter = () => {
+                event.target.mute();
+                event.target.playVideo();
+              };
+
+              const handleLeave = () => {
+                event.target.pauseVideo();
+              };
+
+              stepImage.addEventListener('mouseenter', handleEnter);
+              stepImage.addEventListener('mouseleave', handleLeave);
+            }
+          }
+        });
+      });
+    };
+  }
 
 })();
