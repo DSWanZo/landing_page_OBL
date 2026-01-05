@@ -12,18 +12,62 @@
   <link href="https://i.ibb.co/Ng9z6myj/Screenshot-2-removebg-preview.png" rel="icon">
   <link href="https://i.ibb.co/Ng9z6myj/Screenshot-2-removebg-preview.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Preconnect pour performances -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://i.ibb.co">
+  <link rel="preconnect" href="https://img.youtube.com">
+
+  <!-- Fonts - optimisées (seulement les weights utilisés) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- YouTube Lite Embed - chargement différé des vidéos -->
+  <style>
+    .youtube-lite {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      background-position: center;
+      background-size: cover;
+      cursor: pointer;
+    }
+    .youtube-lite::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 68px;
+      height: 48px;
+      margin-left: -34px;
+      margin-top: -24px;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="%23f00"/><path d="M45 24 27 14v20" fill="%23fff"/></svg>') center/contain no-repeat;
+      z-index: 1;
+      transition: transform 0.2s ease;
+    }
+    .youtube-lite:hover::before {
+      transform: scale(1.1);
+    }
+    .youtube-lite iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .youtube-lite.activated::before {
+      display: none;
+    }
+  </style>
 
 </head>
 
@@ -114,10 +158,9 @@
             <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
               <div class="step-image">
                 <div class="ratio ratio-16x9">
-                  <iframe id="steps-video-player" data-steps-video src="https://www.youtube.com/embed/SQsk-w8KnW4?enablejsapi=1&mute=1"
-                    title="OneBookLab vidéo"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen loading="lazy"></iframe>
+                  <div class="youtube-lite" data-video-id="SQsk-w8KnW4"
+                    style="background-image: url('https://img.youtube.com/vi/SQsk-w8KnW4/maxresdefault.jpg');"
+                    title="OneBookLab vidéo"></div>
                 </div>
               </div>
             </div>
@@ -139,10 +182,9 @@
             <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-delay="200">
               <div class="step-image">
                 <div class="ratio ratio-16x9">
-                  <iframe id="steps-video-player-2" data-steps-video src="https://www.youtube.com/embed/3mzQBA4bYrk?enablejsapi=1&mute=1"
-                    title="OneBookLab vidéo 2"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen loading="lazy"></iframe>
+                  <div class="youtube-lite" data-video-id="3mzQBA4bYrk"
+                    style="background-image: url('https://img.youtube.com/vi/3mzQBA4bYrk/maxresdefault.jpg');"
+                    title="OneBookLab vidéo 2"></div>
                 </div>
               </div>
             </div>
@@ -163,10 +205,9 @@
             <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
               <div class="step-image">
                 <div class="ratio ratio-16x9">
-                  <iframe id="steps-video-player-3" data-steps-video src="https://www.youtube.com/embed/rj3MoKvLbpY?enablejsapi=1&mute=1"
-                    title="OneBookLab vidéo 3"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen loading="lazy"></iframe>
+                  <div class="youtube-lite" data-video-id="rj3MoKvLbpY"
+                    style="background-image: url('https://img.youtube.com/vi/rj3MoKvLbpY/maxresdefault.jpg');"
+                    title="OneBookLab vidéo 3"></div>
                 </div>
               </div>
             </div>
@@ -207,10 +248,9 @@
               <div class="step-item text-center">
                 <div class="step-image">
                   <div class="ratio ratio-16x9">
-                    <iframe id="steps-video-player-4" data-steps-video src="https://www.youtube.com/embed/qwmjJWMfQq8?enablejsapi=1&mute=1"
-                      title="OneBookLab exemple de couverture"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen loading="lazy"></iframe>
+                    <div class="youtube-lite" data-video-id="qwmjJWMfQq8"
+                      style="background-image: url('https://img.youtube.com/vi/qwmjJWMfQq8/maxresdefault.jpg');"
+                      title="OneBookLab exemple de couverture"></div>
                   </div>
                 </div>
               </div>
@@ -220,10 +260,9 @@
               <div class="step-item text-center">
                 <div class="step-image">
                   <div class="ratio ratio-16x9">
-                    <iframe id="steps-video-player-5" data-steps-video src="https://www.youtube.com/embed/vvwTHLooh3M?enablejsapi=1&mute=1"
-                      title="Exemple de pitch OneBookLab"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen loading="lazy"></iframe>
+                    <div class="youtube-lite" data-video-id="vvwTHLooh3M"
+                      style="background-image: url('https://img.youtube.com/vi/vvwTHLooh3M/maxresdefault.jpg');"
+                      title="Exemple de pitch OneBookLab"></div>
                   </div>
                 </div>
               </div>
@@ -876,14 +915,89 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/php-email-form/validate.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/typed.js/typed.umd.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
+
+  <!-- YouTube Lite - chargement au clic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var ytPlayers = {};
+      var apiLoaded = false;
+      var pendingPlayers = [];
+
+      // Charger l'API YouTube une seule fois
+      function loadYouTubeAPI() {
+        if (apiLoaded || document.querySelector('script[src*="youtube.com/iframe_api"]')) return;
+        apiLoaded = true;
+        var tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        document.head.appendChild(tag);
+      }
+
+      window.onYouTubeIframeAPIReady = function() {
+        pendingPlayers.forEach(function(data) {
+          createPlayer(data.el, data.videoId);
+        });
+        pendingPlayers = [];
+      };
+
+      function createPlayer(el, videoId) {
+        var iframe = document.createElement('div');
+        iframe.id = 'yt-player-' + videoId + '-' + Math.random().toString(36).substr(2, 9);
+        el.appendChild(iframe);
+
+        var player = new YT.Player(iframe.id, {
+          videoId: videoId,
+          playerVars: { mute: 1, controls: 1, rel: 0 },
+          events: {
+            onReady: function(event) {
+              el.classList.add('activated');
+              ytPlayers[el.dataset.videoId] = event.target;
+
+              var stepImage = el.closest('.step-image');
+              if (stepImage) {
+                stepImage.addEventListener('mouseenter', function() {
+                  event.target.playVideo();
+                });
+                stepImage.addEventListener('mouseleave', function() {
+                  event.target.pauseVideo();
+                });
+              }
+            }
+          }
+        });
+      }
+
+      // Observer pour charger quand visible
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var el = entry.target;
+            var videoId = el.dataset.videoId;
+            observer.unobserve(el);
+
+            loadYouTubeAPI();
+
+            if (typeof YT !== 'undefined' && YT.Player) {
+              createPlayer(el, videoId);
+            } else {
+              pendingPlayers.push({ el: el, videoId: videoId });
+            }
+          }
+        });
+      }, { rootMargin: '200px' }); // Précharge 200px avant d'être visible
+
+      document.querySelectorAll('.youtube-lite').forEach(function(el) {
+        observer.observe(el);
+      });
+    });
+  </script>
 
 </body>
 
