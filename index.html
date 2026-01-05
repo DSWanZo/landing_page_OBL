@@ -927,17 +927,74 @@
   <!-- YouTube Lite - chargement au clic -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('.youtube-lite').forEach(function(el) {
-        el.addEventListener('click', function() {
-          if (el.classList.contains('activated')) return;
-          var videoId = el.getAttribute('data-video-id');
-          var iframe = document.createElement('iframe');
-          iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
-          iframe.setAttribute('allowfullscreen', '');
-          iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
-          el.appendChild(iframe);
-          el.classList.add('activated');
+      var ytPlayers = {};
+      var apiLoaded = false;
+      var pendingPlayers = [];
+
+      // Charger l'API YouTube une seule fois
+      function loadYouTubeAPI() {
+        if (apiLoaded || document.querySelector('script[src*="youtube.com/iframe_api"]')) return;
+        apiLoaded = true;
+        var tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        document.head.appendChild(tag);
+      }
+
+      window.onYouTubeIframeAPIReady = function() {
+        pendingPlayers.forEach(function(data) {
+          createPlayer(data.el, data.videoId);
         });
+        pendingPlayers = [];
+      };
+
+      function createPlayer(el, videoId) {
+        var iframe = document.createElement('div');
+        iframe.id = 'yt-player-' + videoId + '-' + Math.random().toString(36).substr(2, 9);
+        el.appendChild(iframe);
+
+        var player = new YT.Player(iframe.id, {
+          videoId: videoId,
+          playerVars: { mute: 1, controls: 1, rel: 0 },
+          events: {
+            onReady: function(event) {
+              el.classList.add('activated');
+              ytPlayers[el.dataset.videoId] = event.target;
+
+              var stepImage = el.closest('.step-image');
+              if (stepImage) {
+                stepImage.addEventListener('mouseenter', function() {
+                  event.target.playVideo();
+                });
+                stepImage.addEventListener('mouseleave', function() {
+                  event.target.pauseVideo();
+                });
+              }
+            }
+          }
+        });
+      }
+
+      // Observer pour charger quand visible
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var el = entry.target;
+            var videoId = el.dataset.videoId;
+            observer.unobserve(el);
+
+            loadYouTubeAPI();
+
+            if (typeof YT !== 'undefined' && YT.Player) {
+              createPlayer(el, videoId);
+            } else {
+              pendingPlayers.push({ el: el, videoId: videoId });
+            }
+          }
+        });
+      }, { rootMargin: '200px' }); // Précharge 200px avant d'être visible
+
+      document.querySelectorAll('.youtube-lite').forEach(function(el) {
+        observer.observe(el);
       });
     });
   </script>
