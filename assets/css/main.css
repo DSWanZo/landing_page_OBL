@@ -3100,11 +3100,25 @@ section,
   opacity: 1;
 }
 
-.demo-modal .ratio {
-  background: #000;
-  border-radius: 16px;
+.demo-modal .modal-body {
+  padding: 0;
+}
+
+.demo-modal lite-youtube {
+  border-radius: 0 0 16px 16px;
+}
+
+/* Lite YouTube Embed styles */
+.step-image lite-youtube,
+.demo-modal lite-youtube {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
+}
+
+.step-image lite-youtube {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 991px) {
