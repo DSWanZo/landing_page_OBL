@@ -260,36 +260,25 @@
   });
 
   /**
-   * Lite-youtube hover autoplay
+   * Single video playback - pause other videos when one starts playing
    */
-  document.querySelectorAll('.step-image lite-youtube').forEach((liteYt) => {
-    let player = null;
-    let isActivated = false;
-
-    const handleEnter = () => {
-      if (!isActivated) {
-        liteYt.click();
-        isActivated = true;
-        setTimeout(() => {
-          player = liteYt.querySelector('iframe');
-          if (player && player.contentWindow) {
-            player.contentWindow.postMessage('{"event":"command","func":"mute","args":""}', '*');
-            player.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-          }
-        }, 1000);
-      } else if (player && player.contentWindow) {
-        player.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+  const pauseAllYouTubeVideos = (exceptElement) => {
+    document.querySelectorAll('lite-youtube iframe').forEach((iframe) => {
+      if (iframe !== exceptElement && iframe.contentWindow) {
+        iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
       }
-    };
+    });
+  };
 
-    const handleLeave = () => {
-      if (player && player.contentWindow) {
-        player.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-      }
-    };
-
-    liteYt.closest('.step-image').addEventListener('mouseenter', handleEnter);
-    liteYt.closest('.step-image').addEventListener('mouseleave', handleLeave);
+  // Listen for clicks on lite-youtube elements to ensure only one video plays at a time
+  document.querySelectorAll('lite-youtube').forEach((liteYt) => {
+    liteYt.addEventListener('click', () => {
+      // Pause all other videos when this one is clicked
+      setTimeout(() => {
+        const iframe = liteYt.querySelector('iframe');
+        pauseAllYouTubeVideos(iframe);
+      }, 500);
+    });
   });
 
 })();
