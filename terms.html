@@ -43,8 +43,6 @@
 
       <div class="brand d-flex align-items-center me-auto">
         <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.webp" alt=""> -->
           <img src="https://i.ibb.co/yc5PhYN6/Chat-GPT-Image-27-oct-2025-15-50-50-removebg-preview.png" alt="Author Name" class="img-fluid">
         </a>
         <h1 class="sitename m-0 ms-2"><a href="index.html"><b>OneBookLab™</b></a></h1>
@@ -52,17 +50,23 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero-2">Produit</a></li>
-
-          <li><a href="pricing.html">Tarifs</a></li>
-          <li><a href="index.html#faq-3">FAQ</a></li>
-          <li><a href="index.html#steps">A venir</a></li>
-          <li><a href="index.html#footer">Contact</a></li>
+          <li><a href="index.html#hero-2" data-i18n="nav.product">Produit</a></li>
+          <li><a href="pricing.html" data-i18n="nav.pricing">Tarifs</a></li>
+          <li><a href="index.html#faq-3" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="index.html#steps" data-i18n="nav.upcoming">A venir</a></li>
+          <li><a href="index.html#footer" data-i18n="nav.contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="https://app.onebooklab.com/login">Connexion</a>
+      <div class="lang-switcher">
+        <button class="lang-btn" onclick="I18n.toggleLanguage()" title="Switch language">
+          <span class="current-lang">FR</span>
+          <i class="bi bi-globe2"></i>
+        </button>
+      </div>
+
+      <a class="btn-getstarted" href="https://app.onebooklab.com/login" data-i18n="nav.login">Connexion</a>
 
     </div>
   </header>
@@ -75,35 +79,35 @@
       <div class="container" data-aos="fade-up">
         <!-- Page Header -->
         <div class="tos-header text-center" data-aos="fade-up">
-          <span class="last-updated">En vigueur au 18/10/2025</span>
-          <h2>Mentions légales</h2>
-          
+          <span class="last-updated" data-i18n="legal.effective_date">En vigueur au 18/10/2025</span>
+          <h2 data-i18n="legal.title">Mentions légales</h2>
+
         </div>
 
         <!-- Content -->
         <div class="tos-content" data-aos="fade-up" data-aos-delay="200">
           <!-- Agreement Section -->
           <div id="agreement" class="content-section">
-            <h3>1. Mentions légales</h3>
-            <p>Conformément aux dispositions de la loi n°2004-575 du 21 juin 2004 pour la Confiance en l’économie numérique, il est porté à la connaissance des utilisateurs et visiteurs, ci-après l' "Utilisateur", du site <b>http://www.onebooklab.com</b>, ci-après le "Site", les présentes mentions légales.</p>
+            <h3 data-i18n="legal.section1_title">1. Mentions légales</h3>
+            <p data-i18n-html="legal.section1_p1">Conformément aux dispositions de la loi n°2004-575 du 21 juin 2004 pour la Confiance en l'économie numérique, il est porté à la connaissance des utilisateurs et visiteurs, ci-après l' "Utilisateur", du site <b>http://www.onebooklab.com</b>, ci-après le "Site", les présentes mentions légales.</p>
             <div><br></div>
-            <div>La connexion et la navigation sur le Site par l’Utilisateur implique acceptation intégrale et sans réserve des présentes mentions légales.</div>
-            <div>&nbsp;Ces dernières sont accessibles sur le Site à la rubrique "Mentions légales".</div>
+            <div data-i18n="legal.section1_p2">La connexion et la navigation sur le Site par l'Utilisateur implique acceptation intégrale et sans réserve des présentes mentions légales.</div>
+            <div data-i18n="legal.section1_p3">&nbsp;Ces dernières sont accessibles sur le Site à la rubrique "Mentions légales".</div>
             <p></p>
             <div class="info-box">
               <i class="bi bi-info-circle"></i>
-              <p>Ces conditions s’appliquent à tous les utilisateurs, visiteurs et autres personnes qui accèdent ou utilisent nos services.</p>
+              <p data-i18n="legal.section1_info">Ces conditions s'appliquent à tous les utilisateurs, visiteurs et autres personnes qui accèdent ou utilisent nos services.</p>
             </div>
           </div>
 
           <!-- Intellectual Property -->
           <div id="intellectual-property" class="content-section">
-            <h3>2. EDITION DU SITE</h3>
-            <p>L'édition du Site est assurée par la société SamCreation, Entrepreneur individuel, immatriculée au Registre du Commerce et des Sociétés de Niort sous le numéro 951241330 dont le siège social est situé au 2 rue de Touraine 86530 Cenon sur Vienne,</p>
-            <p>&gt; Adresse e-mail : contact@onebooklab.com.&nbsp;&nbsp;</p>
-            <p>&gt; N° de TVA intracommunautaire : FR07951241330</p>
-            <p>&gt; Directeur de la publication : SamCreation</p>
-            <p>(Les coordonnées du responsable de la publication sont réservées et seront communiquées sur demande).</p>
+            <h3 data-i18n="legal.section2_title">2. EDITION DU SITE</h3>
+            <p data-i18n="legal.section2_p1">L'édition du Site est assurée par la société SamCreation, Entrepreneur individuel, immatriculée au Registre du Commerce et des Sociétés de Niort sous le numéro 951241330 dont le siège social est situé au 2 rue de Touraine 86530 Cenon sur Vienne,</p>
+            <p data-i18n="legal.section2_p2">&gt; Adresse e-mail : contact@onebooklab.com.&nbsp;&nbsp;</p>
+            <p data-i18n="legal.section2_p3">&gt; N° de TVA intracommunautaire : FR07951241330</p>
+            <p data-i18n="legal.section2_p4">&gt; Directeur de la publication : SamCreation</p>
+            <p data-i18n="legal.section2_p5">(Les coordonnées du responsable de la publication sont réservées et seront communiquées sur demande).</p>
             <ul class="list-items">
 
             </ul>
@@ -111,17 +115,17 @@
 
           <!-- User Accounts -->
           <div id="user-accounts" class="content-section">
-            <h3>3. HEBERGEUR</h3>
-            <p>OVH SAS – 2 rue Kellermann, 59100 Roubaix – France</p>
-            <p>Site : www.ovh.com</p>
-            <p>Les informations relatives à l’hébergement du site OneBookLab™ sont réservées aux utilisateurs connectés</p>
+            <h3 data-i18n="legal.section3_title">3. HEBERGEUR</h3>
+            <p data-i18n="legal.section3_p1">OVH SAS – 2 rue Kellermann, 59100 Roubaix – France</p>
+            <p data-i18n="legal.section3_p2">Site : www.ovh.com</p>
+            <p data-i18n="legal.section3_p3">Les informations relatives à l'hébergement du site OneBookLab™ sont réservées aux utilisateurs connectés</p>
 
           </div>
 
           <!-- Prohibited Activities -->
           <div id="prohibited" class="content-section">
-            <h3>4. PROPRIETE INTELLECTUELLE</h3>
-            <p>L’ensemble des éléments présents sur le site OneBookLab™ (textes, images, illustrations, logos) est la propriété exclusive de OneBookLab™ ou de ses partenaires. Toute reproduction, représentation, modification ou diffusion, même partielle, est strictement interdite sans l’autorisation écrite préalable de OneBookLab™, conformément aux dispositions du Code de la propriété intellectuelle.</p>
+            <h3 data-i18n="legal.section4_title">4. PROPRIETE INTELLECTUELLE</h3>
+            <p data-i18n="legal.section4_p1">L'ensemble des éléments présents sur le site OneBookLab™ (textes, images, illustrations, logos) est la propriété exclusive de OneBookLab™ ou de ses partenaires. Toute reproduction, représentation, modification ou diffusion, même partielle, est strictement interdite sans l'autorisation écrite préalable de OneBookLab™, conformément aux dispositions du Code de la propriété intellectuelle.</p>
             <div>
 
             </div>
@@ -129,37 +133,37 @@
 
           <!-- Disclaimers -->
           <div id="disclaimer" class="content-section">
-            <h3>5. DONNEES PERSONNELLES</h3>
-            <p>Les données collectées sur le site OneBookLab™ sont destinées à améliorer la relation client et à vous fournir les services demandés. Les données collectées sont conservées pendant la durée d’utilisation du compte, puis archivées 2 ans maximum après suppression.</p>
-            <p>Pour exercer vos droits, contactez : contact@onebooklab.com. Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée et au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
-            <p>• Droit d’accès</p>
-            <p>• Droit de rectification</p>
-            <p>• Droit à l’effacement</p>
-            <p>• Droit à la limitation du traitement</p>
-            <p>• Droit d’opposition</p>
-            <p>• Droit à la portabilité</p>
-            <p>Pour exercer ces droits, veuillez contacter le responsable du traitement des données à l’adresse : contact@onebooklab.com</p>
+            <h3 data-i18n="legal.section5_title">5. DONNEES PERSONNELLES</h3>
+            <p data-i18n="legal.section5_p1">Les données collectées sur le site OneBookLab™ sont destinées à améliorer la relation client et à vous fournir les services demandés. Les données collectées sont conservées pendant la durée d'utilisation du compte, puis archivées 2 ans maximum après suppression.</p>
+            <p data-i18n="legal.section5_p2">Pour exercer vos droits, contactez : contact@onebooklab.com. Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée et au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
+            <p data-i18n="legal.section5_right1">• Droit d'accès</p>
+            <p data-i18n="legal.section5_right2">• Droit de rectification</p>
+            <p data-i18n="legal.section5_right3">• Droit à l'effacement</p>
+            <p data-i18n="legal.section5_right4">• Droit à la limitation du traitement</p>
+            <p data-i18n="legal.section5_right5">• Droit d'opposition</p>
+            <p data-i18n="legal.section5_right6">• Droit à la portabilité</p>
+            <p data-i18n="legal.section5_p3">Pour exercer ces droits, veuillez contacter le responsable du traitement des données à l'adresse : contact@onebooklab.com</p>
 
           </div>
 
           <!-- Limitation of Liability -->
           <div id="limitation" class="content-section">
-            <h3>6. COOKIES</h3>
-            <p>Le site OneBookLab™ peut être amené à vous demander l’acceptation des cookies pour des besoins de statistiques et d’affichage. Un cookie est une information déposée sur votre disque dur par le serveur du site que vous visitez. Vous pouvez configurer votre navigateur pour refuser les cookies, mais cela pourrait impacter votre expérience utilisateur.</p>
+            <h3 data-i18n="legal.section6_title">6. COOKIES</h3>
+            <p data-i18n="legal.section6_p1">Le site OneBookLab™ peut être amené à vous demander l'acceptation des cookies pour des besoins de statistiques et d'affichage. Un cookie est une information déposée sur votre disque dur par le serveur du site que vous visitez. Vous pouvez configurer votre navigateur pour refuser les cookies, mais cela pourrait impacter votre expérience utilisateur.</p>
           </div>
 
           <!-- Indemnification -->
           <div id="indemnification" class="content-section">
-            <h3>7. LIENS HYPERTEXTES</h3>
-            <p>Le site OneBookLab™ peut contenir des liens vers d’autres sites internet ou ressources externes. OneBookLab™ n’exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu ou leur disponibilité. Il est recommandé de consulter les conditions d’utilisation et la politique de confidentialité de ces sites avant de leur communiquer vos données personnelles.</p>
+            <h3 data-i18n="legal.section7_title">7. LIENS HYPERTEXTES</h3>
+            <p data-i18n="legal.section7_p1">Le site OneBookLab™ peut contenir des liens vers d'autres sites internet ou ressources externes. OneBookLab™ n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu ou leur disponibilité. Il est recommandé de consulter les conditions d'utilisation et la politique de confidentialité de ces sites avant de leur communiquer vos données personnelles.</p>
           </div>
 
           <!-- Termination -->
           <div id="termination" class="content-section">
-            <h3>8. LITIGES</h3>
-            <p>Les présentes mentions légales sont régies par le droit français. En cas de litige relatif à leur interprétation ou leur exécution, seuls les tribunaux compétents du ressort du siège social de OneBookLab™ seront compétents.</p>
-            <div>La langue de référence pour le règlement des contentieux est le français.</div>
-            <div>Pour toute question concernant le site ou les présentes mentions légales :<br></div>
+            <h3 data-i18n="legal.section8_title">8. LITIGES</h3>
+            <p data-i18n="legal.section8_p1">Les présentes mentions légales sont régies par le droit français. En cas de litige relatif à leur interprétation ou leur exécution, seuls les tribunaux compétents du ressort du siège social de OneBookLab™ seront compétents.</p>
+            <div data-i18n="legal.section8_p2">La langue de référence pour le règlement des contentieux est le français.</div>
+            <div data-i18n="legal.section8_p3">Pour toute question concernant le site ou les présentes mentions légales :<br></div>
             <p></p>
           </div>
 
@@ -175,9 +179,9 @@
                 <i class="bi bi-envelope"></i>
               </div>
               <div class="contact-content">
-                <h4>Des questions ?</h4>
-                <p>Si vous avez des questions, contactez nous par mail ci dessous :</p>
-                <a href="mailto:contact@onebooklab.com" class="contact-link">Contacter le support</a>
+                <h4 data-i18n="legal.contact_title">Des questions ?</h4>
+                <p data-i18n="legal.contact_desc">Si vous avez des questions, contactez nous par mail ci dessous :</p>
+                <a href="mailto:contact@onebooklab.com" class="contact-link" data-i18n="legal.contact_link">Contacter le support</a>
               </div>
             </div>
           </div>
@@ -199,36 +203,32 @@
           <div class="footer-contact pt-3">
 
             <p class="mt-3"> </p>
-            <p><strong>Email:</strong> <span class="">contact@onebooklab.com</span></p>
+            <p><strong data-i18n="footer.email_label">Email:</strong> <span class="">contact@onebooklab.com</span></p>
           </div>
 
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Liens utiles</h4>
+          <h4 data-i18n="footer.useful_links">Liens utiles</h4>
           <ul>
             <li></li>
 
-            <li><a href="terms.html">Mentions légales</a></li>
-            <li><a href="cgu.html">Conditions générales de vente et d'utilisation</a></li>
-            <li><a href="privacy.html">Politique de confidentialité</a></li>
-            <li><a href="devenir-affilie.html">Devenir affilié</a></li>
+            <li><a href="terms.html" data-i18n="footer.legal">Mentions légales</a></li>
+            <li><a href="cgu.html" data-i18n="footer.terms">Conditions générales de vente et d'utilisation</a></li>
+            <li><a href="privacy.html" data-i18n="footer.privacy">Politique de confidentialité</a></li>
+            <li><a href="devenir-affilie.html" data-i18n="footer.affiliate">Devenir affilié</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-
           <ul>
-
             <li></li>
             <li></li>
-
             <li></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-
           <ul>
             <li><br></li>
             <li></li>
@@ -239,7 +239,6 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-
           <ul>
             <li></li>
             <li></li>
@@ -253,8 +252,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">OneBookLab™</strong> <span>All Rights Reserved</span></p>
-
+      <p data-i18n="footer.copyright">© Copyright OneBookLab™ All Rights Reserved</p>
     </div>
 
   </footer>
@@ -275,6 +273,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- i18n Script -->
+  <script src="assets/js/i18n.js"></script>
 
 </body>
 
