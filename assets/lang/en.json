@@ -298,5 +298,16 @@
     "contact_title": "Have questions?",
     "contact_desc": "If you have any questions, contact us by email below:",
     "contact_link": "Contact support"
+  },
+  "cgu": {
+    "last_updated": "Last updated: October 22, 2025",
+    "title": "Terms of Use",
+    "contact_title": "Have questions?",
+    "contact_desc": "If you have any questions, contact us by email below:",
+    "contact_link": "Contact support"
+  },
+  "cgv": {
+    "last_updated": "Last updated: October 22, 2025",
+    "title": "Terms of Sale"
   }
 }

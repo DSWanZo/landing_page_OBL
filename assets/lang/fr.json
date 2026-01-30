@@ -298,5 +298,16 @@
     "contact_title": "Des questions ?",
     "contact_desc": "Si vous avez des questions, contactez nous par mail ci dessous :",
     "contact_link": "Contacter le support"
+  },
+  "cgu": {
+    "last_updated": "Dernière mise à jour : 22 octobre 2025",
+    "title": "Conditions Générales d'Utilisation (CGU)",
+    "contact_title": "Des questions ?",
+    "contact_desc": "Si vous avez des questions, contactez nous par mail ci dessous :",
+    "contact_link": "Contacter le support"
+  },
+  "cgv": {
+    "last_updated": "Dernière mise à jour : 22 octobre 2025",
+    "title": "Conditions Générales de Vente (CGV)"
   }
 }
