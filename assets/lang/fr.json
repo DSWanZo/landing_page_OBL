@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "product": "Produit",
+    "pricing": "Tarifs",
+    "faq": "FAQ",
+    "upcoming": "A venir",
+    "contact": "Contact",
+    "login": "Connexion"
+  },
+  "hero": {
+    "lead": "L'écriture n'est plus un frein :",
+    "title": "Des livres générés en moins de 30min.",
+    "typed_items": "Sans écrire,Sans corriger,Sans superviser",
+    "tagline": "Publiez plus. Gagnez plus.",
+    "cta": "Tester OneBookLab™ dès maintenant !",
+    "accelerate": "Accélérez votre Business !",
+    "description": "Et générez un livre complet en moins de 30 minutes."
+  },
+  "steps2": {
+    "title": "En seulement 3 clics, OneBookLab™ génère pour vous :",
+    "step1": {
+      "title": "Des livres complets, cohérents et publiables",
+      "subtitle": "En fiction comme en non-fiction !",
+      "item1": "Plus besoin de guider chaque phrase.",
+      "item2": "Plus besoin de corriger pendant des heures.",
+      "item3": "Plus besoin de payer un ghostwriter hors de prix."
+    },
+    "step2": {
+      "title": "Écrivez moins, publiez plus :",
+      "subtitle": "OneBookLab™ écrit le livre pour vous !",
+      "item1": "Du premier mot au dernier chapitre.",
+      "item2": "Pendant que vous vous concentrez sur ce qui rapporte vraiment.",
+      "item3": "Plus vous publiez, plus vous gagnez."
+    },
+    "step3": {
+      "title": "OneBookLab™ supprime le principal frein des auteurs : le temps d'écriture.",
+      "subtitle": "Résultat :",
+      "item1": "vous publiez beaucoup plus vite.",
+      "item2": "beaucoup plus souvent.",
+      "item3": "et vos revenus suivent."
+    },
+    "cta1": "Lancer la génération de mon prochain livre !",
+    "cta1_sub": "Automatiquement, en 3 clics",
+    "adopted_title": "Déjà adopté par les auteurs autoédités :",
+    "adopted_sub1": "Ils multiplient leur cadence de publication,",
+    "adopted_sub2": "et développent leurs catalogues plus rapidement.",
+    "cta2": "Commencer à générer mes livres automatiquement.",
+    "cta2_sub": "Et gagner plus, plus vite"
+  },
+  "about2": {
+    "title": "OneBookLab™ élimine le vrai blocage des auteurs.",
+    "problem1": "➡️Le problème n'a jamais été l'inspiration.",
+    "problem2": "➡️Ni les idées.",
+    "problem3": "➡️Ni même l'IA.",
+    "real_problem": "Le vrai problème, c'est le temps.⏱️",
+    "time1": "❗ Le temps d'écrire.",
+    "time2": "❗ Le temps de structurer.",
+    "time3": "❗ Le temps de corriger l'IA.",
+    "time4": "❗ Le temps de réparer ce qui ne tient pas.",
+    "result": "Résultat :",
+    "result1": "❌vous publiez lentement,",
+    "result2": "❌votre catalogue stagne",
+    "result3": "❌vos revenus plafonnent.",
+    "solution1": "OneBookLab™ ne vous fait pas gagner du temps...",
+    "solution2": "Il élimine le problème !",
+    "solution3": "C'est une IA qui écrit des livres pour vous.",
+    "solution4": "Du premier mot au dernier chapitre.",
+    "demo_btn": "Voir OneBookLab en action"
+  },
+  "features": {
+    "title1": "En autoédition, tout se joue sur une seule chose :",
+    "title2": "La vitesse de publication ! 🚀",
+    "subtitle": "Publier plus, c'est :",
+    "item1_title": "Tester plus,",
+    "item1_desc": "Essayez vos idées et validez vos concepts rapidement.",
+    "item2_title": "Apprendre plus vite,",
+    "item2_desc": "Maîtrisez les techniques qui font vendre et gagnez du temps.",
+    "item3_title": "Et trouver plus souvent la bonne niche.",
+    "item3_desc": "Découvrez les thèmes qui vendent vraiment.",
+    "item4_title": "Celle qui rapporte vraiment.",
+    "item4_desc": "Et qui vous permet de vraiment faire décoller vos revenus !",
+    "conclusion1": "Ce ne sont pas les meilleurs auteurs qui gagnent.",
+    "conclusion2": "Ce sont les plus rapides."
+  },
+  "features2": {
+    "title": "OneBookLab™ repose sur une structure maîtrisée.",
+    "subtitle1": "Chaque livre généré suit une architecture claire et cohérente.",
+    "subtitle2": "La structure, le rythme et le fil narratif sont contrôlés.",
+    "item1": "❌Pas de chapitres déséquilibrés.",
+    "item2": "❌Pas de ruptures de ton.",
+    "item3": "❌Pas de dérives en cours d'écriture.",
+    "conclusion": "Des livres structurés et fiables lors de chaque génération.",
+    "demo_btn": "Voir la Démo"
+  },
+  "features3": {
+    "title": "Un accès à nos tutoriels et ressources :",
+    "subtitle": "Pour prendre en main l'outil rapidement, optimiser vos générations et exploiter tout son potentiel.",
+    "card1_title": "Identifier des niches et mots-clés rentables,",
+    "card1_desc": "Trouvez facilement les niches qui rapportent. Optimisez vos choix pour maximiser vos résultats.",
+    "card2_title": "Transformer un livre en produit attractif,",
+    "card2_desc": "Créez des livres prêts à captiver vos lecteurs. Rendez chaque publication irrésistible et professionnelle.",
+    "card3_title": "Attirer vos premiers lecteurs et gagner en visibilité.",
+    "card3_desc": "Faites connaître vos livres rapidement. Développez votre audience et augmentez vos ventes.",
+    "cta": "Commencer à écrire !"
+  },
+  "whyus": {
+    "title": "Dans 6 mois, il y aura deux types d'auteurs :",
+    "card1_title": "Ceux qui publieront toujours au même rythme.",
+    "card1_desc": "Un livre de temps en temps. <br>Quand ils trouvent le temps.<br>Quand l'énergie est là.",
+    "card2_title": "Et ceux dont le catalogue aura doublé.",
+    "card2_desc": "Plus de titres. <br>Plus de points d'entrée.<br>Plus d'opportunités de ventes.",
+    "not1": "❌Pas parce qu'ils sont plus talentueux.",
+    "not2": "❌Pas parce qu'ils écrivent mieux.",
+    "but": "✔️Mais parce que leur rythme aura changé.",
+    "cta": "Commencer à générer mes livres automatiquement.",
+    "cta_sub": "Et gagner plus, plus vite"
+  },
+  "faq": {
+    "title": "F.A.Q",
+    "subtitle": "Si vous ne trouvez pas votre réponse ici, contactez nous par mail !",
+    "q1": "Est-ce que la qualité est suffisante pour publier sur Amazon ?",
+    "a1": "Oui, les textes générés sont prêts à être publiés sur Amazon KDP ou toute autre plateforme. Vous pouvez néanmoins personnaliser le contenu à tout moment.",
+    "q2": "Est-ce que ça fonctionne en fiction ET non-fiction ?",
+    "a2": "Absolument, OneBookLab™ gère tous types de livres : romans, nouvelles, guides pratiques, essais et bien plus.",
+    "q3": "Est-ce que je dois savoir écrire ?",
+    "a3": "Non, l'outil s'occupe de structurer et rédiger le texte pour vous. Il suffit de définir le thème et vos préférences.",
+    "q4": "Est-ce que je peux modifier le texte généré ?",
+    "a4": "Oui, tout le contenu reste entièrement modifiable. Vous gardez le contrôle sur chaque phrase et chapitre.",
+    "q5": "Est-ce adapté aux débutants ?",
+    "a5": "Oui, l'outil est pensé pour tous, même ceux qui n'ont jamais publié. Il guide pas à pas de l'idée à la publication.",
+    "q6": "Est-ce que l'outil évolue dans le temps ?",
+    "a6": "Oui, OneBookLab™ bénéficie de mises à jour régulières et de nouvelles fonctionnalités pour améliorer continuellement la qualité et l'expérience utilisateur. Vous pourrez avoir une vision des derniers changements et de ceux à venir grâce au changelog accessible une fois inscrit(e).",
+    "q7": "Les textes générés sont-ils uniques ?",
+    "a7": "Oui. Chaque génération est exclusive : l'IA recrée le contenu à partir de votre brief et de vos paramètres. Aucun texte n'est copié ni réutilisé pour un autre utilisateur.",
+    "q8": "Quelle est la longueur moyenne d'un livre généré ?",
+    "a8": "Un livre complet généré avec OneBookLab™ contient en moyenne entre 10 000 et 45 000 mots, selon le niveau de détail demandé, le nombre de chapitres, de sous-parties... Il peut s'agir d'un ebook court (guide de 40 pages) ou d'un ouvrage plus complet dépassant largement les 100 pages (+60 000 mots) selon vos paramètres.",
+    "q9": "Le prix de l'abonnement est-il fixe ?",
+    "a9": "Oui. Votre abonnement reste fixe tant qu'il est actif. En effet, de nouvelles fonctionnalités seront implémentées au fur et à mesure ce qui augmentera légèrement l'abonnement pour les nouveaux adhérents.",
+    "q10": "Comment fonctionnent les abonnements annuels ?",
+    "a10": "Les abonnements annuels sont facturés en une seule fois au début de la période. Vous recevez tous vos crédits dès le début de cette période et ils restent disponibles même après la fin de l'abonnement.",
+    "q11": "Que se passe-t-il si je n'utilise pas mes crédits ce mois-ci ?",
+    "a11": "Vos crédits ne sont pas perdus : ils restent valables et s'accumulent d'un mois à l'autre tant que votre abonnement reste actif. Ainsi, vous pouvez créer à votre rythme, sans pression ni perte de valeur.",
+    "cta": "Commencer à générer mes livres automatiquement.",
+    "cta_sub": "Et gagner plus, plus vite"
+  },
+  "upcoming": {
+    "title": "Fonctionnalités à venir*",
+    "subtitle": "*Le prix de l'abonnement évolura pour les nouveaux arrivants",
+    "step1_title": "Aide à la création du 4e de couverture",
+    "step1_desc": "Terminées les prises de tête, nous allons ajouter un générateur de 4e de couverture afin de rendre votre livre qualitatif dès le premier regard !",
+    "step2_title": "Aide à la création de page produit",
+    "step2_desc": "Gagnez du temps une fois de plus, OBL créera pour vous le pitch de votre page de vente et vous aidera à la création de contenu A+.",
+    "step3_title": "Module Brain-Storming",
+    "step3_desc": "Plus besoin de se rendre sur votre IA habituelle, vous pourrez explorer vos idées directement sur OneBookLab™ avant de créer votre livre.",
+    "step4_title": "Outil de création de couverture",
+    "step4_desc": "Quoi dire de plus... ? Enfin un outil tout en un qui vous guide de la rédaction à la publication !",
+    "conclusion": "Et bien plus encore..."
+  },
+  "modal": {
+    "demo_title": "Voir la démo OneBookLab™",
+    "close": "Fermer"
+  },
+  "footer": {
+    "email_label": "Email:",
+    "useful_links": "Liens utiles",
+    "legal": "Mentions légales",
+    "terms": "Conditions générales de vente et d'utilisation",
+    "privacy": "Politique de confidentialité",
+    "affiliate": "Devenir affilié",
+    "copyright": "© Copyright OneBookLab™ All Rights Reserved"
+  },
+  "aria": {
+    "prev_image": "Afficher l'image précédente",
+    "next_image": "Afficher l'image suivante",
+    "play_video": "Lire la vidéo OneBookLab",
+    "play_testimonial": "Lire le témoignage"
+  }
+}

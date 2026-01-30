@@ -47,16 +47,23 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero-2" class="active">Produit</a></li>
-          <li><a href="pricing.html">Tarifs</a></li>
-          <li><a href="#faq-3">FAQ</a></li>
-          <li><a href="#steps">A venir</a></li>
-          <li><a href="#footer">Contact</a></li>
+          <li><a href="#hero-2" class="active" data-i18n="nav.product">Produit</a></li>
+          <li><a href="pricing.html" data-i18n="nav.pricing">Tarifs</a></li>
+          <li><a href="#faq-3" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="#steps" data-i18n="nav.upcoming">A venir</a></li>
+          <li><a href="#footer" data-i18n="nav.contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="https://app.onebooklab.com/login">Connexion</a>
+      <div class="lang-switcher">
+        <button class="lang-btn" onclick="I18n.toggleLanguage()" title="Switch language">
+          <span class="current-lang">FR</span>
+          <i class="bi bi-globe2"></i>
+        </button>
+      </div>
+
+      <a class="btn-getstarted" href="https://app.onebooklab.com/login" data-i18n="nav.login">Connexion</a>
 
     </div>
   </header>
@@ -71,21 +78,21 @@
           <div class="hero-main-content hero-content text-center">
             <h1 class="hero-title" data-aos="zoom-in" data-aos-delay="3100">
               <strong>
-                <span class="hero-lead">L’écriture n’est plus un frein :</span><br><br>
-                Des livres générés en moins de 30min. <br><p></p>
-                <span class="typed" data-typed-items="Sans écrire,Sans corriger,Sans superviser"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span>
+                <span class="hero-lead" data-i18n="hero.lead">L'écriture n'est plus un frein :</span><br><br>
+                <span data-i18n="hero.title">Des livres générés en moins de 30min.</span> <br><p></p>
+                <span class="typed" data-typed-items="Sans écrire,Sans corriger,Sans superviser" data-i18n-typed="hero.typed_items"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span>
               </strong>
-              <strong class="hero-tagline">Publiez plus. Gagnez plus.<p></p></strong>
+              <strong class="hero-tagline" data-i18n="hero.tagline">Publiez plus. Gagnez plus.<p></p></strong>
             </h1>
 
             <div class="hero-actions hero-cta-container" data-aos="fade-up" data-aos-delay="600">
-              <a href="pricing.html" class="cta-button cta-primary">Tester OneBookLab™&nbsp;dès maintenant !</a>
+              <a href="pricing.html" class="cta-button cta-primary" data-i18n="hero.cta">Tester OneBookLab™&nbsp;dès maintenant !</a>
             </div>
-            <div class="hero-accelerate hero-size-heading"><u>Accélérez votre Business !</u></div><br>
+            <div class="hero-accelerate hero-size-heading"><u data-i18n="hero.accelerate">Accélérez votre Business !</u></div><br>
           </div>
 
           <div class="hero-image-showcase text-center" data-aos="fade-up" data-aos-delay="500">
-            <h3 class="hero-description hero-description--white" data-aos="fade-up" data-aos-delay="500"><b>Et générez un livre complet en moins de 30 minutes.</b></h3>
+            <h3 class="hero-description hero-description--white" data-aos="fade-up" data-aos-delay="500"><b data-i18n="hero.description">Et générez un livre complet en moins de 30 minutes.</b></h3>
           </div>
         </div>
 
@@ -98,8 +105,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>En seulement 3 clics, OneBookLab™ génère pour vous :</h2>
-        
+        <h2 data-i18n="steps2.title">En seulement 3 clics, OneBookLab™ génère pour vous :</h2>
+
 
       </div><!-- End Section Title -->
 
@@ -116,12 +123,12 @@
             <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
               <div class="step-content">
 
-                <h3><u>Des livres complets, cohérents et publiables</u></h3>
-                <p>En fiction comme en non-fiction !&nbsp;</p>
+                <h3><u data-i18n="steps2.step1.title">Des livres complets, cohérents et publiables</u></h3>
+                <p data-i18n="steps2.step1.subtitle">En fiction comme en non-fiction !&nbsp;</p>
                 <ul class="step-features">
-                  <li><i class="bi bi-check2-circle"></i> Plus besoin de guider chaque phrase.</li>
-                  <li><i class="bi bi-check2-circle"></i> Plus besoin de corriger pendant des heures.</li>
-                  <li><i class="bi bi-check2-circle"></i> Plus besoin de payer un ghostwriter hors de prix.</li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="steps2.step1.item1">Plus besoin de guider chaque phrase.</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="steps2.step1.item2">Plus besoin de corriger pendant des heures.</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="steps2.step1.item3">Plus besoin de payer un ghostwriter hors de prix.</span></li>
                 </ul>
               </div>
             </div>
@@ -130,17 +137,17 @@
           <div class="step-item row gy-5 align-items-center">
             <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-delay="200">
               <div class="step-image">
-                <lite-youtube videoid="3mzQBA4bYrk" playlabel="Lire la vidéo OneBookLab"></lite-youtube>
+                <lite-youtube videoid="3mzQBA4bYrk" playlabel="Lire la vidéo OneBookLab" data-i18n-aria="aria.play_video"></lite-youtube>
               </div>
             </div>
             <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-delay="300">
               <div class="step-content">
-                <h3><u>Écrivez moins, publiez plus :</u></h3>
-                <p>OneBookLab™ écrit le livre pour vous !</p>
+                <h3><u data-i18n="steps2.step2.title">Écrivez moins, publiez plus :</u></h3>
+                <p data-i18n="steps2.step2.subtitle">OneBookLab™ écrit le livre pour vous !</p>
                 <ul class="step-features">
-                  <li><i class="bi bi-check2-circle"></i> Du premier mot au dernier chapitre.</li>
-                  <li><i class="bi bi-check2-circle"></i> Pendant que vous vous concentrez sur ce qui rapporte vraiment.</li>
-                  <li><i class="bi bi-check2-circle"></i> Plus vous publiez, plus vous gagnez.</li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="steps2.step2.item1">Du premier mot au dernier chapitre.</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="steps2.step2.item2">Pendant que vous vous concentrez sur ce qui rapporte vraiment.</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="steps2.step2.item3">Plus vous publiez, plus vous gagnez.</span></li>
                 </ul>
               </div>
             </div>
@@ -149,18 +156,18 @@
           <div class="step-item row gy-5 align-items-center">
             <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
               <div class="step-image">
-                <lite-youtube videoid="rj3MoKvLbpY" playlabel="Lire la vidéo OneBookLab"></lite-youtube>
+                <lite-youtube videoid="rj3MoKvLbpY" playlabel="Lire la vidéo OneBookLab" data-i18n-aria="aria.play_video"></lite-youtube>
               </div>
             </div>
             <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
               <div class="step-content">
 
-                <h3><u>OneBookLab™ supprime le principal frein des auteurs : le temps d’écriture.</u></h3>
-                <p>Résultat :</p>
+                <h3><u data-i18n="steps2.step3.title">OneBookLab™ supprime le principal frein des auteurs : le temps d'écriture.</u></h3>
+                <p data-i18n="steps2.step3.subtitle">Résultat :</p>
                 <ul class="step-features">
-                  <li><i class="bi bi-check2-circle"></i> vous publiez beaucoup plus vite.</li>
-                  <li><i class="bi bi-check2-circle"></i> beaucoup plus souvent.</li>
-                  <li><i class="bi bi-check2-circle"></i> et vos revenus suivent.</li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="steps2.step3.item1">vous publiez beaucoup plus vite.</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="steps2.step3.item2">beaucoup plus souvent.</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="steps2.step3.item3">et vos revenus suivent.</span></li>
                 </ul>
              </div>
             </div>
@@ -170,15 +177,15 @@
 
         <br><br><br>
 <div class="cta-wrapper cta-wrapper--spaced">
-          <a href="pricing.html" class="btn-getstarted">Lancer la génération de mon prochain livre !</a>
-          <div class="cta-subtext"><em>Automatiquement, en 3 clics</em></div>
+          <a href="pricing.html" class="btn-getstarted" data-i18n="steps2.cta1">Lancer la génération de mon prochain livre !</a>
+          <div class="cta-subtext"><em data-i18n="steps2.cta1_sub">Automatiquement, en 3 clics</em></div>
         </div><br><br>
-        
+
 
         <div class="text-center" data-aos="fade-up" data-aos-delay="150">
-          <h2 class="hero-size-heading"><b>Déjà adopté par les auteurs autoédités :</b></h2><br>
-          <h3><b>Ils multiplient leur cadence de publication,</b></h3>
-          <h3 class="text-white match-h3"><b>et développent leurs catalogues plus rapidement.</b></h3><br><br>
+          <h2 class="hero-size-heading"><b data-i18n="steps2.adopted_title">Déjà adopté par les auteurs autoédités :</b></h2><br>
+          <h3><b data-i18n="steps2.adopted_sub1">Ils multiplient leur cadence de publication,</b></h3>
+          <h3 class="text-white match-h3"><b data-i18n="steps2.adopted_sub2">et développent leurs catalogues plus rapidement.</b></h3><br><br>
         </div>
 
         <div class="steps-wrapper">
@@ -204,8 +211,8 @@
         <br><br>
 
         <div class="cta-wrapper">
-          <a href="pricing.html" class="btn-getstarted">Commencer à générer mes livres automatiquement.</a>
-          <div class="cta-subtext"><em>Et gagner plus, plus vite</em></div>
+          <a href="pricing.html" class="btn-getstarted" data-i18n="steps2.cta2">Commencer à générer mes livres automatiquement.</a>
+          <div class="cta-subtext"><em data-i18n="steps2.cta2_sub">Et gagner plus, plus vite</em></div>
           <br><br><br><br>
         </div>
 
@@ -218,7 +225,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2 class="hero-size-heading">OneBookLab™ élimine le vrai blocage des auteurs.</h2>
+        <h2 class="hero-size-heading" data-i18n="about2.title">OneBookLab™ élimine le vrai blocage des auteurs.</h2>
 
       </div><!-- End Section Title -->
 
@@ -228,45 +235,45 @@
           <div class="col-lg-6 d-flex h-100" data-aos="fade-right" data-aos-delay="200">
             <div class="about-text-panel w-100">
               <div class="content intro-block">
-                <h3>➡️Le problème n’a jamais été l’inspiration.</h3>
-                <h3>➡️Ni les idées.</h3>
-                <h3>➡️Ni même l’IA.</h3>
+                <h3 data-i18n="about2.problem1">➡️Le problème n'a jamais été l'inspiration.</h3>
+                <h3 data-i18n="about2.problem2">➡️Ni les idées.</h3>
+                <h3 data-i18n="about2.problem3">➡️Ni même l'IA.</h3>
               </div>
               <br>
 
-              
+
 
               <div class="description time-block">
-                <h2><b>Le vrai problème, c’est le temps.⏱️</b></h2>
+                <h2><b data-i18n="about2.real_problem">Le vrai problème, c'est le temps.⏱️</b></h2>
                 <div>
-                  <h3>❗ Le temps d’écrire.</h3>
+                  <h3 data-i18n="about2.time1">❗ Le temps d'écrire.</h3>
                 </div>
                 <div>
-                  <h3>❗ Le temps de structurer.</h3>
+                  <h3 data-i18n="about2.time2">❗ Le temps de structurer.</h3>
                 </div>
                 <div>
-                  <h3>❗ Le temps de corriger l'IA.</h3>
+                  <h3 data-i18n="about2.time3">❗ Le temps de corriger l'IA.</h3>
                 </div>
                 <div>
-                  <h3>❗ Le temps de réparer ce qui ne tient pas.</h3>
+                  <h3 data-i18n="about2.time4">❗ Le temps de réparer ce qui ne tient pas.</h3>
                 </div>
               </div>
 
-              
+
 
               <div class="result-block">
                 <div class="stat-label">
-                  <h2><u><b>Résultat :</b></u></h2>
+                  <h2><u><b data-i18n="about2.result">Résultat :</b></u></h2>
                 </div>
                 <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
                   <div>
-                    <h3>❌vous publiez lentement,</h3>
+                    <h3 data-i18n="about2.result1">❌vous publiez lentement,</h3>
                   </div>
                   <div>
-                    <h3>❌votre catalogue stagne</h3>
+                    <h3 data-i18n="about2.result2">❌votre catalogue stagne</h3>
                   </div>
                   <div>
-                    <h3>❌vos revenus plafonnent.</h3>
+                    <h3 data-i18n="about2.result3">❌vos revenus plafonnent.</h3>
                   </div>
                 </div>
               </div>
@@ -282,18 +289,18 @@
 
         <div class="about-highlight text-center" data-aos="fade-up" data-aos-delay="400">
           <br>
-          <h3 class="no-wrap">OneBookLab™ ne vous fait pas gagner du temps...</h3>
-          <h2 class="problem-emphasis"><b>Il élimine le problème !</b></h2>
+          <h3 class="no-wrap" data-i18n="about2.solution1">OneBookLab™ ne vous fait pas gagner du temps...</h3>
+          <h2 class="problem-emphasis"><b data-i18n="about2.solution2">Il élimine le problème !</b></h2>
           <br><p></p>
-          <h4>C’est une IA qui écrit des livres pour vous.<p>
-              Du premier mot au dernier chapitre.
+          <h4><span data-i18n="about2.solution3">C'est une IA qui écrit des livres pour vous.</span><p>
+              <span data-i18n="about2.solution4">Du premier mot au dernier chapitre.</span>
             </p>
           </h4>
         </div>
 
         <div class="text-center">
           <br><br>
-          <button type="button" class="cta-button cta-primary" data-bs-toggle="modal" data-bs-target="#demoModal">Voir OneBookLab en action</button>
+          <button type="button" class="cta-button cta-primary" data-bs-toggle="modal" data-bs-target="#demoModal" data-i18n="about2.demo_btn">Voir OneBookLab en action</button>
         </div>
       </div><br><br><br><br>
 
@@ -304,8 +311,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>En autoédition, tout se joue sur une seule chose :</h2><br>
-        <h2><u>La vitesse de publication ! 🚀</u></h2>
+        <h2 data-i18n="features.title1">En autoédition, tout se joue sur une seule chose :</h2><br>
+        <h2><u data-i18n="features.title2">La vitesse de publication ! 🚀</u></h2>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -326,7 +333,7 @@
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="features-content">
-              <h3>Publier plus, c’est :</h3><br>
+              <h3 data-i18n="features.subtitle">Publier plus, c'est :</h3><br>
 
               <div class="features-grid">
                 <div class="feature-item" data-aos="zoom-in" data-aos-delay="400">
@@ -334,8 +341,8 @@
                     <i class="bi bi-shield-check"></i>
                   </div>
                   <div class="feature-content">
-                    <h4>Tester plus,</h4>
-                    <p>Essayez vos idées et validez vos concepts rapidement.</p>
+                    <h4 data-i18n="features.item1_title">Tester plus,</h4>
+                    <p data-i18n="features.item1_desc">Essayez vos idées et validez vos concepts rapidement.</p>
                   </div>
                 </div>
                 <!-- End Feature Item -->
@@ -345,8 +352,8 @@
                     <i class="bi bi-lightning"></i>
                   </div>
                   <div class="feature-content">
-                    <h4>Apprendre plus vite,</h4>
-                    <p>Maîtrisez les techniques qui font vendre et gagnez du temps.</p>
+                    <h4 data-i18n="features.item2_title">Apprendre plus vite,</h4>
+                    <p data-i18n="features.item2_desc">Maîtrisez les techniques qui font vendre et gagnez du temps.</p>
                   </div>
                 </div><!-- End Feature Item -->
 
@@ -355,8 +362,8 @@
                     <i class="bi bi-gear"></i>
                   </div>
                   <div class="feature-content">
-                    <h4>Et trouver plus souvent la bonne niche.</h4>
-                    <p>Découvrez les thèmes qui vendent vraiment.</p>
+                    <h4 data-i18n="features.item3_title">Et trouver plus souvent la bonne niche.</h4>
+                    <p data-i18n="features.item3_desc">Découvrez les thèmes qui vendent vraiment.</p>
                   </div>
                 </div><!-- End Feature Item -->
                 <div class="features-grid">
@@ -365,8 +372,8 @@
                       <i class="bi bi-shield-check"></i>
                     </div>
                     <div class="feature-content">
-                      <h4>Celle qui rapporte vraiment.</h4>
-                      <p>Et qui vous permet de vraiment faire décoller vos revenus !</p>
+                      <h4 data-i18n="features.item4_title">Celle qui rapporte vraiment.</h4>
+                      <p data-i18n="features.item4_desc">Et qui vous permet de vraiment faire décoller vos revenus !</p>
                     </div>
                   </div>
                 </div>
@@ -378,8 +385,8 @@
         </div>
         <br><br>
         <div class="text-center">
-          <h3>Ce ne sont pas les meilleurs auteurs qui gagnent.</h3><br>
-          <h2><b><u>Ce sont les plus rapides.</u></b></h2>
+          <h3 data-i18n="features.conclusion1">Ce ne sont pas les meilleurs auteurs qui gagnent.</h3><br>
+          <h2><b><u data-i18n="features.conclusion2">Ce sont les plus rapides.</u></b></h2>
         </div>
       </div><br><br><br><br><br><br>
     </section><!-- /Features Section -->
@@ -389,7 +396,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2 class="hero-size-heading">OneBookLab™ repose sur une structure maîtrisée.</h2>
+        <h2 class="hero-size-heading" data-i18n="features2.title">OneBookLab™ repose sur une structure maîtrisée.</h2>
 
       </div><!-- End Section Title -->
 
@@ -399,13 +406,13 @@
 
           <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
             <div class="features-content">
-              <h3>Chaque livre généré suit une architecture claire et cohérente.<div><br></div>
+              <h3 data-i18n="features2.subtitle1">Chaque livre généré suit une architecture claire et cohérente.<div><br></div>
               </h3>
-              <h3>La structure, le rythme et le fil narratif sont contrôlés.</h3>
+              <h3 data-i18n="features2.subtitle2">La structure, le rythme et le fil narratif sont contrôlés.</h3>
               <ul class="features-2-list">
-                <li>❌Pas de chapitres déséquilibrés.</li>
-                <li>❌Pas de ruptures de ton.</li>
-                <li>❌Pas de dérives en cours d’écriture.</li>
+                <li data-i18n="features2.item1">❌Pas de chapitres déséquilibrés.</li>
+                <li data-i18n="features2.item2">❌Pas de ruptures de ton.</li>
+                <li data-i18n="features2.item3">❌Pas de dérives en cours d'écriture.</li>
               </ul>
             </div>
           </div>
@@ -435,9 +442,9 @@
 
         <br><br>
         <div class="text-center">
-          <h3><b>Des livres structurés et fiables lors de&nbsp;chaque génération.</b></h3><br><br>
+          <h3><b data-i18n="features2.conclusion">Des livres structurés et fiables lors de&nbsp;chaque génération.</b></h3><br><br>
           <div class="cta-container">
-            <button type="button" class="cta-button cta-primary" data-bs-toggle="modal" data-bs-target="#demoModal">Voir la Démo</button>
+            <button type="button" class="cta-button cta-primary" data-bs-toggle="modal" data-bs-target="#demoModal" data-i18n="features2.demo_btn">Voir la Démo</button>
           </div>
         </div>
       </div>
@@ -449,10 +456,10 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2><u>Un accès à nos tutoriels et ressources :</u></h2>
+        <h2><u data-i18n="features3.title">Un accès à nos tutoriels et ressources :</u></h2>
         <p></p><br>
         <p></p>
-        <h4>Pour prendre en main l’outil rapidement, optimiser vos générations et exploiter tout son potentiel.</h4>
+        <h4 data-i18n="features3.subtitle">Pour prendre en main l'outil rapidement, optimiser vos générations et exploiter tout son potentiel.</h4>
         <p></p>
       </div><!-- End Section Title -->
 
@@ -464,9 +471,9 @@
               <div class="feature-icon">
                 <i class="bi bi-search"></i>
               </div>
-              <h3>Identifier des niches et mots-clés rentables,</h3>
+              <h3 data-i18n="features3.card1_title">Identifier des niches et mots-clés rentables,</h3>
             </div>
-            <p>Trouvez facilement les niches qui rapportent. Optimisez vos choix pour maximiser vos résultats.</p>
+            <p data-i18n="features3.card1_desc">Trouvez facilement les niches qui rapportent. Optimisez vos choix pour maximiser vos résultats.</p>
           </div>
 
           <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
@@ -474,9 +481,9 @@
               <div class="feature-icon">
                 <i class="bi bi-cloud-check"></i>
               </div>
-              <h3>Transformer un livre en produit attractif,</h3>
+              <h3 data-i18n="features3.card2_title">Transformer un livre en produit attractif,</h3>
             </div>
-            <p>Créez des livres prêts à captiver vos lecteurs. Rendez chaque publication irrésistible et professionnelle.</p>
+            <p data-i18n="features3.card2_desc">Créez des livres prêts à captiver vos lecteurs. Rendez chaque publication irrésistible et professionnelle.</p>
           </div>
 
           <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
@@ -484,15 +491,15 @@
               <div class="feature-icon">
                 <i class="bi bi-people"></i>
               </div>
-              <h3>Attirer vos premiers lecteurs et gagner en visibilité.</h3>
+              <h3 data-i18n="features3.card3_title">Attirer vos premiers lecteurs et gagner en visibilité.</h3>
             </div>
-            <p>Faites connaître vos livres rapidement. Développez votre audience et augmentez vos ventes.</p>
+            <p data-i18n="features3.card3_desc">Faites connaître vos livres rapidement. Développez votre audience et augmentez vos ventes.</p>
           </div>
 
         </div>
 
         <div class="cta-container" data-aos="fade-up" data-aos-delay="300">
-          <a href="pricing.html" class="cta-button cta-primary">Commencer à écrire !</a>
+          <a href="pricing.html" class="cta-button cta-primary" data-i18n="features3.cta">Commencer à écrire !</a>
 
         </div>
 <br><br><br><br>
@@ -505,7 +512,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2 class="hero-size-heading">Dans 6 mois, il y aura deux types d’auteurs :&nbsp;</h2>
+        <h2 class="hero-size-heading" data-i18n="whyus.title">Dans 6 mois, il y aura deux types d'auteurs :&nbsp;</h2>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -517,8 +524,8 @@
               <div class="icon-wrapper">
                 <img src="https://i.ibb.co/FfC88FX/Screenshot-3.jpg" alt="Badge rythme lent">
               </div>
-              <h4>Ceux qui publieront toujours au même rythme.</h4>
-              <p class="highlight-white">Un livre de temps en temps. <br>Quand ils trouvent le temps.<br>Quand l’énergie est là.</p>
+              <h4 data-i18n="whyus.card1_title">Ceux qui publieront toujours au même rythme.</h4>
+              <p class="highlight-white" data-i18n-html="whyus.card1_desc">Un livre de temps en temps. <br>Quand ils trouvent le temps.<br>Quand l'énergie est là.</p>
               <div class="feature-stats">
 
               </div>
@@ -530,8 +537,8 @@
               <div class="icon-wrapper">
                 <img src="https://i.ibb.co/PZbLCcgN/Screenshot-4.jpg" alt="Badge catalogue doublé">
               </div>
-              <h4>Et ceux dont le catalogue aura doublé.</h4>
-              <p class="highlight-white">Plus de titres. <br>Plus de points d’entrée.<br>Plus d’opportunités de ventes.</p>
+              <h4 data-i18n="whyus.card2_title">Et ceux dont le catalogue aura doublé.</h4>
+              <p class="highlight-white" data-i18n-html="whyus.card2_desc">Plus de titres. <br>Plus de points d'entrée.<br>Plus d'opportunités de ventes.</p>
               <div class="feature-stats">
 
               </div>
@@ -549,11 +556,11 @@
                   <div class="feature-text">
                     <h4 class="match-positive">
                       <span class="negative-lines match-positive">
-                        <span class="negative-line"><span class="negative-icon">❌</span><span>Pas parce qu’ils sont plus talentueux.</span></span>
-                        <span class="negative-line"><span class="negative-icon">❌</span><span>Pas parce qu’ils écrivent mieux.</span></span>
+                        <span class="negative-line"><span class="negative-icon">❌</span><span data-i18n="whyus.not1">Pas parce qu'ils sont plus talentueux.</span></span>
+                        <span class="negative-line"><span class="negative-icon">❌</span><span data-i18n="whyus.not2">Pas parce qu'ils écrivent mieux.</span></span>
                       </span>
                     </h4>
-                    <h4><b>✔️Mais parce que leur rythme aura changé.</b></h4>
+                    <h4><b data-i18n="whyus.but">✔️Mais parce que leur rythme aura changé.</b></h4>
                   </div>
                 </div>
               </div>
@@ -564,8 +571,8 @@
 
         <br>
         <div class="cta-wrapper">
-          <a href="pricing.html" class="btn-getstarted">Commencer à générer mes livres automatiquement.</a>
-          <div class="cta-subtext"><strong>Et gagner plus, plus vite</strong></div>
+          <a href="pricing.html" class="btn-getstarted" data-i18n="whyus.cta">Commencer à générer mes livres automatiquement.</a>
+          <div class="cta-subtext"><strong data-i18n="whyus.cta_sub">Et gagner plus, plus vite</strong></div>
         </div>
     </section><!-- /Why Us Section -->
 
@@ -574,8 +581,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2 class="hero-size-heading">F.A.Q</h2>
-        <p>Si vous ne trouvez pas votre réponse ici, contactez nous par mail !</p>
+        <h2 class="hero-size-heading" data-i18n="faq.title">F.A.Q</h2>
+        <p data-i18n="faq.subtitle">Si vous ne trouvez pas votre réponse ici, contactez nous par mail !</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -587,83 +594,83 @@
             <div class="faq-container">
 
               <div class="faq-item">
-                <h3>Est-ce que la qualité est suffisante pour publier sur Amazon ?</h3>
+                <h3 data-i18n="faq.q1">Est-ce que la qualité est suffisante pour publier sur Amazon ?</h3>
                 <div class="faq-content">
-                  <p>Oui, les textes générés sont prêts à être publiés sur Amazon KDP ou toute autre plateforme. Vous pouvez néanmoins personnaliser le contenu à tout moment.</p>
+                  <p data-i18n="faq.a1">Oui, les textes générés sont prêts à être publiés sur Amazon KDP ou toute autre plateforme. Vous pouvez néanmoins personnaliser le contenu à tout moment.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
               <div class="faq-item">
-                <h3>Est-ce que ça fonctionne en fiction ET non-fiction ?</h3>
+                <h3 data-i18n="faq.q2">Est-ce que ça fonctionne en fiction ET non-fiction ?</h3>
                 <div class="faq-content">
-                  <p>Absolument, OneBookLab™ gère tous types de livres : romans, nouvelles, guides pratiques, essais et bien plus.</p>
+                  <p data-i18n="faq.a2">Absolument, OneBookLab™ gère tous types de livres : romans, nouvelles, guides pratiques, essais et bien plus.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
               <div class="faq-item">
-                <h3>Est-ce que je dois savoir écrire ?</h3>
+                <h3 data-i18n="faq.q3">Est-ce que je dois savoir écrire ?</h3>
                 <div class="faq-content">
-                  <p>Non, l’outil s’occupe de structurer et rédiger le texte pour vous. Il suffit de définir le thème et vos préférences.</p>
+                  <p data-i18n="faq.a3">Non, l'outil s'occupe de structurer et rédiger le texte pour vous. Il suffit de définir le thème et vos préférences.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
               <div class="faq-item">
-                <h3>Est-ce que je peux modifier le texte généré ?</h3>
+                <h3 data-i18n="faq.q4">Est-ce que je peux modifier le texte généré ?</h3>
                 <div class="faq-content">
-                  <p>Oui, tout le contenu reste entièrement modifiable. Vous gardez le contrôle sur chaque phrase et chapitre.</p>
+                  <p data-i18n="faq.a4">Oui, tout le contenu reste entièrement modifiable. Vous gardez le contrôle sur chaque phrase et chapitre.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
               <div class="faq-item">
-                <h3>Est-ce adapté aux débutants ?</h3>
+                <h3 data-i18n="faq.q5">Est-ce adapté aux débutants ?</h3>
                 <div class="faq-content">
-                  <p>Oui, l’outil est pensé pour tous, même ceux qui n’ont jamais publié. Il guide pas à pas de l’idée à la publication.</p>
+                  <p data-i18n="faq.a5">Oui, l'outil est pensé pour tous, même ceux qui n'ont jamais publié. Il guide pas à pas de l'idée à la publication.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
               <div class="faq-item">
-                <h3>Est-ce que l’outil évolue dans le temps ?</h3>
+                <h3 data-i18n="faq.q6">Est-ce que l'outil évolue dans le temps ?</h3>
                 <div class="faq-content">
-                  <p>Oui, OneBookLab™ bénéficie de mises à jour régulières et de nouvelles fonctionnalités pour améliorer continuellement la qualité et l’expérience utilisateur. Vous pourrez avoir une vision des derniers changements et de ceux à venir grâce au changelog accessible une fois inscrit(e).</p>
+                  <p data-i18n="faq.a6">Oui, OneBookLab™ bénéficie de mises à jour régulières et de nouvelles fonctionnalités pour améliorer continuellement la qualité et l'expérience utilisateur. Vous pourrez avoir une vision des derniers changements et de ceux à venir grâce au changelog accessible une fois inscrit(e).</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
               <div class="faq-item">
-                <h3>Les textes générés sont-ils uniques ?</h3>
+                <h3 data-i18n="faq.q7">Les textes générés sont-ils uniques ?</h3>
                 <div class="faq-content">
-                  <p>Oui. Chaque génération est exclusive : l’IA recrée le contenu à partir de votre brief et de vos paramètres. Aucun texte n’est copié ni réutilisé pour un autre utilisateur.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Quelle est la longueur moyenne d’un livre généré ?</h3>
-                <div class="faq-content">
-                  <p>Un livre complet généré avec OneBookLab™ contient en moyenne entre 10 000 et 45 000 mots, selon le niveau de détail demandé, le nombre de chapitres, de sous-parties... Il peut s’agir d’un ebook court (guide de 40 pages) ou d’un ouvrage plus complet dépassant largement les 100 pages (+60 000 mots) selon vos paramètres.</p>
+                  <p data-i18n="faq.a7">Oui. Chaque génération est exclusive : l'IA recrée le contenu à partir de votre brief et de vos paramètres. Aucun texte n'est copié ni réutilisé pour un autre utilisateur.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3>Le prix de l'abonnement est-il fixe ?</h3>
+                <h3 data-i18n="faq.q8">Quelle est la longueur moyenne d'un livre généré ?</h3>
                 <div class="faq-content">
-                  <p>Oui. Votre abonnement reste fixe tant qu’il est actif. En effet, de nouvelles fonctionnalités seront implémentées au fur et à mesure ce qui augmentera légèrement l'abonnement pour les nouveaux adhérents.</p>
+                  <p data-i18n="faq.a8">Un livre complet généré avec OneBookLab™ contient en moyenne entre 10 000 et 45 000 mots, selon le niveau de détail demandé, le nombre de chapitres, de sous-parties... Il peut s'agir d'un ebook court (guide de 40 pages) ou d'un ouvrage plus complet dépassant largement les 100 pages (+60 000 mots) selon vos paramètres.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3>Comment fonctionnent les abonnements annuels ?</h3>
+                <h3 data-i18n="faq.q9">Le prix de l'abonnement est-il fixe ?</h3>
                 <div class="faq-content">
-                  <p>Les abonnements annuels sont facturés en une seule fois au début de la période. Vous recevez tous vos crédits dès le début de cette période et ils restent disponibles même après la fin de l'abonnement.</p>
+                  <p data-i18n="faq.a9">Oui. Votre abonnement reste fixe tant qu'il est actif. En effet, de nouvelles fonctionnalités seront implémentées au fur et à mesure ce qui augmentera légèrement l'abonnement pour les nouveaux adhérents.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3>Que se passe-t-il si je n’utilise pas mes crédits ce mois-ci ?</h3>
+                <h3 data-i18n="faq.q10">Comment fonctionnent les abonnements annuels ?</h3>
                 <div class="faq-content">
-                  <p>Vos crédits ne sont pas perdus : ils restent valables et s’accumulent d’un mois à l’autre tant que votre abonnement reste actif. Ainsi, vous pouvez créer à votre rythme, sans pression ni perte de valeur.</p>
+                  <p data-i18n="faq.a10">Les abonnements annuels sont facturés en une seule fois au début de la période. Vous recevez tous vos crédits dès le début de cette période et ils restent disponibles même après la fin de l'abonnement.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3 data-i18n="faq.q11">Que se passe-t-il si je n'utilise pas mes crédits ce mois-ci ?</h3>
+                <div class="faq-content">
+                  <p data-i18n="faq.a11">Vos crédits ne sont pas perdus : ils restent valables et s'accumulent d'un mois à l'autre tant que votre abonnement reste actif. Ainsi, vous pouvez créer à votre rythme, sans pression ni perte de valeur.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -676,8 +683,8 @@
 
       </div><br><br><br>
       <div class="cta-wrapper">
-        <a href="pricing.html" class="btn-getstarted">Commencer à générer mes livres automatiquement.</a>
-        <div class="cta-subtext"><strong>Et gagner plus, plus vite</strong></div>
+        <a href="pricing.html" class="btn-getstarted" data-i18n="faq.cta">Commencer à générer mes livres automatiquement.</a>
+        <div class="cta-subtext"><strong data-i18n="faq.cta_sub">Et gagner plus, plus vite</strong></div>
       </div>
     </section><!-- /Faq 3 Section -->
 
@@ -686,8 +693,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2 class="hero-size-heading">Fonctionnalités à venir*</h2>
-        <p>*Le prix de l'abonnement évolura pour les nouveaux arrivants</p>
+        <h2 class="hero-size-heading" data-i18n="upcoming.title">Fonctionnalités à venir*</h2>
+        <p data-i18n="upcoming.subtitle">*Le prix de l'abonnement évolura pour les nouveaux arrivants</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -700,8 +707,8 @@
                 <div class="step-circle">
                   <span>1</span>
                 </div>
-                <h3>Aide à la création du 4e de couverture</h3>
-                <p>Terminées les prises de tête, nous allons ajouter un générateur de 4e de couverture afin de rendre votre livre qualitatif dès le premier regard !</p>
+                <h3 data-i18n="upcoming.step1_title">Aide à la création du 4e de couverture</h3>
+                <p data-i18n="upcoming.step1_desc">Terminées les prises de tête, nous allons ajouter un générateur de 4e de couverture afin de rendre votre livre qualitatif dès le premier regard !</p>
               </div>
             </div>
 
@@ -710,8 +717,8 @@
                 <div class="step-circle">
                   <span>2</span>
                 </div>
-                <h3>Aide à la création de page produit</h3>
-                <p>Gagnez du temps une fois de plus, OBL créera pour vous le pitch de votre page de vente et vous aidera à la création de contenu A+.</p>
+                <h3 data-i18n="upcoming.step2_title">Aide à la création de page produit</h3>
+                <p data-i18n="upcoming.step2_desc">Gagnez du temps une fois de plus, OBL créera pour vous le pitch de votre page de vente et vous aidera à la création de contenu A+.</p>
               </div>
             </div>
 
@@ -720,8 +727,8 @@
                 <div class="step-circle">
                   <span>3</span>
                 </div>
-                <h3>Module Brain-Storming</h3>
-                <p>Plus besoin de se rendre sur votre IA habituelle, vous pourrez explorer vos idées directement sur OneBookLab™ avant de créer votre livre.</p>
+                <h3 data-i18n="upcoming.step3_title">Module Brain-Storming</h3>
+                <p data-i18n="upcoming.step3_desc">Plus besoin de se rendre sur votre IA habituelle, vous pourrez explorer vos idées directement sur OneBookLab™ avant de créer votre livre.</p>
               </div>
             </div>
 
@@ -730,17 +737,17 @@
                 <div class="step-circle">
                   <span>4</span>
                 </div>
-                <h3>Outil de création de couverture</h3>
-                <p>Quoi dire de plus... ? Enfin un outil tout en un qui vous guide de la rédaction à la publication !</p>
+                <h3 data-i18n="upcoming.step4_title">Outil de création de couverture</h3>
+                <p data-i18n="upcoming.step4_desc">Quoi dire de plus... ? Enfin un outil tout en un qui vous guide de la rédaction à la publication !</p>
               </div>
             </div>
           </div>
 
          </div>
         <div class="text-center"><br><br>
-          <h2 class="hero-size-heading"><b>Et bien plus encore... </b></h2><br><br><br><br>
+          <h2 class="hero-size-heading"><b data-i18n="upcoming.conclusion">Et bien plus encore... </b></h2><br><br><br><br>
           <p></p>
-          
+
         </div>
       </div>
 
@@ -753,11 +760,11 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="demoModalLabel">Voir la démo OneBookLab™</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+          <h5 class="modal-title" id="demoModalLabel" data-i18n="modal.demo_title">Voir la démo OneBookLab™</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer" data-i18n-aria="modal.close"></button>
         </div>
         <div class="modal-body">
-          <lite-youtube videoid="ux9HZuPSL4A" playlabel="Voir la démo OneBookLab™"></lite-youtube>
+          <lite-youtube videoid="ux9HZuPSL4A" playlabel="Voir la démo OneBookLab™" data-i18n-aria="modal.demo_title"></lite-youtube>
         </div>
       </div>
     </div>
@@ -773,7 +780,7 @@
           </a>
           <div class="footer-contact pt-3">
 
-            <p><strong>Email:</strong> <span>contact@onebooklab.com</span></p>
+            <p><strong data-i18n="footer.email_label">Email:</strong> <span>contact@onebooklab.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
 
@@ -781,13 +788,13 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Liens utiles</h4>
+          <h4 data-i18n="footer.useful_links">Liens utiles</h4>
           <ul>
-            <li><a href="terms.html">Mentions légales</a></li>
-            <li><a href="cgu.html">Conditions générales de vente et d'utilisation</a></li>
-            <li><a href="privacy.html">Politique de confidentialité</a></li>
+            <li><a href="terms.html" data-i18n="footer.legal">Mentions légales</a></li>
+            <li><a href="cgu.html" data-i18n="footer.terms">Conditions générales de vente et d'utilisation</a></li>
+            <li><a href="privacy.html" data-i18n="footer.privacy">Politique de confidentialité</a></li>
             <li></li>
-            <li><a href="devenir-affilie.html">Devenir affilié</a></li>
+            <li><a href="devenir-affilie.html" data-i18n="footer.affiliate">Devenir affilié</a></li>
           </ul>
         </div>
 
@@ -828,7 +835,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© Copyright OneBookLab™ All Rights Reserved</p>
+      <p data-i18n="footer.copyright">© Copyright OneBookLab™ All Rights Reserved</p>
 
     </div>
 
@@ -846,6 +853,9 @@
   <script src="assets/vendor/aos/aos.js" defer></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
   <script src="assets/vendor/typed.js/typed.umd.js" defer></script>
+
+  <!-- i18n (Internationalization) -->
+  <script src="assets/js/i18n.js" defer></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js" defer></script>

@@ -3151,3 +3151,66 @@ section,
     font-size: 20px;
   }
 }
+
+/*--------------------------------------------------------------
+# Language Switcher
+--------------------------------------------------------------*/
+.lang-switcher {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.lang-switcher .lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--nav-color), transparent 60%);
+  border-radius: 20px;
+  padding: 6px 12px;
+  color: var(--nav-color);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lang-switcher .lang-btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+}
+
+.lang-switcher .lang-btn .current-lang {
+  font-weight: 600;
+}
+
+.lang-switcher .lang-btn i {
+  font-size: 14px;
+}
+
+@media (max-width: 1199px) {
+  .lang-switcher {
+    position: fixed;
+    top: 18px;
+    right: 70px;
+    z-index: 9998;
+    margin: 0;
+  }
+
+  .lang-switcher .lang-btn {
+    background: var(--surface-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media (max-width: 575px) {
+  .lang-switcher {
+    right: 60px;
+  }
+
+  .lang-switcher .lang-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}

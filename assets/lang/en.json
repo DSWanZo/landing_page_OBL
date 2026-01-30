@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "product": "Product",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "upcoming": "Coming Soon",
+    "contact": "Contact",
+    "login": "Login"
+  },
+  "hero": {
+    "lead": "Writing is no longer a barrier:",
+    "title": "Generate complete books in under 30 minutes.",
+    "typed_items": "No writing,No editing,No supervision",
+    "tagline": "Publish more. Earn more.",
+    "cta": "Try OneBookLab™ now!",
+    "accelerate": "Supercharge your Business!",
+    "description": "Generate a complete book in under 30 minutes."
+  },
+  "steps2": {
+    "title": "In just 3 clicks, OneBookLab™ creates for you:",
+    "step1": {
+      "title": "Complete, coherent, and publish-ready books",
+      "subtitle": "Fiction and non-fiction alike!",
+      "item1": "No more guiding every single sentence.",
+      "item2": "No more hours spent editing.",
+      "item3": "No more expensive ghostwriters."
+    },
+    "step2": {
+      "title": "Write less, publish more:",
+      "subtitle": "OneBookLab™ writes the book for you!",
+      "item1": "From the first word to the final chapter.",
+      "item2": "While you focus on what truly matters.",
+      "item3": "The more you publish, the more you earn."
+    },
+    "step3": {
+      "title": "OneBookLab™ eliminates the #1 barrier for authors: writing time.",
+      "subtitle": "The result:",
+      "item1": "you publish much faster.",
+      "item2": "you publish more often.",
+      "item3": "and your revenue grows."
+    },
+    "cta1": "Generate my next book now!",
+    "cta1_sub": "Automatically, in 3 clicks",
+    "adopted_title": "Already trusted by self-published authors:",
+    "adopted_sub1": "They're multiplying their publication rate,",
+    "adopted_sub2": "and scaling their catalogs faster than ever.",
+    "cta2": "Start generating my books automatically.",
+    "cta2_sub": "Earn more, faster"
+  },
+  "about2": {
+    "title": "OneBookLab™ eliminates the real roadblock for authors.",
+    "problem1": "➡️The problem has never been inspiration.",
+    "problem2": "➡️Or ideas.",
+    "problem3": "➡️Or even AI.",
+    "real_problem": "The real problem is time.⏱️",
+    "time1": "❗ Time to write.",
+    "time2": "❗ Time to structure.",
+    "time3": "❗ Time to fix AI outputs.",
+    "time4": "❗ Time to repair what falls apart.",
+    "result": "Result:",
+    "result1": "❌you publish slowly,",
+    "result2": "❌your catalog stagnates,",
+    "result3": "❌your income plateaus.",
+    "solution1": "OneBookLab™ doesn't just save you time...",
+    "solution2": "It eliminates the problem entirely!",
+    "solution3": "It's an AI that writes complete books for you.",
+    "solution4": "From the first word to the final chapter.",
+    "demo_btn": "See OneBookLab in action"
+  },
+  "features": {
+    "title1": "In self-publishing, success comes down to one thing:",
+    "title2": "Publication speed! 🚀",
+    "subtitle": "Publishing more means:",
+    "item1_title": "Testing more ideas,",
+    "item1_desc": "Validate your concepts quickly and iterate fast.",
+    "item2_title": "Learning faster,",
+    "item2_desc": "Master the techniques that drive sales.",
+    "item3_title": "Finding the right niche faster.",
+    "item3_desc": "Discover the topics that actually sell.",
+    "item4_title": "The one that really pays off.",
+    "item4_desc": "The niche that takes your income to the next level!",
+    "conclusion1": "It's not the best writers who win.",
+    "conclusion2": "It's the fastest."
+  },
+  "features2": {
+    "title": "OneBookLab™ is built on a proven structure.",
+    "subtitle1": "Every generated book follows a clear, coherent architecture.",
+    "subtitle2": "Structure, pacing, and narrative flow are fully controlled.",
+    "item1": "❌No unbalanced chapters.",
+    "item2": "❌No tone inconsistencies.",
+    "item3": "❌No off-topic tangents.",
+    "conclusion": "Structured, reliable books with every generation.",
+    "demo_btn": "Watch the Demo"
+  },
+  "features3": {
+    "title": "Access our tutorials and resources:",
+    "subtitle": "Master the tool quickly, optimize your generations, and unlock its full potential.",
+    "card1_title": "Identify profitable niches and keywords,",
+    "card1_desc": "Find niches that convert. Optimize your choices to maximize results.",
+    "card2_title": "Turn a book into an irresistible product,",
+    "card2_desc": "Create books that captivate readers. Make every publication professional and compelling.",
+    "card3_title": "Attract readers and boost visibility.",
+    "card3_desc": "Get your books noticed fast. Grow your audience and increase sales.",
+    "cta": "Start creating now!"
+  },
+  "whyus": {
+    "title": "In 6 months, there will be two types of authors:",
+    "card1_title": "Those still publishing at the same pace.",
+    "card1_desc": "A book here and there. <br>When they find the time.<br>When motivation strikes.",
+    "card2_title": "And those who doubled their catalog.",
+    "card2_desc": "More titles. <br>More entry points.<br>More sales opportunities.",
+    "not1": "❌Not because they're more talented.",
+    "not2": "❌Not because they write better.",
+    "but": "✔️But because they changed their pace.",
+    "cta": "Start generating my books automatically.",
+    "cta_sub": "Earn more, faster"
+  },
+  "faq": {
+    "title": "F.A.Q",
+    "subtitle": "Can't find your answer? Contact us by email!",
+    "q1": "Is the quality good enough to publish on Amazon?",
+    "a1": "Yes, generated texts are ready to publish on Amazon KDP or any platform. You can still customize the content anytime.",
+    "q2": "Does it work for both fiction AND non-fiction?",
+    "a2": "Absolutely. OneBookLab™ handles all book types: novels, short stories, how-to guides, essays, and more.",
+    "q3": "Do I need to know how to write?",
+    "a3": "No. The tool handles structuring and writing for you. Just define your theme and preferences.",
+    "q4": "Can I edit the generated text?",
+    "a4": "Yes, all content is fully editable. You maintain complete control over every sentence and chapter.",
+    "q5": "Is it suitable for beginners?",
+    "a5": "Absolutely. The tool is designed for everyone, including first-time authors. It guides you step by step from idea to publication.",
+    "q6": "Does the tool get updated?",
+    "a6": "Yes, OneBookLab™ receives regular updates and new features to continuously improve quality and user experience. Track changes via the changelog available once registered.",
+    "q7": "Are the generated texts unique?",
+    "a7": "Yes. Each generation is 100% exclusive: the AI creates content from your brief and parameters. No text is copied or reused for other users.",
+    "q8": "What's the average length of a generated book?",
+    "a8": "A complete book generated with OneBookLab™ averages 10,000-45,000 words, depending on detail level, chapters, and sections. It can be a short ebook (40 pages) or a comprehensive work exceeding 100 pages (60,000+ words) based on your settings.",
+    "q9": "Is the subscription price locked in?",
+    "a9": "Yes. Your subscription rate stays fixed as long as it's active. New features will be added over time, which may slightly increase pricing for new subscribers.",
+    "q10": "How do annual subscriptions work?",
+    "a10": "Annual subscriptions are billed once upfront. You receive all credits immediately, and they remain available even after the subscription period ends.",
+    "q11": "What if I don't use my credits this month?",
+    "a11": "Credits never expire: they roll over month to month as long as your subscription is active. Create at your own pace, with zero pressure.",
+    "cta": "Start generating my books automatically.",
+    "cta_sub": "Earn more, faster"
+  },
+  "upcoming": {
+    "title": "Upcoming Features*",
+    "subtitle": "*Subscription pricing will increase for new members",
+    "step1_title": "Back cover generator",
+    "step1_desc": "No more headaches! We're adding a back cover generator to make your book look professional at first glance!",
+    "step2_title": "Product page assistant",
+    "step2_desc": "Save even more time. OBL will craft your sales page pitch and help create A+ content.",
+    "step3_title": "Brainstorming Module",
+    "step3_desc": "No need for external AI tools. Explore your ideas directly on OneBookLab™ before creating your book.",
+    "step4_title": "Cover design tool",
+    "step4_desc": "What more could you ask for? Finally, an all-in-one tool from writing to publication!",
+    "conclusion": "And much more to come..."
+  },
+  "modal": {
+    "demo_title": "Watch the OneBookLab™ Demo",
+    "close": "Close"
+  },
+  "footer": {
+    "email_label": "Email:",
+    "useful_links": "Useful Links",
+    "legal": "Legal Notice",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "affiliate": "Become an Affiliate",
+    "copyright": "© Copyright OneBookLab™ All Rights Reserved"
+  },
+  "aria": {
+    "prev_image": "Show previous image",
+    "next_image": "Show next image",
+    "play_video": "Play OneBookLab video",
+    "play_testimonial": "Play testimonial"
+  }
+}
