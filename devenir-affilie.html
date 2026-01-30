@@ -52,17 +52,24 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero-2">Produit</a></li>
+          <li><a href="index.html#hero-2" data-i18n="nav.product">Produit</a></li>
 
-          <li><a href="pricing.html">Tarifs</a></li>
-          <li><a href="index.html#faq-3">FAQ</a></li>
-          <li><a href="index.html#steps">A venir</a></li>
-          <li><a href="index.html#footer">Contact</a></li>
+          <li><a href="pricing.html" data-i18n="nav.pricing">Tarifs</a></li>
+          <li><a href="index.html#faq-3" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="index.html#steps" data-i18n="nav.upcoming">A venir</a></li>
+          <li><a href="index.html#footer" data-i18n="nav.contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="https://app.onebooklab.com/login">Connexion</a>
+      <div class="lang-switcher">
+        <button class="lang-btn" onclick="I18n.toggleLanguage()" title="Switch language">
+          <span class="current-lang">FR</span>
+          <i class="bi bi-globe2"></i>
+        </button>
+      </div>
+
+      <a class="btn-getstarted" href="https://app.onebooklab.com/login" data-i18n="nav.login">Connexion</a>
 
     </div>
   </header>
@@ -75,73 +82,73 @@
       <div class="container" data-aos="fade-up">
         <!-- Page Header -->
         <div class="tos-header text-center" data-aos="fade-up">
-          <h1><strong>Programme partenaire OneBookLab</strong></h1><br>
+          <h1><strong data-i18n="affiliate.title">Programme partenaire OneBookLab</strong></h1><br>
           <p></p>
-          <h3 class="mt-3">Boostez vos revenus en devenant affilié(e) à la meilleure plateforme d'écriture IA.</h3><br><br>
+          <h3 class="mt-3" data-i18n="affiliate.subtitle">Boostez vos revenus en devenant affilié(e) à la meilleure plateforme d'écriture IA.</h3><br><br>
         </div>
 
         <!-- Content -->
         <div class="tos-content" data-aos="fade-up" data-aos-delay="200">
           <!-- Gains Section -->
           <div id="rewards" class="content-section">
-            <h3><b>✅ Ce que vous gagnez</b></h3><br>
-            <p>Monétisez votre audience en profitant d'un programme de rémunération généreux et transparent.</p>
+            <h3><b data-i18n="affiliate.rewards_title">✅ Ce que vous gagnez</b></h3><br>
+            <p data-i18n="affiliate.rewards_desc">Monétisez votre audience en profitant d'un programme de rémunération généreux et transparent.</p>
             <ul class="list-items">
-              <li><strong>Jusqu'à 30% de commission</strong> sur chaque achat généré via votre lien d'affiliation et sur chaque renouvellement d'abonnement !</li>
-              <li class="mb-3"><strong>Un code promo exclusif de 15%</strong> à offrir à votre communauté (disponible sur demande).</li><br>
+              <li data-i18n-html="affiliate.rewards_item1"><strong>Jusqu'à 30% de commission</strong> sur chaque achat généré via votre lien d'affiliation et sur chaque renouvellement d'abonnement !</li>
+              <li class="mb-3" data-i18n-html="affiliate.rewards_item2"><strong>Un code promo exclusif de 15%</strong> à offrir à votre communauté (disponible sur demande).</li><br>
             </ul>
           </div>
 
           <!-- Recommendations Section -->
           <div id="recommendations" class="content-section">
-            <h3><b>🚀 Nos recommandations pour maximiser vos gains</b></h3><br>
-            <p>Adoptez ces réflexes pour booster vos conversions et augmenter vos revenus.</p>
+            <h3><b data-i18n="affiliate.reco_title">🚀 Nos recommandations pour maximiser vos gains</b></h3><br>
+            <p data-i18n="affiliate.reco_desc">Adoptez ces réflexes pour booster vos conversions et augmenter vos revenus.</p>
             <ul class="list-items">
-              <li><b>Parlez de OneBookLab™</b> sur vos réseaux sociaux pour toucher un large public.</li>
-              <li><b>Créez du contenu YouTube</b> : tutoriels, avis, démonstrations… le format vidéo est idéal pour les outils IA !</li>
-              <li><b>Optimisez votre SEO</b> en ciblant des requêtes stratégiques telles que :</li>
+              <li data-i18n-html="affiliate.reco_item1"><b>Parlez de OneBookLab™</b> sur vos réseaux sociaux pour toucher un large public.</li>
+              <li data-i18n-html="affiliate.reco_item2"><b>Créez du contenu YouTube</b> : tutoriels, avis, démonstrations… le format vidéo est idéal pour les outils IA !</li>
+              <li data-i18n-html="affiliate.reco_item3"><b>Optimisez votre SEO</b> en ciblant des requêtes stratégiques telles que :</li>
             </ul>
             <div class="info-box">
               <ul class="list-items ps-4 mb-0 fst-italic">
-                <li>Avis OneBookLab</li>
-                <li>Tuto OneBookLab</li>
-                <li>Test OneBookLab</li>
-                <li>Meilleur outil de rédaction IA</li>
-                <li>Rédiger un livre avec IA</li>
+                <li data-i18n="affiliate.seo_item1">Avis OneBookLab</li>
+                <li data-i18n="affiliate.seo_item2">Tuto OneBookLab</li>
+                <li data-i18n="affiliate.seo_item3">Test OneBookLab</li>
+                <li data-i18n="affiliate.seo_item4">Meilleur outil de rédaction IA</li>
+                <li data-i18n="affiliate.seo_item5">Rédiger un livre avec IA</li>
               </ul>
             </div>
             <br>
-            <p class="mb-0"><b>Plus votre contenu est visible, plus vos commissions augmentent ! 🚀</b></p><br><br>
+            <p class="mb-0"><b data-i18n="affiliate.reco_conclusion">Plus votre contenu est visible, plus vos commissions augmentent ! 🚀</b></p><br><br>
 
           </div>
 
           <!-- Prohibitions Section -->
           <div id="restrictions" class="content-section">
-            <h3><b>❌ Ce qui est interdit</b></h3><br>
-            <p>Pour préserver l'équité entre affiliés, certaines pratiques sont strictement interdites.</p>
+            <h3><b data-i18n="affiliate.prohibited_title">❌ Ce qui est interdit</b></h3><br>
+            <p data-i18n="affiliate.prohibited_desc">Pour préserver l'équité entre affiliés, certaines pratiques sont strictement interdites.</p>
             <ul class="list-items">
-              <li>Brand bidding sur les moteurs de recherche.</li>
-              <li>Usage d’un nom de domaine laissant croire que vous êtes le site officiel de OneBookLab™.</li>
-              <li>Auto-affiliation pour percevoir des commissions sur vos propres achats.</li><br>
+              <li data-i18n="affiliate.prohibited_item1">Brand bidding sur les moteurs de recherche.</li>
+              <li data-i18n="affiliate.prohibited_item2">Usage d'un nom de domaine laissant croire que vous êtes le site officiel de OneBookLab™.</li>
+              <li data-i18n="affiliate.prohibited_item3">Auto-affiliation pour percevoir des commissions sur vos propres achats.</li><br>
             </ul>
           </div>
 
           <!-- How-to Section -->
-          <div id="restrictions" class="content-section">
-            <h3><b>👉 Comment faire ?</b></h3>
+          <div id="howto" class="content-section">
+            <h3><b data-i18n="affiliate.howto_title">👉 Comment faire ?</b></h3>
             <br>
             <ul class="list-items">
-              <li><b>Contactez nous l'adresse mail</b> ci dessous en nous indiquant votre type d'audience, le nom de votre site/chaine... </li>
-              <li>Nous vous créerons ensuite un <b>lien d'affiliation</b> qui vous sera dédié.</li>
-              <li>Vous recevrez également vos accès pour <b>suivre vos commissions</b> (Via FirstPromoter).</li><br>
+              <li data-i18n-html="affiliate.howto_item1"><b>Contactez nous l'adresse mail</b> ci dessous en nous indiquant votre type d'audience, le nom de votre site/chaine... </li>
+              <li data-i18n-html="affiliate.howto_item2">Nous vous créerons ensuite un <b>lien d'affiliation</b> qui vous sera dédié.</li>
+              <li data-i18n-html="affiliate.howto_item3">Vous recevrez également vos accès pour <b>suivre vos commissions</b> (Via FirstPromoter).</li><br>
             </ul>
           </div>
 
           <!-- Contact Section -->
           <div id="contact" class="content-section">
-            <h3><b>📩 Des questions&nbsp;?</b></h3><br>
-            <p>Nous sommes disponibles pour vous aider !</p>
-            <p>Contactez-nous à l’adresse&nbsp;:<a href="mailto:contact@onebooklab.com" class="ms-1">contact@onebooklab.com</a></p>
+            <h3><b data-i18n="affiliate.contact_title">📩 Des questions ?</b></h3><br>
+            <p data-i18n="affiliate.contact_desc">Nous sommes disponibles pour vous aider !</p>
+            <p><span data-i18n="affiliate.contact_email">Contactez-nous à l'adresse :</span><a href="mailto:contact@onebooklab.com" class="ms-1">contact@onebooklab.com</a></p>
           </div>
         </div>
 
@@ -162,20 +169,20 @@
           <div class="footer-contact pt-3">
 
             <p class="mt-3"> </p>
-            <p><strong>Email:</strong> <span class="">contact@onebooklab.com</span></p>
+            <p><strong data-i18n="footer.email_label">Email:</strong> <span class="">contact@onebooklab.com</span></p>
           </div>
 
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Liens utiles</h4>
+          <h4 data-i18n="footer.useful_links">Liens utiles</h4>
           <ul>
             <li></li>
 
-            <li><a href="terms.html">Mentions légales</a></li>
-            <li><a href="cgu.html">Conditions générales de vente et d'utilisation</a></li>
-            <li><a href="privacy.html">Politique de confidentialité</a></li>
-            <li><a href="devenir-affilie.html">Devenir affilié</a></li>
+            <li><a href="terms.html" data-i18n="footer.legal">Mentions légales</a></li>
+            <li><a href="cgu.html" data-i18n="footer.terms">Conditions générales de vente et d'utilisation</a></li>
+            <li><a href="privacy.html" data-i18n="footer.privacy">Politique de confidentialité</a></li>
+            <li><a href="devenir-affilie.html" data-i18n="footer.affiliate">Devenir affilié</a></li>
           </ul>
         </div>
 
@@ -233,6 +240,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- i18n Script -->
+  <script src="assets/js/i18n.js"></script>
 
 </body>
 
