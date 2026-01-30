@@ -156,6 +156,53 @@
     "step4_desc": "Quoi dire de plus... ? Enfin un outil tout en un qui vous guide de la rédaction à la publication !",
     "conclusion": "Et bien plus encore..."
   },
+  "pricing": {
+    "page_title": "Abonnements",
+    "page_subtitle": "Sans engagement – Résiliable à tout moment.",
+    "monthly": "Mensuel",
+    "yearly": "Annuel",
+    "save_badge": "Économisez 13%",
+    "per_month": "/mois",
+    "per_year": "/an",
+    "popular": "Populaire",
+    "cta": "Commencer à écrire !",
+    "no_subscription": "Sans abonnement",
+    "token_equiv1": "*10 Tokens = 1 Livre non fiction ou Nouvelle",
+    "token_equiv2": "*20 Tokens = 1 Roman de fiction",
+    "feature_tutorials": "Accès à nos tutoriels et ressources",
+    "feature_support": "Support prioritaire",
+    "feature_save": "Possibilité d'enregistrer vos projets",
+    "feature_early_access": "Accès anticipé aux nouvelles fonctionnalités",
+    "feature_api": "Possibilité de participer aux évolutions de l'API",
+    "discovery": {
+      "title": "Pack découverte",
+      "subtitle": "Pour découvrir OneBookLab™ !",
+      "feature1": "30 tokens par mois*",
+      "yearly_detail": "44€/mois en paiement unique<br>60€ d'économie !"
+    },
+    "author": {
+      "title": "Pack Auteur",
+      "subtitle": "Pour les auteurs débutants et confirmés",
+      "feature1": "60 tokens par mois*",
+      "yearly_detail": "69€/mois en paiement unique<br>120€ d'économie !"
+    },
+    "pro": {
+      "title": "Pack Pro'",
+      "subtitle": "Pour les auteur(e)s prolifiques",
+      "feature1": "120 tokens par mois*",
+      "yearly_detail": "112€/mois en paiement unique<br>204€ d'économie !"
+    },
+    "small_topup": {
+      "title": "Petite recharge de Tokens",
+      "subtitle": "Pour écrire dès maintenant !",
+      "feature1": "10 tokens*"
+    },
+    "topup": {
+      "title": "Recharge de Tokens",
+      "subtitle": "Pour un \"One shot\" !",
+      "feature1": "20 tokens*"
+    }
+  },
   "modal": {
     "demo_title": "Voir la démo OneBookLab™",
     "close": "Fermer"

@@ -156,6 +156,53 @@
     "step4_desc": "What more could you ask for? Finally, an all-in-one tool from writing to publication!",
     "conclusion": "And much more to come..."
   },
+  "pricing": {
+    "page_title": "Subscriptions",
+    "page_subtitle": "No commitment – Cancel anytime.",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "save_badge": "Save 13%",
+    "per_month": "/month",
+    "per_year": "/year",
+    "popular": "Popular",
+    "cta": "Start writing!",
+    "no_subscription": "No subscription",
+    "token_equiv1": "*10 Tokens = 1 Non-fiction book or Short story",
+    "token_equiv2": "*20 Tokens = 1 Fiction novel",
+    "feature_tutorials": "Access to our tutorials and resources",
+    "feature_support": "Priority support",
+    "feature_save": "Save your projects",
+    "feature_early_access": "Early access to new features",
+    "feature_api": "Participate in API development",
+    "discovery": {
+      "title": "Discovery Pack",
+      "subtitle": "Discover OneBookLab™!",
+      "feature1": "30 tokens per month*",
+      "yearly_detail": "€44/month with one-time payment<br>Save €60!"
+    },
+    "author": {
+      "title": "Author Pack",
+      "subtitle": "For beginner and experienced authors",
+      "feature1": "60 tokens per month*",
+      "yearly_detail": "€69/month with one-time payment<br>Save €120!"
+    },
+    "pro": {
+      "title": "Pro Pack",
+      "subtitle": "For prolific authors",
+      "feature1": "120 tokens per month*",
+      "yearly_detail": "€112/month with one-time payment<br>Save €204!"
+    },
+    "small_topup": {
+      "title": "Small Token Top-up",
+      "subtitle": "Start writing now!",
+      "feature1": "10 tokens*"
+    },
+    "topup": {
+      "title": "Token Top-up",
+      "subtitle": "For a one-shot project!",
+      "feature1": "20 tokens*"
+    }
+  },
   "modal": {
     "demo_title": "Watch the OneBookLab™ Demo",
     "close": "Close"
