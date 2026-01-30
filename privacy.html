@@ -43,8 +43,6 @@
 
       <div class="brand d-flex align-items-center me-auto">
         <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.webp" alt=""> -->
           <img src="https://i.ibb.co/yc5PhYN6/Chat-GPT-Image-27-oct-2025-15-50-50-removebg-preview.png" alt="Author Name" class="img-fluid">
         </a>
         <h1 class="sitename m-0 ms-2"><a href="index.html"><b>OneBookLab™</b></a></h1>
@@ -52,17 +50,23 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero-2">Produit</a></li>
-
-          <li><a href="pricing.html">Tarifs</a></li>
-          <li><a href="index.html#faq-3">FAQ</a></li>
-          <li><a href="index.html#steps">A venir</a></li>
-          <li><a href="index.html#footer">Contact</a></li>
+          <li><a href="index.html#hero-2" data-i18n="nav.product">Produit</a></li>
+          <li><a href="pricing.html" data-i18n="nav.pricing">Tarifs</a></li>
+          <li><a href="index.html#faq-3" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="index.html#steps" data-i18n="nav.upcoming">A venir</a></li>
+          <li><a href="index.html#footer" data-i18n="nav.contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="https://app.onebooklab.com/login">Connexion</a>
+      <div class="lang-switcher">
+        <button class="lang-btn" onclick="I18n.toggleLanguage()" title="Switch language">
+          <span class="current-lang">FR</span>
+          <i class="bi bi-globe2"></i>
+        </button>
+      </div>
+
+      <a class="btn-getstarted" href="https://app.onebooklab.com/login" data-i18n="nav.login">Connexion</a>
 
     </div>
   </header>
@@ -76,132 +80,130 @@
         <!-- Header -->
         <div class="privacy-header" data-aos="fade-up">
           <div class="header-content">
-            <div class="last-updated">Dernière mise à jour : 22 octobre 2025</div>
-            <h1>Politique de Confidentialité</h1>
-            <p class="intro-text">La présente politique de confidentialité a pour objet d’informer les utilisateurs de la manière dont OneBookLab™ collecte, utilise, conserve et protège leurs données personnelles dans le cadre de l’utilisation de la plateforme de génération de contenu pour auteurs.</p>
+            <div class="last-updated" data-i18n="privacy.last_updated">Dernière mise à jour : 22 octobre 2025</div>
+            <h1 data-i18n="privacy.title">Politique de Confidentialité</h1>
+            <p class="intro-text" data-i18n="privacy.intro">La présente politique de confidentialité a pour objet d'informer les utilisateurs de la manière dont OneBookLab™ collecte, utilise, conserve et protège leurs données personnelles dans le cadre de l'utilisation de la plateforme de génération de contenu pour auteurs.</p>
           </div>
         </div>
 
         <!-- Main Content -->
         <div class="privacy-content" data-aos="fade-up">
-          <!-- Introduction -->
+          <!-- Section 1: Definitions -->
           <div class="content-section">
-            <h2>1. Définitions</h2>
-            <p>• <b>Données Personnelles</b> : toute information se rapportant à une personne physique identifiée ou identifiable (nom, adresse e-mail, adresse IP, etc.).</p>
-            <p>• <b>Utilisateur</b> : toute personne accédant et utilisant la plateforme OneBookLab™.</p>
-            <p>• <b>Cookie</b> : petit fichier texte déposé sur l’appareil de l’utilisateur lors de la navigation sur le site.</p>
-            <p>• <b>Responsable de traitement</b> : OneBookLab™, dont les coordonnées sont indiquées ci-dessous.</p>
-            <p>• <b>Utilisateur</b> : toute personne accédant et utilisant la plateforme OneBookLab™.</p>
+            <h2 data-i18n="privacy.s1_title">1. Définitions</h2>
+            <p data-i18n-html="privacy.s1_p1">• <b>Données Personnelles</b> : toute information se rapportant à une personne physique identifiée ou identifiable (nom, adresse e-mail, adresse IP, etc.).</p>
+            <p data-i18n-html="privacy.s1_p2">• <b>Utilisateur</b> : toute personne accédant et utilisant la plateforme OneBookLab™.</p>
+            <p data-i18n-html="privacy.s1_p3">• <b>Cookie</b> : petit fichier texte déposé sur l'appareil de l'utilisateur lors de la navigation sur le site.</p>
+            <p data-i18n-html="privacy.s1_p4">• <b>Responsable de traitement</b> : OneBookLab™, dont les coordonnées sont indiquées ci-dessous.</p>
           </div>
 
-          <!-- Information Collection -->
+          <!-- Section 2: Data Controller -->
           <div class="content-section">
-            <h2>2. Responsable de Traitement</h2>
-            <p>Le responsable du traitement des données est :</p>
+            <h2 data-i18n="privacy.s2_title">2. Responsable de Traitement</h2>
+            <p data-i18n="privacy.s2_p1">Le responsable du traitement des données est :</p>
             <p><b>OneBookLab™</b></p>
-            <p><b>Siège social</b> : 2 rue de Touraine, 86130 Cenon sur Vienne</p>
-            <p><b>Email</b> : contact@onebooklab.com</p>
-
-            <!-- Use of Information -->
-            <div class="content-section">
-              <h2>3. Durée de Conservation des Données</h2>
-              <p>Les données personnelles sont conservées :</p>
-              <ul>
-                <li>Pendant toute la durée de l’abonnement ou de l’utilisation active des services.</li>
-                <li>Pour une durée maximale de 3 ans après le dernier contact ou la fin de la relation contractuelle, sauf obligation légale contraire.</li>
-
-              </ul>
-            </div>
-
-            <!-- Information Sharing -->
-            <div class="content-section">
-              <h2>4. Données Collectées</h2>
-
-              <h3>4.1. Données fournies par l’utilisateur</h3>
-              <p>• Informations d’inscription et de profil (nom, prénom, adresse e-mail, photo, etc.).</p>
-              <p>• Données de paiement et informations de facturation lors des achats ou abonnements.</p>
-              <p>• Informations transmises lors de la communication avec notre support.</p>
-
-              <h3>4.2. Données collectées automatiquement</h3>
-              <p>• Données de navigation (adresse IP, type de navigateur, pages consultées, temps de visite, etc.).</p>
-              <p>• Cookies et technologies similaires pour faciliter la navigation, améliorer l’expérience utilisateur et réaliser des analyses statistiques.</p>
-              <ul>
-                <li>• Cookies et technologies similaires pour faciliter la navigation, améliorer l’expérience utilisateur et réaliser des analyses statistiques.</li>
-
-                <h3>4.3. Données issues des intégrations externes</h3>
-                <p>• Informations provenant des connexions aux services tiers (WordPress, flux RSS, YouTube, etc.) afin d’assurer l’automatisation et l’optimisation du maillage interne.</p>
-
-              </ul>
-            </div>
-
-            <!-- Data Security -->
-            <div class="content-section">
-              <h2>5. Finalités du Traitement des Données</h2>
-              <p>Les données collectées sont utilisées pour :</p>
-              <ul>
-                <li>Fournir et améliorer les services : permettre l’accès à la plateforme et la génération de contenu optimisé.</li>
-                <li>Gestion de la relation client : support technique, assistance et communication d’informations relatives aux services.</li>
-                <li>Analyse et statistiques : mesurer l’utilisation de la plateforme, analyser les tendances et améliorer l’expérience utilisateur.</li>
-                <li>Sécurité : prévenir les fraudes et garantir la sécurité de l’accès et des transactions.</li>
-              </ul>
-            </div>
-
-            <!-- Your Rights -->
-            <div class="content-section">
-              <h2>6. Base Légale du Traitement</h2>
-              <p>Le traitement des données est réalisé sur la base :</p>
-              <ul>
-                <li>Du consentement explicite de l’utilisateur lors de l’inscription et de l’utilisation de certains services.</li>
-                <li>De la nécessité contractuelle pour la fourniture des services commandés.</li>
-                <li>Des intérêts légitimes de OneBookLab™, notamment pour l’amélioration de la plateforme, la sécurité et l’optimisation de l’expérience utilisateur.</li>
-
-              </ul>
-            </div>
-
-            <!-- Policy Updates -->
-            <div class="content-section">
-              <h2>7. Communication des Données à des Tiers</h2>
-              <p>OneBookLab™ peut être amené à communiquer vos données à :</p>
-              <p>• Des prestataires techniques et informatiques (hébergeurs, services de paiement, analyses statistiques) qui agissent pour le compte de OneBookLab™.</p>
-              <p>• Des partenaires dans le cadre d’intégrations (WordPress, YouTube, flux RSS) afin de permettre l’automatisation des services.</p>
-              <p>Ces tiers sont soumis à une obligation contractuelle de confidentialité et de sécurité des données et ne peuvent les utiliser que pour les finalités définies par OneBookLab™.</p>
-            </div>
+            <p data-i18n-html="privacy.s2_p2"><b>Siège social</b> : 2 rue de Touraine, 86130 Cenon sur Vienne</p>
+            <p data-i18n-html="privacy.s2_p3"><b>Email</b> : contact@onebooklab.com</p>
           </div>
 
+          <!-- Section 3: Data Retention -->
           <div class="content-section">
-            <h2>8. Utilisation des Cookies</h2>
-            <p>La plateforme utilise des cookies pour :</p>
-            <p>• Faciliter la navigation et personnaliser l’expérience utilisateur.</p>
-            <p>• Réaliser des statistiques et analyses d’utilisation.</p>
-            <p>• Offrir des fonctionnalités de connexion et d’intégration avec des services tiers.</p>
-            <p>L’utilisateur peut configurer son navigateur pour refuser les cookies. Toutefois, certaines fonctionnalités du site pourraient être impactées.</p>
+            <h2 data-i18n="privacy.s3_title">3. Durée de Conservation des Données</h2>
+            <p data-i18n="privacy.s3_p1">Les données personnelles sont conservées :</p>
+            <ul>
+              <li data-i18n="privacy.s3_li1">Pendant toute la durée de l'abonnement ou de l'utilisation active des services.</li>
+              <li data-i18n="privacy.s3_li2">Pour une durée maximale de 3 ans après le dernier contact ou la fin de la relation contractuelle, sauf obligation légale contraire.</li>
+            </ul>
           </div>
-          <div class="content-section">
-            <h2>9. Sécurité des Données</h2>
-            <p>OneBookLab™ met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre toute destruction accidentelle ou illicite, perte, altération, divulgation non autorisée ou accès non autorisé.</p>
 
+          <!-- Section 4: Data Collected -->
+          <div class="content-section">
+            <h2 data-i18n="privacy.s4_title">4. Données Collectées</h2>
+
+            <h3 data-i18n="privacy.s4_sub1">4.1. Données fournies par l'utilisateur</h3>
+            <p data-i18n="privacy.s4_p1">• Informations d'inscription et de profil (nom, prénom, adresse e-mail, photo, etc.).</p>
+            <p data-i18n="privacy.s4_p2">• Données de paiement et informations de facturation lors des achats ou abonnements.</p>
+            <p data-i18n="privacy.s4_p3">• Informations transmises lors de la communication avec notre support.</p>
+
+            <h3 data-i18n="privacy.s4_sub2">4.2. Données collectées automatiquement</h3>
+            <p data-i18n="privacy.s4_p4">• Données de navigation (adresse IP, type de navigateur, pages consultées, temps de visite, etc.).</p>
+            <p data-i18n="privacy.s4_p5">• Cookies et technologies similaires pour faciliter la navigation, améliorer l'expérience utilisateur et réaliser des analyses statistiques.</p>
+
+            <h3 data-i18n="privacy.s4_sub3">4.3. Données issues des intégrations externes</h3>
+            <p data-i18n="privacy.s4_p6">• Informations provenant des connexions aux services tiers (WordPress, flux RSS, YouTube, etc.) afin d'assurer l'automatisation et l'optimisation du maillage interne.</p>
           </div>
-          <div class="content-section">
-            <h2>10. Vos Droits</h2>
-            <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
-            <p>• Droit d’accès : obtenir des informations sur les données que nous détenons à votre sujet.</p>
-            <p>• Droit de rectification : corriger toute donnée inexacte ou incomplète.</p>
-            <p>• Droit à l’effacement : demander la suppression de vos données, sous réserve des obligations légales.</p>
-            <p>• Droit à la limitation du traitement : demander la suspension temporaire du traitement de vos données.</p>
-            <p>• Droit d’opposition : vous opposer à tout moment au traitement de vos données pour des raisons tenant à votre situation particulière.</p>
-            <p>• Droit à la portabilité : recevoir vos données dans un format structuré, couramment utilisé et lisible par machine.</p>
-            <p>Pour exercer ces droits, veuillez contacter notre délégué à la protection des données à l’adresse : contact@onebooklab.com</p>
 
+          <!-- Section 5: Purpose of Processing -->
+          <div class="content-section">
+            <h2 data-i18n="privacy.s5_title">5. Finalités du Traitement des Données</h2>
+            <p data-i18n="privacy.s5_p1">Les données collectées sont utilisées pour :</p>
+            <ul>
+              <li data-i18n="privacy.s5_li1">Fournir et améliorer les services : permettre l'accès à la plateforme et la génération de contenu optimisé.</li>
+              <li data-i18n="privacy.s5_li2">Gestion de la relation client : support technique, assistance et communication d'informations relatives aux services.</li>
+              <li data-i18n="privacy.s5_li3">Analyse et statistiques : mesurer l'utilisation de la plateforme, analyser les tendances et améliorer l'expérience utilisateur.</li>
+              <li data-i18n="privacy.s5_li4">Sécurité : prévenir les fraudes et garantir la sécurité de l'accès et des transactions.</li>
+            </ul>
           </div>
-          <div class="content-section">
-            <h2>11. Transferts Internationaux</h2>
-            <p>Vos données sont traitées et stockées au sein de l’Union Européenne. Tout transfert de données hors UE, le cas échéant, sera effectué en conformité avec les dispositions légales en vigueur et avec des garanties appropriées.</p>
 
+          <!-- Section 6: Legal Basis -->
+          <div class="content-section">
+            <h2 data-i18n="privacy.s6_title">6. Base Légale du Traitement</h2>
+            <p data-i18n="privacy.s6_p1">Le traitement des données est réalisé sur la base :</p>
+            <ul>
+              <li data-i18n="privacy.s6_li1">Du consentement explicite de l'utilisateur lors de l'inscription et de l'utilisation de certains services.</li>
+              <li data-i18n="privacy.s6_li2">De la nécessité contractuelle pour la fourniture des services commandés.</li>
+              <li data-i18n="privacy.s6_li3">Des intérêts légitimes de OneBookLab™, notamment pour l'amélioration de la plateforme, la sécurité et l'optimisation de l'expérience utilisateur.</li>
+            </ul>
           </div>
-          <div class="content-section">
-            <h2>12. Modification de la Politique de Confidentialité</h2>
-            <p>OneBookLab™ se réserve le droit de modifier la présente politique de confidentialité à tout moment. Les modifications prendront effet dès leur publication sur le site. Nous invitons les utilisateurs à consulter régulièrement cette politique afin de prendre connaissance des éventuelles mises à jour.</p>
 
+          <!-- Section 7: Third Party Communication -->
+          <div class="content-section">
+            <h2 data-i18n="privacy.s7_title">7. Communication des Données à des Tiers</h2>
+            <p data-i18n="privacy.s7_p1">OneBookLab™ peut être amené à communiquer vos données à :</p>
+            <p data-i18n="privacy.s7_p2">• Des prestataires techniques et informatiques (hébergeurs, services de paiement, analyses statistiques) qui agissent pour le compte de OneBookLab™.</p>
+            <p data-i18n="privacy.s7_p3">• Des partenaires dans le cadre d'intégrations (WordPress, YouTube, flux RSS) afin de permettre l'automatisation des services.</p>
+            <p data-i18n="privacy.s7_p4">Ces tiers sont soumis à une obligation contractuelle de confidentialité et de sécurité des données et ne peuvent les utiliser que pour les finalités définies par OneBookLab™.</p>
+          </div>
+
+          <!-- Section 8: Cookies -->
+          <div class="content-section">
+            <h2 data-i18n="privacy.s8_title">8. Utilisation des Cookies</h2>
+            <p data-i18n="privacy.s8_p1">La plateforme utilise des cookies pour :</p>
+            <p data-i18n="privacy.s8_p2">• Faciliter la navigation et personnaliser l'expérience utilisateur.</p>
+            <p data-i18n="privacy.s8_p3">• Réaliser des statistiques et analyses d'utilisation.</p>
+            <p data-i18n="privacy.s8_p4">• Offrir des fonctionnalités de connexion et d'intégration avec des services tiers.</p>
+            <p data-i18n="privacy.s8_p5">L'utilisateur peut configurer son navigateur pour refuser les cookies. Toutefois, certaines fonctionnalités du site pourraient être impactées.</p>
+          </div>
+
+          <!-- Section 9: Data Security -->
+          <div class="content-section">
+            <h2 data-i18n="privacy.s9_title">9. Sécurité des Données</h2>
+            <p data-i18n="privacy.s9_p1">OneBookLab™ met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre toute destruction accidentelle ou illicite, perte, altération, divulgation non autorisée ou accès non autorisé.</p>
+          </div>
+
+          <!-- Section 10: Your Rights -->
+          <div class="content-section">
+            <h2 data-i18n="privacy.s10_title">10. Vos Droits</h2>
+            <p data-i18n="privacy.s10_p1">Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
+            <p data-i18n="privacy.s10_p2">• Droit d'accès : obtenir des informations sur les données que nous détenons à votre sujet.</p>
+            <p data-i18n="privacy.s10_p3">• Droit de rectification : corriger toute donnée inexacte ou incomplète.</p>
+            <p data-i18n="privacy.s10_p4">• Droit à l'effacement : demander la suppression de vos données, sous réserve des obligations légales.</p>
+            <p data-i18n="privacy.s10_p5">• Droit à la limitation du traitement : demander la suspension temporaire du traitement de vos données.</p>
+            <p data-i18n="privacy.s10_p6">• Droit d'opposition : vous opposer à tout moment au traitement de vos données pour des raisons tenant à votre situation particulière.</p>
+            <p data-i18n="privacy.s10_p7">• Droit à la portabilité : recevoir vos données dans un format structuré, couramment utilisé et lisible par machine.</p>
+            <p data-i18n="privacy.s10_p8">Pour exercer ces droits, veuillez contacter notre délégué à la protection des données à l'adresse : contact@onebooklab.com</p>
+          </div>
+
+          <!-- Section 11: International Transfers -->
+          <div class="content-section">
+            <h2 data-i18n="privacy.s11_title">11. Transferts Internationaux</h2>
+            <p data-i18n="privacy.s11_p1">Vos données sont traitées et stockées au sein de l'Union Européenne. Tout transfert de données hors UE, le cas échéant, sera effectué en conformité avec les dispositions légales en vigueur et avec des garanties appropriées.</p>
+          </div>
+
+          <!-- Section 12: Policy Modifications -->
+          <div class="content-section">
+            <h2 data-i18n="privacy.s12_title">12. Modification de la Politique de Confidentialité</h2>
+            <p data-i18n="privacy.s12_p1">OneBookLab™ se réserve le droit de modifier la présente politique de confidentialité à tout moment. Les modifications prendront effet dès leur publication sur le site. Nous invitons les utilisateurs à consulter régulièrement cette politique afin de prendre connaissance des éventuelles mises à jour.</p>
           </div>
 
           <!-- Contact Section -->
@@ -211,9 +213,9 @@
                 <i class="bi bi-envelope"></i>
               </div>
               <div class="contact-content">
-                <h4>Des questions ?</h4>
-                <p>Si vous avez des questions, contactez nous par mail ci dessous :</p>
-                <a href="mailto:contact@onebooklab.com" class="contact-link">Contacter le support</a>
+                <h4 data-i18n="privacy.contact_title">Des questions ?</h4>
+                <p data-i18n="privacy.contact_desc">Si vous avez des questions, contactez nous par mail ci dessous :</p>
+                <a href="mailto:contact@onebooklab.com" class="contact-link" data-i18n="privacy.contact_link">Contacter le support</a>
               </div>
             </div>
           </div>
@@ -236,20 +238,20 @@
           <div class="footer-contact pt-3">
 
             <p class="mt-3"> </p>
-            <p><strong>Email:</strong> <span class="">contact@onebooklab.com</span></p>
+            <p><strong data-i18n="footer.email_label">Email:</strong> <span class="">contact@onebooklab.com</span></p>
           </div>
 
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Liens utiles</h4>
+          <h4 data-i18n="footer.useful_links">Liens utiles</h4>
           <ul>
             <li></li>
 
-            <li><a href="terms.html">Mentions légales</a></li>
-            <li><a href="cgu.html">Conditions générales de vente et d'utilisation</a></li>
-            <li><a href="privacy.html">Politique de confidentialité</a></li>
-            <li><a href="devenir-affilie.html">Devenir affilié</a></li>
+            <li><a href="terms.html" data-i18n="footer.legal">Mentions légales</a></li>
+            <li><a href="cgu.html" data-i18n="footer.terms">Conditions générales de vente et d'utilisation</a></li>
+            <li><a href="privacy.html" data-i18n="footer.privacy">Politique de confidentialité</a></li>
+            <li><a href="devenir-affilie.html" data-i18n="footer.affiliate">Devenir affilié</a></li>
           </ul>
         </div>
 
@@ -290,8 +292,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">OneBookLab™</strong> <span>All Rights Reserved</span></p>
-
+      <p data-i18n="footer.copyright">© Copyright OneBookLab™ All Rights Reserved</p>
     </div>
 
   </footer>
@@ -312,6 +313,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- i18n Script -->
+  <script src="assets/js/i18n.js"></script>
 
 </body>
 
