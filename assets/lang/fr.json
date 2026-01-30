@@ -252,5 +252,9 @@
     "contact_title": "📩 Des questions ?",
     "contact_desc": "Nous sommes disponibles pour vous aider !",
     "contact_email": "Contactez-nous à l'adresse :"
+  },
+  "error404": {
+    "title": "Page introuvable",
+    "description": "La page que vous recherchez a peut-être été supprimée, son nom a peut-être été modifié ou elle est temporairement indisponible."
   }
 }

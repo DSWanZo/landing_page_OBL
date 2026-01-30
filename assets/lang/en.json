@@ -252,5 +252,9 @@
     "contact_title": "📩 Have Questions?",
     "contact_desc": "We're here to help!",
     "contact_email": "Contact us at:"
+  },
+  "error404": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for may have been removed, renamed, or is temporarily unavailable."
   }
 }
