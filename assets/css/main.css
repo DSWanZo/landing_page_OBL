@@ -145,13 +145,25 @@ h6 {
 
 .header .logo {
   line-height: 1;
+  display: flex;
+  align-items: center;
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 32px;
   /* Invert logo for light mode (original is white for dark bg) */
   filter: invert(1);
+}
+
+.header .brand {
+  display: flex;
+  align-items: center;
+}
+
+.header .sitename {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
 }
 
 .btn-getstarted,
