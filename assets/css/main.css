@@ -1007,6 +1007,7 @@ section,
   position: relative;
   overflow-x: clip;
   overflow-y: visible;
+  padding-top: 80px;
 }
 
 .hero-2 > .container {
@@ -1053,6 +1054,18 @@ section,
 
 .hero-2 .hero-title .hero-main-title {
   display: block;
+  color: var(--accent-color);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hero-2 .hero-title .hero-subtitle {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  font-style: normal;
+  margin-top: 8px;
 }
 
 .hero-2 .hero-title .typed-wrapper {
