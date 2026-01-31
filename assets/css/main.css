@@ -1010,11 +1010,16 @@ section,
   overflow-y: visible;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 80px 0;
 }
 
 .hero-2 > .container {
   max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hero-2::before {
