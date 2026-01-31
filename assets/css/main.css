@@ -3861,3 +3861,291 @@ lite-youtube {
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
+
+/*--------------------------------------------------------------
+# Business Section 1 - The Time Problem
+--------------------------------------------------------------*/
+.business-section {
+  padding: 80px 0;
+}
+
+.business-section.dark-background {
+  background-color: #0f172a;
+}
+
+.business-section .business-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.business-section .problem-intro {
+  margin-bottom: 1.5rem;
+}
+
+.business-section .problem-intro p {
+  font-size: 1.1rem;
+  color: #e2e8f0;
+  margin-bottom: 0.5rem;
+}
+
+.business-section .time-problem {
+  margin-bottom: 2rem;
+}
+
+.business-section .time-problem h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.business-section .time-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.business-section .time-list li {
+  font-size: 1.1rem;
+  color: #e2e8f0;
+  margin-bottom: 0.5rem;
+}
+
+.business-section .result-block h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.business-section .result-block p {
+  font-size: 1.1rem;
+  color: #f87171;
+  margin-bottom: 0.4rem;
+}
+
+.business-section .business-image img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.business-section .solution-block {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.business-section .solution-block h3 {
+  font-size: 1.3rem;
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+}
+
+.business-section .solution-emphasis {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.business-section .solution-desc {
+  font-size: 1.2rem;
+  color: #e2e8f0;
+}
+
+/*--------------------------------------------------------------
+# Business Section 2 - Publication Speed
+--------------------------------------------------------------*/
+.business-section-2 {
+  padding: 80px 0;
+  background-color: var(--background-color-alt);
+}
+
+.business-section-2 .section-title h2 {
+  font-size: 1.8rem;
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
+}
+
+.business-section-2 .speed-title {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 3rem;
+}
+
+.business-section-2 .benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .business-section-2 .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.business-section-2 .benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--surface-color);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.business-section-2 .benefit-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.business-section-2 .benefit-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--accent-color-light);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.business-section-2 .benefit-icon i {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.business-section-2 .benefit-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 0.25rem;
+}
+
+.business-section-2 .benefit-content p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.business-section-2 .speed-conclusion {
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.business-section-2 .speed-conclusion p {
+  font-size: 1.1rem;
+  color: var(--default-color);
+  margin-bottom: 0.5rem;
+}
+
+.business-section-2 .speed-conclusion h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+/* Authors Comparison */
+.business-section-2 .authors-comparison {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.business-section-2 .authors-comparison > h2 {
+  font-size: 1.8rem;
+  color: var(--heading-color);
+}
+
+.business-section-2 .author-card {
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.business-section-2 .author-card:hover {
+  transform: translateY(-4px);
+}
+
+.business-section-2 .author-slow {
+  background: #fef2f2;
+  border: 2px solid #fecaca;
+}
+
+.business-section-2 .author-fast {
+  background: var(--accent-color-light);
+  border: 2px solid var(--accent-color);
+}
+
+.business-section-2 .author-badge {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.business-section-2 .author-badge i {
+  font-size: 1.8rem;
+}
+
+.business-section-2 .slow-badge {
+  background: #fee2e2;
+}
+
+.business-section-2 .slow-badge i {
+  color: #ef4444;
+}
+
+.business-section-2 .fast-badge {
+  background: #d1fae5;
+}
+
+.business-section-2 .fast-badge i {
+  color: var(--accent-color);
+}
+
+.business-section-2 .author-card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+}
+
+.business-section-2 .author-card p {
+  font-size: 1rem;
+  color: var(--default-color);
+  line-height: 1.6;
+}
+
+.business-section-2 .author-difference {
+  margin-top: 3rem;
+}
+
+.business-section-2 .author-difference p {
+  font-size: 1.1rem;
+  color: var(--default-color);
+  margin-bottom: 0.5rem;
+}
+
+.business-section-2 .difference-highlight {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--accent-color) !important;
+  margin-top: 1rem;
+}
+
+.business-section-2 .cta-wrapper {
+  margin-top: 3rem;
+}
