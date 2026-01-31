@@ -151,7 +151,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  max-height: 42px;
   /* Invert logo for light mode (original is white for dark bg) */
   filter: invert(1);
 }
@@ -196,9 +196,9 @@ h6 {
 
 .header .logo h1,
 .header .sitename a {
-  font-size: 22px;
+  font-size: 26px;
   margin: 0;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--heading-color);
   text-decoration: none;
 }
@@ -1010,6 +1010,11 @@ section,
   overflow-y: visible;
 }
 
+.hero-2 > .container {
+  max-width: 1400px;
+  padding-left: 60px;
+}
+
 .hero-2::before {
   content: "";
   position: absolute;
@@ -1115,7 +1120,7 @@ section,
   position: relative;
   perspective: 1500px;
   transform-style: preserve-3d;
-  margin-right: -80px;
+  margin-right: -40px;
   padding: 20px 0;
 }
 
@@ -1136,7 +1141,7 @@ section,
 .laptop-mockup {
   position: relative;
   z-index: 1;
-  width: 130%;
+  width: 115%;
   max-width: none;
   transform: rotateY(-8deg) rotateX(3deg);
   transform-origin: left center;
@@ -1280,6 +1285,10 @@ section,
   .hero-2 {
     padding: 100px 0 60px;
     overflow: hidden;
+  }
+
+  .hero-2 > .container {
+    padding-left: 15px;
   }
 
   .hero-2 .hero-content {
