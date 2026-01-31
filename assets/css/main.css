@@ -1134,32 +1134,15 @@ section,
   border-radius: 50%;
 }
 
-/* MacBook PNG Mockup */
-.macbook-mockup {
-  position: relative;
-  z-index: 1;
+/* Hero MacBook Image */
+.hero-macbook {
+  display: block;
   width: 120%;
   max-width: none;
+  height: auto;
   margin-left: -10%;
-}
-
-.macbook-frame {
-  display: block;
-  width: 100%;
-  height: auto;
   position: relative;
-  z-index: 2;
-}
-
-.macbook-screen-content {
-  position: absolute;
   z-index: 1;
-  /* Position the screenshot inside the MacBook screen area */
-  top: 8%;
-  left: 30%;
-  width: 38%;
-  height: auto;
-  border-radius: 2px;
 }
 
 /* Hero Responsive */
@@ -1198,13 +1181,9 @@ section,
     perspective: none;
   }
 
-  .macbook-mockup {
+  .hero-macbook {
     width: 100%;
     margin-left: 0;
-  }
-
-  .macbook-screen-content {
-    transform: none;
   }
 }
 
