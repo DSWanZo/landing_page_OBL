@@ -1155,14 +1155,11 @@ section,
   position: absolute;
   z-index: 1;
   /* Position the screenshot inside the MacBook screen area */
-  top: 5.5%;
-  left: 12.5%;
-  width: 63%;
+  top: 4%;
+  left: 19.5%;
+  width: 48%;
   height: auto;
-  border-radius: 4px;
-  /* Apply same perspective as the MacBook image */
-  transform: perspective(1000px) rotateY(-8deg) rotateX(1deg);
-  transform-origin: left center;
+  border-radius: 2px;
 }
 
 /* Hero Responsive */
