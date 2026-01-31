@@ -70,35 +70,44 @@
 
   <main class="main">
 
-    <!-- Hero 2 Section -->
+    <!-- Hero Section -->
    <section id="hero-2" class="hero-2 section">
       <div class="container">
-        <div class="hero-wrapper">
+        <div class="row align-items-center">
 
-          <div class="hero-main-content hero-content text-center">
-            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="3100">
-              <strong>
-                <span class="hero-lead" data-i18n="hero.lead">L'écriture n'est plus un frein :</span><br><br>
-                <span data-i18n="hero.title">Des livres générés en moins de 30min.</span> <br><p></p>
-                <span class="typed" data-typed-items="Sans écrire,Sans corriger,Sans superviser" data-i18n-typed="hero.typed_items"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span>
-              </strong>
-              <strong class="hero-tagline" data-i18n="hero.tagline">Publiez plus. Gagnez plus.<p></p></strong>
-            </h1>
+          <!-- Left Column - Text -->
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                <span class="hero-lead" data-i18n="hero.lead">L'écriture n'est plus un frein :</span>
+                <span class="hero-main-title" data-i18n="hero.title">Des livres générés en moins de 30min.</span>
+                <span class="typed-wrapper">
+                  <span class="typed" data-typed-items="Sans écrire,Sans corriger,Sans superviser" data-i18n-typed="hero.typed_items"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span>
+                </span>
+              </h1>
 
-            <div class="hero-actions hero-cta-container" data-aos="fade-up" data-aos-delay="600">
-              <a href="https://app.onebooklab.com/login" class="cta-button cta-primary" data-i18n="hero.cta">Tester OneBookLab™&nbsp;dès maintenant !</a>
+              <p class="hero-tagline" data-i18n="hero.tagline">Publiez plus. Gagnez plus.</p>
+
+              <p class="hero-description" data-i18n="hero.description">Et générez un livre complet en moins de 30 minutes.</p>
+
+              <div class="hero-cta-buttons">
+                <a href="https://app.onebooklab.com/login" class="cta-button cta-primary" data-i18n="hero.cta">Tester OneBookLab™</a>
+                <a href="pricing.html" class="cta-button cta-secondary" data-i18n="hero.cta_pricing">Voir les offres</a>
+              </div>
             </div>
-            <div class="hero-accelerate hero-size-heading"><u data-i18n="hero.accelerate">Accélérez votre Business !</u></div><br>
           </div>
 
-          <div class="hero-image-showcase text-center" data-aos="fade-up" data-aos-delay="500">
-            <h3 class="hero-description hero-description--white" data-aos="fade-up" data-aos-delay="500"><b data-i18n="hero.description">Et générez un livre complet en moins de 30 minutes.</b></h3>
+          <!-- Right Column - App Screenshot -->
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="hero-image-wrapper">
+              <div class="hero-image-glow"></div>
+              <img src="assets/screen_appli.png" alt="OneBookLab Application" class="hero-app-screenshot">
+            </div>
           </div>
+
         </div>
-
       </div>
-
-    </section><!-- /Hero 2 Section -->
+    </section><!-- /Hero Section -->
 
     <!-- Steps 2 Section -->
     <section id="steps-2" class="steps-2 section">

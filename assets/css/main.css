@@ -960,10 +960,10 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Hero 2 Section
+# Hero Section
 --------------------------------------------------------------*/
 .hero-2 {
-  padding: 100px 0 80px;
+  padding: 120px 0 100px;
   background: linear-gradient(180deg, #f0fdf4 0%, var(--background-color) 100%);
   position: relative;
   overflow: hidden;
@@ -973,12 +973,10 @@ section,
   content: "";
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 1200px;
+  right: 0;
+  width: 60%;
   height: 100%;
-  background: radial-gradient(ellipse at top, rgba(16, 185, 129, 0.08) 0%, transparent 60%);
+  background: radial-gradient(ellipse at top right, rgba(16, 185, 129, 0.1) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -987,40 +985,164 @@ section,
   z-index: 2;
 }
 
-.hero-2 .hero-content .hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--surface-color);
-  padding: 8px 20px;
-  border-radius: 50px;
-  margin-bottom: 32px;
-  box-shadow: 0 4px 20px color-mix(in srgb, var(--default-color), transparent 90%);
-  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
-}
-
-.hero-2 .hero-content .hero-badge i {
-  color: #FFD700;
-  font-size: 0.875rem;
-}
-
-.hero-2 .hero-content .hero-badge span {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--heading-color);
-}
-
-.hero-2 .hero-content .hero-title {
-  font-size: 2.8rem;
-  font-weight: 400;
-  line-height: 1.1;
+.hero-2 .hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.15;
   margin-bottom: 24px;
   color: var(--heading-color);
   letter-spacing: -0.02em;
 }
 
-.hero-2 .hero-content .hero-title strong {
-  font-weight: 700;
+.hero-2 .hero-title .hero-lead {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+  letter-spacing: 0;
+}
+
+.hero-2 .hero-title .hero-main-title {
+  display: block;
+}
+
+.hero-2 .hero-title .typed-wrapper {
+  display: block;
+  margin-top: 8px;
+  color: var(--accent-color);
+}
+
+.hero-2 .hero-tagline {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 16px;
+}
+
+.hero-2 .hero-description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  max-width: 480px;
+}
+
+/* Hero CTA Buttons */
+.hero-cta-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-cta-buttons .cta-button {
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.hero-cta-buttons .cta-secondary {
+  background: transparent;
+  color: var(--heading-color);
+  border: 2px solid var(--border-color);
+}
+
+.hero-cta-buttons .cta-secondary:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  background: rgba(16, 185, 129, 0.05);
+}
+
+/* Hero Image with Glow Effect */
+.hero-image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, transparent 70%);
+  filter: blur(40px);
+  z-index: 0;
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+.hero-app-screenshot {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-app-screenshot:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow:
+    0 35px 60px -15px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+/* Hero Responsive */
+@media (max-width: 991px) {
+  .hero-2 {
+    padding: 100px 0 60px;
+  }
+
+  .hero-2 .hero-content {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .hero-2 .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-2 .hero-description {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-2 .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-cta-buttons {
+    flex-direction: column;
+  }
+
+  .hero-cta-buttons .cta-button {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .hero-2 .hero-content .hero-lead {
