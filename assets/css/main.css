@@ -335,6 +335,45 @@ h6 {
   right: 12px;
 }
 
+/* Header responsive - Large screens */
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .header .sitename a {
+    font-size: 18px;
+  }
+
+  .header .btn-getstarted {
+    padding: 8px 18px;
+    font-size: 13px;
+    margin-left: 20px;
+  }
+}
+
+/* Header responsive - Medium-large screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header .sitename a {
+    font-size: 16px;
+  }
+
+  .header .logo img {
+    max-height: 28px;
+  }
+
+  .header .btn-getstarted {
+    padding: 7px 14px;
+    font-size: 12px;
+    margin-left: 15px;
+  }
+
+  .navmenu>ul>li {
+    padding: 12px 8px;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 1200px) {
   .header {
     padding-top: 10px;
@@ -1063,46 +1102,117 @@ section,
   overflow: visible;
 }
 
+/* Laptop Mockup Container */
 .hero-image-wrapper {
   position: relative;
   perspective: 1500px;
   transform-style: preserve-3d;
-  margin-right: -60px;
+  margin-right: -80px;
   padding: 20px 0;
 }
 
 .hero-image-glow {
   position: absolute;
-  top: 10%;
-  left: 0;
-  width: 100%;
-  height: 80%;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
-  filter: blur(40px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 60%;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+  filter: blur(60px);
   z-index: 0;
   border-radius: 50%;
 }
 
-.hero-app-screenshot {
+/* Laptop Frame */
+.laptop-mockup {
   position: relative;
   z-index: 1;
-  width: 125%;
+  width: 130%;
   max-width: none;
-  height: auto;
-  border-radius: 12px;
-  box-shadow:
-    0 25px 50px -12px rgba(0, 0, 0, 0.12),
-    0 0 0 1px rgba(0, 0, 0, 0.05);
-  transform: rotateY(-5deg) rotateX(2deg);
+  transform: rotateY(-8deg) rotateX(3deg);
   transform-origin: left center;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease;
 }
 
-.hero-app-screenshot:hover {
-  transform: rotateY(-2deg) rotateX(1deg) scale(1.01);
+.laptop-mockup:hover {
+  transform: rotateY(-4deg) rotateX(2deg);
+}
+
+/* Laptop Screen (lid) */
+.laptop-screen {
+  position: relative;
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+  border-radius: 16px 16px 0 0;
+  padding: 12px 12px 0 12px;
   box-shadow:
-    0 30px 60px -15px rgba(0, 0, 0, 0.15),
-    0 0 0 1px rgba(0, 0, 0, 0.05);
+    0 -2px 20px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Screen bezel */
+.laptop-screen::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: #0a0a0a;
+  border-radius: 50%;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* The actual screen content */
+.laptop-screen-content {
+  position: relative;
+  background: #000;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+}
+
+.laptop-screen-content img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Laptop Base (keyboard area) */
+.laptop-base {
+  position: relative;
+  height: 14px;
+  background: linear-gradient(180deg, #e8e8e8 0%, #d4d4d4 50%, #c0c0c0 100%);
+  border-radius: 0 0 16px 16px;
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Notch on laptop base */
+.laptop-base::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(180deg, #b0b0b0 0%, #a0a0a0 100%);
+  border-radius: 0 0 4px 4px;
+}
+
+/* Overall laptop shadow */
+.laptop-mockup::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 10%;
+  right: 10%;
+  height: 20px;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, transparent 70%);
+  filter: blur(10px);
 }
 
 /* Hero Responsive */
@@ -1137,14 +1247,23 @@ section,
     perspective: none;
   }
 
-  .hero-app-screenshot {
+  .laptop-mockup {
     width: 100%;
     transform: none;
-    border-radius: 12px;
   }
 
-  .hero-app-screenshot:hover {
-    transform: scale(1.02);
+  .laptop-mockup:hover {
+    transform: none;
+  }
+
+  .laptop-screen {
+    border-radius: 12px 12px 0 0;
+    padding: 8px 8px 0 8px;
+  }
+
+  .laptop-base {
+    height: 10px;
+    border-radius: 0 0 12px 12px;
   }
 }
 
