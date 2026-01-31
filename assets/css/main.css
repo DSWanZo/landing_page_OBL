@@ -1003,11 +1003,14 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero-2 {
-  padding: 120px 0 100px;
+  min-height: 100vh;
   background: linear-gradient(180deg, #f0fdf4 0%, var(--background-color) 100%);
   position: relative;
   overflow-x: clip;
   overflow-y: visible;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
 }
 
 .hero-2 > .container {
