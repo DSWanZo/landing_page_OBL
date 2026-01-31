@@ -1103,6 +1103,7 @@ section,
 .hero-2 .row {
   overflow: visible;
   min-height: 500px;
+  align-items: center;
 }
 
 .hero-2 .col-lg-6 {
