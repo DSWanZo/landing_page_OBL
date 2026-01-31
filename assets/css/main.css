@@ -966,7 +966,8 @@ section,
   padding: 120px 0 100px;
   background: linear-gradient(180deg, #f0fdf4 0%, var(--background-color) 100%);
   position: relative;
-  overflow: hidden;
+  overflow-x: clip;
+  overflow-y: visible;
 }
 
 .hero-2::before {
@@ -1053,54 +1054,70 @@ section,
   background: rgba(16, 185, 129, 0.05);
 }
 
-/* Hero Image with Glow Effect */
+/* Hero Image with 3D Perspective Effect */
+.hero-2 .row {
+  overflow: visible;
+}
+
+.hero-2 .col-lg-6:last-child {
+  overflow: visible;
+}
+
 .hero-image-wrapper {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  margin-right: -150px;
+  padding: 20px 0;
 }
 
 .hero-image-glow {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, transparent 70%);
-  filter: blur(40px);
+  top: 5%;
+  left: -10%;
+  width: 120%;
+  height: 90%;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(16, 185, 129, 0.03) 100%);
+  filter: blur(50px);
   z-index: 0;
-  animation: pulse-glow 4s ease-in-out infinite;
+  border-radius: 30%;
+  animation: pulse-glow 5s ease-in-out infinite;
 }
 
 @keyframes pulse-glow {
   0%, 100% {
     opacity: 0.6;
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1);
   }
   50% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 0.9;
+    transform: scale(1.03);
   }
 }
 
 .hero-app-screenshot {
   position: relative;
   z-index: 1;
-  max-width: 100%;
+  width: 160%;
+  max-width: none;
   height: auto;
-  border-radius: 16px;
+  border-radius: 12px;
   box-shadow:
-    0 25px 50px -12px rgba(0, 0, 0, 0.15),
+    0 60px 100px -30px rgba(0, 0, 0, 0.25),
+    0 30px 60px -20px rgba(0, 0, 0, 0.2),
+    -20px 0 40px -20px rgba(0, 0, 0, 0.1),
     0 0 0 1px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: rotateY(-12deg) rotateX(4deg) translateX(20px);
+  transform-origin: left center;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.5s ease;
 }
 
 .hero-app-screenshot:hover {
-  transform: translateY(-8px) scale(1.02);
+  transform: rotateY(-6deg) rotateX(2deg) translateX(10px) scale(1.02);
   box-shadow:
-    0 35px 60px -15px rgba(0, 0, 0, 0.2),
+    0 70px 120px -30px rgba(0, 0, 0, 0.3),
+    0 40px 80px -20px rgba(0, 0, 0, 0.25),
+    -30px 0 50px -20px rgba(0, 0, 0, 0.15),
     0 0 0 1px rgba(0, 0, 0, 0.05);
 }
 
@@ -1108,6 +1125,7 @@ section,
 @media (max-width: 991px) {
   .hero-2 {
     padding: 100px 0 60px;
+    overflow: hidden;
   }
 
   .hero-2 .hero-content {
@@ -1127,6 +1145,22 @@ section,
 
   .hero-cta-buttons {
     justify-content: center;
+  }
+
+  .hero-image-wrapper {
+    margin-right: 0;
+    margin-left: 0;
+    perspective: none;
+  }
+
+  .hero-app-screenshot {
+    width: 100%;
+    transform: none;
+    border-radius: 12px;
+  }
+
+  .hero-app-screenshot:hover {
+    transform: scale(1.02);
   }
 }
 
