@@ -1007,7 +1007,7 @@ section,
   position: relative;
   overflow-x: clip;
   overflow-y: visible;
-  padding-top: 120px;
+  padding-top: 10px;
   padding-bottom: 60px;
 }
 
@@ -1135,7 +1135,7 @@ section,
   position: relative;
   padding: 20px 0;
   /* Agrandir l'image en la faisant déborder */
-  width: 140%;
+  width: 170%;
   margin-left: -20%;
 }
 
