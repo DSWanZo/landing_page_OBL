@@ -1055,8 +1055,7 @@ section,
 .hero-2 .hero-title .hero-main-title {
   display: block;
   color: var(--accent-color);
-  font-style: italic;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .hero-2 .hero-title .hero-subtitle {
