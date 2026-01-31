@@ -1015,7 +1015,6 @@ section,
 
 .hero-2 > .container {
   max-width: 1400px;
-  padding-left: 60px;
 }
 
 .hero-2::before {
