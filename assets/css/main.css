@@ -1007,6 +1007,7 @@ section,
   position: relative;
   overflow-x: clip;
   overflow-y: visible;
+  margin-top: -40px;
 }
 
 .hero-2 > .container {
@@ -1116,7 +1117,6 @@ section,
 /* Hero Image with 3D Perspective Effect */
 .hero-2 .row {
   overflow: visible;
-  min-height: 500px;
   align-items: center;
 }
 
