@@ -1199,16 +1199,16 @@ section,
 /* Laptop Base (keyboard area) - laid flat with perspective */
 .laptop-base {
   position: relative;
-  padding: 25px 30px 35px;
+  padding: 20px 15px 30px;
   background: linear-gradient(180deg, #d0d0d0 0%, #c0c0c0 30%, #b0b0b0 100%);
   border-radius: 0 0 12px 12px;
   border: 2px solid #a0a0a0;
   border-top: none;
   transform-style: preserve-3d;
-  transform: rotateX(55deg);
+  transform: rotateX(45deg);
   transform-origin: top center;
   box-shadow:
-    0 50px 60px -15px rgba(0, 0, 0, 0.4),
+    0 60px 70px -15px rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
@@ -1216,10 +1216,10 @@ section,
 .laptop-base::before {
   content: '';
   position: absolute;
-  top: -5px;
+  top: -6px;
   left: 0;
   right: 0;
-  height: 10px;
+  height: 12px;
   background: linear-gradient(180deg, #505050 0%, #707070 100%);
   border-radius: 0;
 }
@@ -1228,51 +1228,48 @@ section,
 .laptop-keyboard {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  padding: 12px;
+  gap: 5px;
+  padding: 10px 8px;
   background: #1a1a1a;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
 }
 
 .keyboard-row {
   display: flex;
-  gap: 3px;
-  justify-content: center;
+  gap: 4px;
+  justify-content: stretch;
 }
 
 .keyboard-row .key {
-  height: 18px;
+  flex: 1;
+  height: 24px;
   background: linear-gradient(180deg, #3a3a3a 0%, #2a2a2a 100%);
   border-radius: 3px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.keyboard-row .key.small {
-  width: 22px;
-}
-
 .keyboard-row .key.medium {
-  width: 32px;
+  flex: 1.4;
 }
 
 .keyboard-row .key.large {
-  width: 42px;
+  flex: 1.8;
 }
 
 .keyboard-row .key.spacebar {
-  width: 110px;
+  flex: 5;
 }
 
 /* Trackpad */
 .laptop-trackpad {
-  width: 140px;
-  height: 90px;
+  width: 45%;
+  height: 100px;
   margin: 0 auto;
   background: linear-gradient(180deg, #c8c8c8 0%, #b8b8b8 100%);
   border-radius: 8px;
   box-shadow:
-    inset 0 1px 2px rgba(0, 0, 0, 0.1),
+    inset 0 1px 3px rgba(0, 0, 0, 0.15),
     0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
@@ -1356,32 +1353,20 @@ section,
   .laptop-keyboard {
     padding: 5px;
     gap: 2px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+  }
+
+  .keyboard-row {
+    gap: 2px;
   }
 
   .keyboard-row .key {
-    height: 8px;
-  }
-
-  .keyboard-row .key.small {
-    width: 10px;
-  }
-
-  .keyboard-row .key.medium {
-    width: 16px;
-  }
-
-  .keyboard-row .key.large {
-    width: 22px;
-  }
-
-  .keyboard-row .key.spacebar {
-    width: 50px;
+    height: 12px;
   }
 
   .laptop-trackpad {
-    width: 70px;
-    height: 40px;
+    width: 40%;
+    height: 50px;
   }
 }
 
