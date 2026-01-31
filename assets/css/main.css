@@ -3869,14 +3869,14 @@ lite-youtube {
   padding: 80px 0;
 }
 
-.business-section.dark-background {
-  background-color: #0f172a;
+.business-section.light-background {
+  background-color: var(--background-color-alt);
 }
 
 .business-section .business-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--heading-color);
   margin-bottom: 2rem;
 }
 
@@ -3886,7 +3886,7 @@ lite-youtube {
 
 .business-section .problem-intro p {
   font-size: 1.1rem;
-  color: #e2e8f0;
+  color: var(--default-color);
   margin-bottom: 0.5rem;
 }
 
@@ -3897,7 +3897,7 @@ lite-youtube {
 .business-section .time-problem h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--heading-color);
   margin-bottom: 1rem;
 }
 
@@ -3909,20 +3909,20 @@ lite-youtube {
 
 .business-section .time-list li {
   font-size: 1.1rem;
-  color: #e2e8f0;
+  color: var(--default-color);
   margin-bottom: 0.5rem;
 }
 
 .business-section .result-block h4 {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--heading-color);
   margin-bottom: 1rem;
 }
 
 .business-section .result-block p {
   font-size: 1.1rem;
-  color: #f87171;
+  color: #dc2626;
   margin-bottom: 0.4rem;
 }
 
@@ -3930,18 +3930,18 @@ lite-youtube {
   width: 100%;
   max-width: 100%;
   border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .business-section .solution-block {
   margin-top: 4rem;
   padding-top: 3rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--border-color);
 }
 
 .business-section .solution-block h3 {
   font-size: 1.3rem;
-  color: #cbd5e1;
+  color: var(--text-muted);
   margin-bottom: 0.5rem;
 }
 
@@ -3954,7 +3954,7 @@ lite-youtube {
 
 .business-section .solution-desc {
   font-size: 1.2rem;
-  color: #e2e8f0;
+  color: var(--default-color);
 }
 
 /*--------------------------------------------------------------
