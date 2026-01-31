@@ -3525,6 +3525,45 @@ section,
   font-size: 14px;
 }
 
+/* Testimonials Carousel */
+.testimonials-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 0 -15px;
+  padding: 0 15px;
+}
+
+.testimonials-carousel {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 0 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.testimonials-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonials-carousel .testimonial-card {
+  flex: 0 0 350px;
+  scroll-snap-align: start;
+  min-width: 300px;
+  max-width: 350px;
+}
+
+@media (max-width: 768px) {
+  .testimonials-carousel .testimonial-card {
+    flex: 0 0 280px;
+    min-width: 280px;
+    max-width: 280px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Light Mode Adjustments
 --------------------------------------------------------------*/
