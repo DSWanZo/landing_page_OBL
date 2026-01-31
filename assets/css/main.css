@@ -1199,16 +1199,16 @@ section,
 /* Laptop Base (keyboard area) - laid flat with perspective */
 .laptop-base {
   position: relative;
-  padding: 15px 20px 20px;
+  padding: 25px 30px 35px;
   background: linear-gradient(180deg, #d0d0d0 0%, #c0c0c0 30%, #b0b0b0 100%);
   border-radius: 0 0 12px 12px;
   border: 2px solid #a0a0a0;
   border-top: none;
   transform-style: preserve-3d;
-  transform: rotateX(70deg);
+  transform: rotateX(55deg);
   transform-origin: top center;
   box-shadow:
-    0 30px 40px -10px rgba(0, 0, 0, 0.35),
+    0 50px 60px -15px rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
@@ -1216,11 +1216,11 @@ section,
 .laptop-base::before {
   content: '';
   position: absolute;
-  top: -3px;
+  top: -5px;
   left: 0;
   right: 0;
-  height: 6px;
-  background: linear-gradient(180deg, #606060 0%, #808080 100%);
+  height: 10px;
+  background: linear-gradient(180deg, #505050 0%, #707070 100%);
   border-radius: 0;
 }
 
@@ -1228,49 +1228,49 @@ section,
 .laptop-keyboard {
   display: flex;
   flex-direction: column;
-  gap: 3px;
-  padding: 8px;
+  gap: 4px;
+  padding: 12px;
   background: #1a1a1a;
-  border-radius: 6px;
-  margin-bottom: 8px;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 .keyboard-row {
   display: flex;
-  gap: 2px;
+  gap: 3px;
   justify-content: center;
 }
 
 .keyboard-row .key {
-  height: 12px;
+  height: 18px;
   background: linear-gradient(180deg, #3a3a3a 0%, #2a2a2a 100%);
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .keyboard-row .key.small {
-  width: 16px;
+  width: 22px;
 }
 
 .keyboard-row .key.medium {
-  width: 24px;
-}
-
-.keyboard-row .key.large {
   width: 32px;
 }
 
+.keyboard-row .key.large {
+  width: 42px;
+}
+
 .keyboard-row .key.spacebar {
-  width: 80px;
+  width: 110px;
 }
 
 /* Trackpad */
 .laptop-trackpad {
-  width: 100px;
-  height: 60px;
+  width: 140px;
+  height: 90px;
   margin: 0 auto;
   background: linear-gradient(180deg, #c8c8c8 0%, #b8b8b8 100%);
-  border-radius: 6px;
+  border-radius: 8px;
   box-shadow:
     inset 0 1px 2px rgba(0, 0, 0, 0.1),
     0 1px 0 rgba(255, 255, 255, 0.5);
