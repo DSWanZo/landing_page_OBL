@@ -150,6 +150,8 @@ h6 {
 .header .logo img {
   max-height: 36px;
   margin-right: 8px;
+  /* Invert logo for light mode (original is white for dark bg) */
+  filter: invert(1);
 }
 
 .btn-getstarted,
