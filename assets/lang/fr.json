@@ -97,13 +97,12 @@
   },
   "features2": {
     "title": "OneBookLab™ repose sur une structure maîtrisée.",
-    "subtitle1": "Chaque livre généré suit une architecture claire et cohérente.",
-    "subtitle2": "La structure, le rythme et le fil narratif sont contrôlés.",
-    "item1": "❌Pas de chapitres déséquilibrés.",
-    "item2": "❌Pas de ruptures de ton.",
-    "item3": "❌Pas de dérives en cours d'écriture.",
-    "conclusion": "Des livres structurés et fiables lors de chaque génération.",
-    "demo_btn": "Voir la Démo"
+    "intro": "Chaque livre généré suit une architecture pensée pour la publication.",
+    "item1": "Chapitres équilibrés et bien proportionnés",
+    "item2": "Ton cohérent du début à la fin",
+    "item3": "Fil narratif maîtrisé et progression fluide",
+    "conclusion": "Des livres prêts à publier, à chaque génération.",
+    "demo_title": "Voir OneBookLab™ en action"
   },
   "features3": {
     "title": "Un accès à nos tutoriels et ressources :",

@@ -97,13 +97,12 @@
   },
   "features2": {
     "title": "OneBookLab™ is built on a controlled structure.",
-    "subtitle1": "Every generated book follows a clear, coherent architecture.",
-    "subtitle2": "Structure, pacing, and narrative flow are fully controlled.",
-    "item1": "❌No unbalanced chapters.",
-    "item2": "❌No tone inconsistencies.",
-    "item3": "❌No off-topic tangents.",
-    "conclusion": "Structured, reliable books with every generation.",
-    "demo_btn": "Watch the Demo"
+    "intro": "Every generated book follows an architecture designed for publishing.",
+    "item1": "Well-balanced and proportioned chapters",
+    "item2": "Consistent tone from start to finish",
+    "item3": "Controlled narrative flow and smooth progression",
+    "conclusion": "Publish-ready books, every single time.",
+    "demo_title": "See OneBookLab™ in action"
   },
   "features3": {
     "title": "Access our tutorials and resources:",

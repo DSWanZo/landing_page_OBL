@@ -338,7 +338,6 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2 class="hero-size-heading" data-i18n="features2.title">OneBookLab™ repose sur une structure maîtrisée.</h2>
-
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -347,31 +346,47 @@
 
           <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
             <div class="features-content">
-              <h3 data-i18n="features2.subtitle1">Chaque livre généré suit une architecture claire et cohérente.<div><br></div>
-              </h3>
-              <h3 data-i18n="features2.subtitle2">La structure, le rythme et le fil narratif sont contrôlés.</h3>
+              <p class="features-intro" data-i18n="features2.intro">Chaque livre généré suit une architecture pensée pour la publication.</p>
               <ul class="features-2-list">
-                <li data-i18n="features2.item1">❌Pas de chapitres déséquilibrés.</li>
-                <li data-i18n="features2.item2">❌Pas de ruptures de ton.</li>
-                <li data-i18n="features2.item3">❌Pas de dérives en cours d'écriture.</li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span data-i18n="features2.item1">Chapitres équilibrés et bien proportionnés</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span data-i18n="features2.item2">Ton cohérent du début à la fin</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span data-i18n="features2.item3">Fil narratif maîtrisé et progression fluide</span>
+                </li>
               </ul>
+              <p class="features-conclusion" data-i18n="features2.conclusion">Des livres prêts à publier, à chaque génération.</p>
             </div>
           </div>
 
-          <div class="col-lg-6 image-viewer-column" data-aos="fade-left" data-aos-delay="300">
-            <div class="image-composition">
-              <div class="image-main">
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="app-mockup">
+              <div class="mockup-header">
+                <div class="mockup-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="mockup-title">OneBookLab™</div>
+              </div>
+              <div class="mockup-content">
                 <div class="image-viewer" data-image-viewer>
-                  <img src="https://i.ibb.co/j9J8xSP6/OBL.jpg" alt="Modern office with a team working" class="image-viewer-slide img-fluid is-active" loading="lazy" data-image-viewer-slide>
-                  <img src="https://i.ibb.co/LdnL5QWf/NF-Livre.jpg" alt="Collaborative discussiosss" class="image-viewer-slide img-fluid" loading="lazy" data-image-viewer-slide>
-                  <img src="https://app.onebooklab.com/tutorial-images/F-Pitch.jpg" alt="Collaborative discussion" class="image-viewer-slide img-fluid" loading="lazy" data-image-viewer-slide>
-                  <img src="https://app.onebooklab.com/tutorial-images/F-Perso.jpg" alt="Collaborative discussions" class="image-viewer-slide img-fluid" loading="lazy" data-image-viewer-slide>
-                  <img src="https://app.onebooklab.com/tutorial-images/F-auteurs.jpg" alt="Collaborative discussionss" class="image-viewer-slide img-fluid" loading="lazy" data-image-viewer-slide>
-                  <img src="https://app.onebooklab.com/tutorial-images/F-Guide-2.jpg" alt="Collaborative discussionsss" class="image-viewer-slide img-fluid" loading="lazy" data-image-viewer-slide>
-                  <button class="image-viewer-control prev" type="button" data-image-viewer-prev aria-label="Afficher l'image précédente">
+                  <img src="https://i.ibb.co/j9J8xSP6/OBL.jpg" alt="Interface OneBookLab" class="image-viewer-slide is-active" loading="lazy" data-image-viewer-slide>
+                  <img src="https://i.ibb.co/LdnL5QWf/NF-Livre.jpg" alt="Génération de livre" class="image-viewer-slide" loading="lazy" data-image-viewer-slide>
+                  <img src="https://app.onebooklab.com/tutorial-images/F-Pitch.jpg" alt="Configuration du pitch" class="image-viewer-slide" loading="lazy" data-image-viewer-slide>
+                  <img src="https://app.onebooklab.com/tutorial-images/F-Perso.jpg" alt="Personnages" class="image-viewer-slide" loading="lazy" data-image-viewer-slide>
+                  <img src="https://app.onebooklab.com/tutorial-images/F-auteurs.jpg" alt="Style d'auteur" class="image-viewer-slide" loading="lazy" data-image-viewer-slide>
+                  <img src="https://app.onebooklab.com/tutorial-images/F-Guide-2.jpg" alt="Guide de génération" class="image-viewer-slide" loading="lazy" data-image-viewer-slide>
+                  <button class="image-viewer-control prev" type="button" data-image-viewer-prev aria-label="Image précédente">
                     <i class="bi bi-chevron-left" aria-hidden="true"></i>
                   </button>
-                  <button class="image-viewer-control next" type="button" data-image-viewer-next aria-label="Afficher l'image suivante">
+                  <button class="image-viewer-control next" type="button" data-image-viewer-next aria-label="Image suivante">
                     <i class="bi bi-chevron-right" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -381,13 +396,14 @@
 
         </div>
 
-        <br><br>
-        <div class="text-center">
-          <h3><b data-i18n="features2.conclusion">Des livres structurés et fiables lors de&nbsp;chaque génération.</b></h3><br><br>
-          <div class="cta-container">
-            <button type="button" class="cta-button cta-primary" data-bs-toggle="modal" data-bs-target="#demoModal" data-i18n="features2.demo_btn">Voir la Démo</button>
+        <!-- Demo Video -->
+        <div class="demo-video-section" data-aos="fade-up" data-aos-delay="400">
+          <h3 class="text-center" data-i18n="features2.demo_title">Voir OneBookLab™ en action</h3>
+          <div class="demo-video-wrapper">
+            <lite-youtube videoid="ux9HZuPSL4A" playlabel="Voir la démo OneBookLab™"></lite-youtube>
           </div>
         </div>
+
       </div>
 
     </section><!-- /Features 2 Section -->
@@ -626,21 +642,6 @@
     </section><!-- /Steps Section -->
 
   </main>
-
-  <!-- Demo Modal -->
-  <div class="modal fade demo-modal" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="demoModalLabel" data-i18n="modal.demo_title">Voir la démo OneBookLab™</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer" data-i18n-aria="modal.close"></button>
-        </div>
-        <div class="modal-body">
-          <lite-youtube videoid="ux9HZuPSL4A" playlabel="Voir la démo OneBookLab™" data-i18n-aria="modal.demo_title"></lite-youtube>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <footer id="footer" class="footer position-relative dark-background">
 
