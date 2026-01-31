@@ -1155,9 +1155,9 @@ section,
   position: absolute;
   z-index: 1;
   /* Position the screenshot inside the MacBook screen area */
-  top: 4%;
-  left: 19.5%;
-  width: 48%;
+  top: 6%;
+  left: 25%;
+  width: 44%;
   height: auto;
   border-radius: 2px;
 }
