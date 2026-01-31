@@ -214,7 +214,7 @@
       const items = typedItems.split(',').map(item => item.trim()).filter(item => item.length > 0);
 
       if (items.length > 0 && typeof Typed !== 'undefined') {
-        new Typed('.typed', {
+        window.typedInstance = new Typed('.typed', {
           strings: items,
           loop: true,
           typeSpeed: 80,

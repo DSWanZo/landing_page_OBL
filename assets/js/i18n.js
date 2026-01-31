@@ -152,13 +152,34 @@
         }
       });
 
-      // Handle Typed.js data attribute
+      // Handle Typed.js - reinitialize with new strings
       const typedElement = document.querySelector('.typed[data-i18n-typed]');
-      if (typedElement) {
+      if (typedElement && typeof Typed !== 'undefined') {
         const key = typedElement.getAttribute('data-i18n-typed');
         const translation = this.t(key);
         if (translation !== key) {
+          // Update the data attribute
           typedElement.setAttribute('data-typed-items', translation);
+
+          // Destroy existing Typed instance if it exists
+          if (window.typedInstance) {
+            window.typedInstance.destroy();
+          }
+
+          // Clear the element
+          typedElement.textContent = '';
+
+          // Reinitialize Typed.js with new strings
+          const items = translation.split(',').map(item => item.trim()).filter(item => item.length > 0);
+          if (items.length > 0) {
+            window.typedInstance = new Typed('.typed', {
+              strings: items,
+              loop: true,
+              typeSpeed: 80,
+              backSpeed: 30,
+              backDelay: 2000
+            });
+          }
         }
       }
     },
