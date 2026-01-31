@@ -1140,10 +1140,10 @@ section,
 /* Hero MacBook Image */
 .hero-macbook {
   display: block;
-  width: 180%;
+  width: 200%;
   max-width: none;
   height: auto;
-  margin-left: -20%;
+  margin-left: -50%;
   position: relative;
   z-index: 1;
 }
