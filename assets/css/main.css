@@ -1115,12 +1115,9 @@ section,
   justify-content: center;
 }
 
-/* Laptop Mockup Container */
+/* MacBook Mockup Container */
 .hero-image-wrapper {
   position: relative;
-  perspective: 1500px;
-  transform-style: preserve-3d;
-  margin-right: -40px;
   padding: 20px 0;
 }
 
@@ -1131,161 +1128,41 @@ section,
   transform: translate(-50%, -50%);
   width: 80%;
   height: 60%;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
   filter: blur(60px);
   z-index: 0;
   border-radius: 50%;
 }
 
-/* Laptop Frame - 3D Open Laptop Effect */
-.laptop-mockup {
+/* MacBook PNG Mockup */
+.macbook-mockup {
   position: relative;
   z-index: 1;
-  width: 115%;
+  width: 120%;
   max-width: none;
-  transform-style: preserve-3d;
-  transform: rotateX(-15deg) rotateY(-25deg);
-  transform-origin: center center;
-  transition: transform 0.4s ease;
+  margin-left: -10%;
 }
 
-.laptop-mockup:hover {
-  transform: rotateX(-12deg) rotateY(-20deg);
-}
-
-/* Laptop Screen (lid) - tilted back */
-.laptop-screen {
-  position: relative;
-  background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
-  border-radius: 12px 12px 0 0;
-  padding: 8px 8px 0 8px;
-  border: 2px solid #2a2a2a;
-  transform-style: preserve-3d;
-  transform: rotateX(5deg);
-  transform-origin: bottom center;
-  box-shadow:
-    0 -5px 30px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
-}
-
-/* Screen bezel - webcam */
-.laptop-screen::before {
-  content: '';
-  position: absolute;
-  top: 3px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 6px;
-  height: 6px;
-  background: #0a0a0a;
-  border-radius: 50%;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.8);
-}
-
-/* The actual screen content */
-.laptop-screen-content {
-  position: relative;
-  background: #000;
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.laptop-screen-content img {
+.macbook-frame {
   display: block;
   width: 100%;
   height: auto;
-}
-
-/* Laptop Base (keyboard area) - laid flat with perspective */
-.laptop-base {
   position: relative;
-  padding: 30px 20px 40px;
-  background: linear-gradient(180deg, #d5d5d5 0%, #c5c5c5 30%, #b5b5b5 100%);
-  border-radius: 0 0 14px 14px;
-  border: 2px solid #a0a0a0;
-  border-top: none;
-  transform-style: preserve-3d;
-  transform: rotateX(28deg);
-  transform-origin: top center;
-  box-shadow:
-    0 80px 80px -20px rgba(0, 0, 0, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  z-index: 2;
 }
 
-/* Hinge detail on base */
-.laptop-base::before {
-  content: '';
+.macbook-screen-content {
   position: absolute;
-  top: -8px;
-  left: 0;
-  right: 0;
-  height: 14px;
-  background: linear-gradient(180deg, #454545 0%, #656565 100%);
-  border-radius: 0;
-}
-
-/* Keyboard container */
-.laptop-keyboard {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 15px 12px;
-  background: #1a1a1a;
-  border-radius: 8px;
-  margin-bottom: 25px;
-}
-
-.keyboard-row {
-  display: flex;
-  gap: 5px;
-  justify-content: center;
-}
-
-.keyboard-row .key {
-  height: 28px;
-  background: linear-gradient(180deg, #404040 0%, #2d2d2d 100%);
+  z-index: 1;
+  /* Position the screenshot inside the MacBook screen area */
+  top: 5.5%;
+  left: 12.5%;
+  width: 63%;
+  height: auto;
   border-radius: 4px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
-}
-
-.keyboard-row .key.small {
-  width: 28px;
-}
-
-.keyboard-row .key.medium {
-  width: 38px;
-}
-
-.keyboard-row .key.large {
-  width: 50px;
-}
-
-.keyboard-row .key.spacebar {
-  width: 140px;
-}
-
-/* Trackpad */
-.laptop-trackpad {
-  width: 50%;
-  height: 120px;
-  margin: 0 auto;
-  background: linear-gradient(180deg, #c0c0c0 0%, #b0b0b0 100%);
-  border-radius: 10px;
-  box-shadow:
-    inset 0 2px 4px rgba(0, 0, 0, 0.12),
-    0 1px 0 rgba(255, 255, 255, 0.6);
-}
-
-/* Overall laptop shadow */
-.laptop-mockup::after {
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  left: 10%;
-  right: 10%;
-  height: 20px;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, transparent 70%);
-  filter: blur(10px);
+  /* Apply same perspective as the MacBook image */
+  transform: perspective(1000px) rotateY(-8deg) rotateX(1deg);
+  transform-origin: left center;
 }
 
 /* Hero Responsive */
@@ -1324,52 +1201,13 @@ section,
     perspective: none;
   }
 
-  .laptop-mockup {
+  .macbook-mockup {
     width: 100%;
+    margin-left: 0;
+  }
+
+  .macbook-screen-content {
     transform: none;
-    transform-style: flat;
-  }
-
-  .laptop-mockup:hover {
-    transform: none;
-  }
-
-  .laptop-screen {
-    border-radius: 12px 12px 0 0;
-    padding: 8px 8px 0 8px;
-    transform: none;
-    border: 1px solid #2a2a2a;
-  }
-
-  .laptop-base {
-    padding: 8px 12px 10px;
-    border-radius: 0 0 12px 12px;
-    transform: none;
-    border: 1px solid #a0a0a0;
-    border-top: none;
-  }
-
-  .laptop-base::before {
-    display: none;
-  }
-
-  .laptop-keyboard {
-    padding: 5px;
-    gap: 2px;
-    margin-bottom: 8px;
-  }
-
-  .keyboard-row {
-    gap: 2px;
-  }
-
-  .keyboard-row .key {
-    height: 12px;
-  }
-
-  .laptop-trackpad {
-    width: 40%;
-    height: 50px;
   }
 }
 
