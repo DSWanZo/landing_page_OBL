@@ -1011,6 +1011,7 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 .hero-2 > .container {
