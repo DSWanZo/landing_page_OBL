@@ -8,7 +8,13 @@
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
     if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+    if (window.scrollY > 100) {
+      selectBody.classList.add('scrolled');
+      selectHeader.classList.add('scrolled');
+    } else {
+      selectBody.classList.remove('scrolled');
+      selectHeader.classList.remove('scrolled');
+    }
   }
 
   document.addEventListener('scroll', toggleScrolled);
@@ -88,10 +94,12 @@
    */
   function aosInit() {
     AOS.init({
-      duration: 600,
-      easing: 'ease-in-out',
+      duration: 500,
+      easing: 'ease-out',
       once: true,
-      mirror: false
+      mirror: false,
+      offset: 50,
+      delay: 0
     });
   }
   window.addEventListener('load', aosInit);
@@ -206,7 +214,7 @@
       const items = typedItems.split(',').map(item => item.trim()).filter(item => item.length > 0);
 
       if (items.length > 0 && typeof Typed !== 'undefined') {
-        new Typed('.typed', {
+        window.typedInstance = new Typed('.typed', {
           strings: items,
           loop: true,
           typeSpeed: 80,
