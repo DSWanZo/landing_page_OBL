@@ -3131,6 +3131,10 @@ html[lang="en"] .demo-video-section {
   z-index: 1;
 }
 
+.pricing.section {
+  padding-top: 30px;
+}
+
 .pricing .pricing-toggle {
   position: relative;
   display: flex;
@@ -3445,20 +3449,37 @@ html[lang="en"] .demo-video-section {
   transform: translateY(-3px);
 }
 
-.pricing .token-equivalence {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.pricing .token-equivalence-box {
-  display: inline-block;
-  padding: 16px 24px;
+/* Token Info Box */
+.token-info-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 1.25rem 2rem;
+  background: linear-gradient(135deg, rgba(42, 157, 143, 0.08) 0%, rgba(42, 157, 143, 0.04) 100%);
+  border: 1px solid rgba(42, 157, 143, 0.2);
   border-radius: 12px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.pricing .token-equivalence p {
-  margin-bottom: 8px;
+.token-info-icon {
+  color: #2a9d8f;
+  font-size: 1.5rem;
+}
+
+.token-info-content p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: var(--default-color);
+}
+
+.token-info-content p:first-child {
+  margin-top: 0;
+}
+
+.token-info-content p:last-child {
+  margin-bottom: 0;
 }
 
 .demo-modal .modal-content {
