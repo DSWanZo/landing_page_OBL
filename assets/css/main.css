@@ -2412,16 +2412,14 @@ section,
 .screenshot-viewer .image-viewer {
   position: relative;
   flex: 1;
-  perspective: 1000px;
 }
 
 .screenshot-viewer .image-viewer-slide {
   width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-  transform: rotateY(-3deg) rotateX(1deg);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12), 0 8px 40px rgba(0, 0, 0, 0.08);
+  transition: opacity 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -2434,12 +2432,7 @@ section,
 
 .screenshot-viewer .image-viewer-slide.is-active {
   opacity: 1;
-  transform: rotateY(-3deg) rotateX(1deg);
   z-index: 1;
-}
-
-.screenshot-viewer:hover .image-viewer-slide.is-active {
-  transform: rotateY(-1deg) rotateX(0.5deg);
 }
 
 .screenshot-viewer .image-viewer-control {
@@ -2455,7 +2448,7 @@ section,
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease, border-color 0.3s ease;
   z-index: 10;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
@@ -2463,7 +2456,6 @@ section,
 .screenshot-viewer .image-viewer-control:hover {
   background: var(--accent-color);
   border-color: var(--accent-color);
-  transform: scale(1.1);
 }
 
 .screenshot-viewer .image-viewer-control:hover i {
