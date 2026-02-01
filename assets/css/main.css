@@ -1153,12 +1153,7 @@ section,
 }
 
 /* Hero MacBook Image */
-.hero-macbook {
-  display: block;
-  width: 220%;
-  max-width: none;
-  height: auto;
-  margin-left: -75%;
+.hero-screenshot-frame {
   position: relative;
   z-index: 1;
   background: var(--surface-color);
@@ -1172,6 +1167,10 @@ section,
   transform-origin: right center;
   transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   will-change: transform;
+}
+ 
+.hero-screenshot-frame:hover {
+  transform: perspective(2000px) rotateY(-4deg) rotateX(1deg) scale(1.02) translateZ(0);
 }
  
 .hero-screenshot-frame:hover {
