@@ -2401,62 +2401,21 @@ section,
   color: var(--accent-color);
 }
 
-/* App Mockup */
-.app-mockup {
-  background: var(--surface-color);
-  border-radius: 12px;
+/* Screenshot Viewer - Clean image carousel */
+.screenshot-viewer {
+  position: relative;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.15);
-  border: 1px solid var(--border-color);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  background: #1a1a2e;
 }
 
-.mockup-header {
-  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-  padding: 12px 16px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.mockup-dots {
-  display: flex;
-  gap: 6px;
-}
-
-.mockup-dots span {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #ef4444;
-}
-
-.mockup-dots span:nth-child(2) {
-  background: #f59e0b;
-}
-
-.mockup-dots span:nth-child(3) {
-  background: #22c55e;
-}
-
-.mockup-title {
-  color: #94a3b8;
-  font-size: 0.85rem;
-  font-weight: 500;
-}
-
-.mockup-content {
+.screenshot-viewer .image-viewer {
   position: relative;
   aspect-ratio: 16 / 10;
-  overflow: hidden;
-  background: #0f172a;
 }
 
-.mockup-content .image-viewer {
-  position: absolute;
-  inset: 0;
-}
-
-.mockup-content .image-viewer-slide {
+.screenshot-viewer .image-viewer-slide {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -2467,18 +2426,18 @@ section,
   transition: opacity 0.4s ease;
 }
 
-.mockup-content .image-viewer-slide.is-active {
+.screenshot-viewer .image-viewer-slide.is-active {
   opacity: 1;
 }
 
-.mockup-content .image-viewer-control {
+.screenshot-viewer .image-viewer-control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   border: none;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -2486,25 +2445,25 @@ section,
   cursor: pointer;
   transition: all 0.3s;
   z-index: 10;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.mockup-content .image-viewer-control:hover {
+.screenshot-viewer .image-viewer-control:hover {
   background: #fff;
   transform: translateY(-50%) scale(1.1);
 }
 
-.mockup-content .image-viewer-control.prev {
-  left: 12px;
+.screenshot-viewer .image-viewer-control.prev {
+  left: 16px;
 }
 
-.mockup-content .image-viewer-control.next {
-  right: 12px;
+.screenshot-viewer .image-viewer-control.next {
+  right: 16px;
 }
 
-.mockup-content .image-viewer-control i {
+.screenshot-viewer .image-viewer-control i {
   color: #1e293b;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 /* Demo Video Section - Two Column Layout */
@@ -2579,15 +2538,6 @@ section,
 
   .features-2 .features-2-list li {
     font-size: 1rem;
-  }
-
-  .mockup-header {
-    padding: 10px 12px;
-  }
-
-  .mockup-dots span {
-    width: 10px;
-    height: 10px;
   }
 
   .demo-video-section {
