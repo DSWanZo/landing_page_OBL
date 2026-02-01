@@ -4025,7 +4025,6 @@ lite-youtube {
 .business-section .solution-block {
   margin-top: 4rem;
   padding-top: 3rem;
-  border-top: 1px solid var(--border-color);
 }
 
 .business-section .solution-block h3 {
@@ -4049,7 +4048,8 @@ lite-youtube {
 /* Publish More Section */
 .business-section .publish-more-section {
   margin-top: 4rem;
-  padding: 3rem 0;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border-color);
 }
 
 .business-section .publish-more-title {
