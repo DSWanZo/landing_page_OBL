@@ -2554,9 +2554,9 @@ section,
   position: relative;
   border-radius: 16px;
   overflow: hidden;
+  background: #1a1a1a;
   box-shadow:
-    0 25px 50px -12px rgba(0, 0, 0, 0.2),
-    0 0 0 1px rgba(0, 0, 0, 0.05);
+    0 25px 50px -12px rgba(0, 0, 0, 0.2);
   transform: perspective(1500px) rotateY(-8deg) rotateX(2deg);
   transform-origin: left center;
   transition: transform 0.4s ease;
