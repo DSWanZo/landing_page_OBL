@@ -1152,7 +1152,13 @@ section,
   border-radius: 50%;
 }
 
-.hero-screenshot-frame {
+/* Hero MacBook Image */
+.hero-macbook {
+  display: block;
+  width: 220%;
+  max-width: none;
+  height: auto;
+  margin-left: -75%;
   position: relative;
   z-index: 1;
   background: var(--surface-color);
