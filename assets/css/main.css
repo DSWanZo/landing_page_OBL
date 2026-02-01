@@ -3356,6 +3356,20 @@ html[lang="en"] .demo-video-section {
   transform: rotate(-45deg);
 }
 
+/* Pack icon with image */
+.pricing .icon.pack-icon {
+  transform: none;
+  background: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.pricing .icon.pack-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Token badge for top-up packs */
 .pricing .icon.token-badge {
   border-radius: 50%;
