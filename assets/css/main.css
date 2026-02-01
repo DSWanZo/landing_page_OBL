@@ -2265,6 +2265,28 @@ section,
   margin-bottom: 0;
 }
 
+/* Serpentine workflow line */
+.features-2 .features-2-container {
+  position: relative;
+}
+
+.features-2 .workflow-line {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: calc(100% - 120px);
+  color: #d1d5db;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.features-2 .feature-row {
+  position: relative;
+  z-index: 1;
+}
+
 @media (min-width: 992px) {
   .features-2 .feature-text {
     padding: 20px 40px;
@@ -2272,6 +2294,10 @@ section,
 }
 
 @media (max-width: 991px) {
+  .features-2 .workflow-line {
+    display: none;
+  }
+
   .features-2 .feature-row {
     padding: 40px 0;
   }
