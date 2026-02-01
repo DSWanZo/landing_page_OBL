@@ -55,6 +55,7 @@
       const href = navmenu.getAttribute('href');
       if (href && href.startsWith('#')) {
         e.preventDefault();
+        e.stopPropagation();
         const section = document.querySelector(href);
         if (section) {
           const scrollMarginTop = getComputedStyle(section).scrollMarginTop;
@@ -62,6 +63,8 @@
             top: section.offsetTop - parseInt(scrollMarginTop),
             behavior: 'smooth'
           });
+          // Keep URL clean
+          history.replaceState(null, '', window.location.pathname);
         }
       }
     });
