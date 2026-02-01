@@ -4305,6 +4305,13 @@ lite-youtube {
   margin-bottom: 0;
 }
 
+.business-section-2 .snowball-roi {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-top: 0.5rem;
+}
+
 /* Powerful Question */
 .business-section-2 .powerful-question {
   max-width: 700px;
