@@ -284,9 +284,8 @@
     "howto_item1": "<b>Contactez nous l'adresse mail</b> ci dessous en nous indiquant votre type d'audience, le nom de votre site/chaine...",
     "howto_item2": "Nous vous créerons ensuite un <b>lien d'affiliation</b> qui vous sera dédié.",
     "howto_item3": "Vous recevrez également vos accès pour <b>suivre vos commissions</b> (Via FirstPromoter).",
-    "contact_title": "📩 Des questions ?",
-    "contact_desc": "Nous sommes disponibles pour vous aider !",
-    "contact_email": "Contactez-nous à l'adresse :"
+    "contact_title": "Une question ?",
+    "contact_desc": "Notre équipe est disponible pour répondre à toutes vos questions."
   },
   "error404": {
     "title": "Page introuvable",
@@ -330,16 +329,14 @@
     "section8_p1": "Les présentes mentions légales sont régies par le droit français. En cas de litige relatif à leur interprétation ou leur exécution, seuls les tribunaux compétents du ressort du siège social de OneBookLab™ seront compétents.",
     "section8_p2": "La langue de référence pour le règlement des contentieux est le français.",
     "section8_p3": "Pour toute question concernant le site ou les présentes mentions légales :",
-    "contact_title": "Des questions ?",
-    "contact_desc": "Si vous avez des questions, contactez nous par mail ci dessous :",
-    "contact_link": "Contacter le support"
+    "contact_title": "Une question ?",
+    "contact_desc": "Notre équipe est disponible pour répondre à toutes vos questions."
   },
   "cgu": {
     "last_updated": "Dernière mise à jour : 22 octobre 2025",
     "title": "Conditions Générales d'Utilisation (CGU)",
-    "contact_title": "Des questions ?",
-    "contact_desc": "Si vous avez des questions, contactez nous par mail ci dessous :",
-    "contact_link": "Contacter le support",
+    "contact_title": "Une question ?",
+    "contact_desc": "Notre équipe est disponible pour répondre à toutes vos questions.",
     "art1_title": "Article 1 — Objet",
     "art1_p1": "Les présentes Conditions Générales d'Utilisation (ci-après « CGU ») ont pour objet de définir les modalités et conditions d'accès et d'utilisation du site OneBookLab™, accessible à l'adresse <b>https://www.onebooklab.com</b> (ci-après « le Site »), ainsi que du service de génération de contenu littéraire assisté par intelligence artificielle (ci-après « le Service »), édité par la société SamCreation, Entrepreneur individuel, immatriculée au Registre du Commerce et des Sociétés de Niort sous le numéro 951241330 dont le siège social est situé au 2 rue de Touraine 86530 Cenon sur Vienne.",
     "art2_title": "Article 2 — Définitions",
@@ -544,8 +541,7 @@
     "s11_p1": "Vos données sont traitées et stockées au sein de l'Union Européenne. Tout transfert de données hors UE, le cas échéant, sera effectué en conformité avec les dispositions légales en vigueur et avec des garanties appropriées.",
     "s12_title": "12. Modification de la Politique de Confidentialité",
     "s12_p1": "OneBookLab™ se réserve le droit de modifier la présente politique de confidentialité à tout moment. Les modifications prendront effet dès leur publication sur le site. Nous invitons les utilisateurs à consulter régulièrement cette politique afin de prendre connaissance des éventuelles mises à jour.",
-    "contact_title": "Des questions ?",
-    "contact_desc": "Si vous avez des questions, contactez nous par mail ci dessous :",
-    "contact_link": "Contacter le support"
+    "contact_title": "Une question ?",
+    "contact_desc": "Notre équipe est disponible pour répondre à toutes vos questions."
   }
 }

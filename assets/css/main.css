@@ -4240,3 +4240,91 @@ lite-youtube {
     font-size: 1.4rem;
   }
 }
+
+/*--------------------------------------------------------------
+# Legal Pages Contact Section
+--------------------------------------------------------------*/
+.legal-contact-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.legal-contact-box {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(99, 102, 241, 0.04) 100%);
+  border: 1px solid rgba(79, 70, 229, 0.15);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.legal-contact-box:hover {
+  border-color: rgba(79, 70, 229, 0.3);
+  box-shadow: 0 8px 30px rgba(79, 70, 229, 0.1);
+  transform: translateY(-2px);
+}
+
+.legal-contact-icon {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.legal-contact-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
+}
+
+.legal-contact-content p {
+  color: var(--default-color);
+  margin-bottom: 1rem;
+  opacity: 0.85;
+}
+
+.legal-contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  color: #4f46e5;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.legal-contact-email:hover {
+  background: #4f46e5;
+  color: #fff;
+  border-color: #4f46e5;
+}
+
+.legal-contact-email i {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 576px) {
+  .legal-contact-box {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .legal-contact-email {
+    width: 100%;
+    justify-content: center;
+  }
+}
