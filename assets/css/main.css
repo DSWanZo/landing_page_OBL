@@ -2364,6 +2364,11 @@ section,
   border-top: 1px solid var(--border-color);
 }
 
+/* Hide video section in English (video is in French only) */
+html[lang="en"] .demo-video-section {
+  display: none;
+}
+
 .demo-text-content h3 {
   font-size: 1.8rem;
   font-weight: 700;
