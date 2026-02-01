@@ -4250,8 +4250,8 @@ lite-youtube {
 }
 
 .legal-contact-box {
-  background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(99, 102, 241, 0.04) 100%);
-  border: 1px solid rgba(79, 70, 229, 0.15);
+  background: linear-gradient(135deg, rgba(42, 157, 143, 0.08) 0%, rgba(42, 157, 143, 0.04) 100%);
+  border: 1px solid rgba(42, 157, 143, 0.15);
   border-radius: 16px;
   padding: 2rem;
   display: flex;
@@ -4261,8 +4261,8 @@ lite-youtube {
 }
 
 .legal-contact-box:hover {
-  border-color: rgba(79, 70, 229, 0.3);
-  box-shadow: 0 8px 30px rgba(79, 70, 229, 0.1);
+  border-color: rgba(42, 157, 143, 0.3);
+  box-shadow: 0 8px 30px rgba(42, 157, 143, 0.1);
   transform: translateY(-2px);
 }
 
@@ -4270,7 +4270,7 @@ lite-youtube {
   width: 56px;
   height: 56px;
   min-width: 56px;
-  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+  background: linear-gradient(135deg, #2a9d8f 0%, #40b4a6 100%);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -4297,19 +4297,19 @@ lite-youtube {
   align-items: center;
   gap: 0.5rem;
   background: #fff;
-  border: 1px solid rgba(79, 70, 229, 0.2);
+  border: 1px solid rgba(42, 157, 143, 0.2);
   border-radius: 8px;
   padding: 0.75rem 1.25rem;
-  color: #4f46e5;
+  color: #2a9d8f;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .legal-contact-email:hover {
-  background: #4f46e5;
+  background: #2a9d8f;
   color: #fff;
-  border-color: #4f46e5;
+  border-color: #2a9d8f;
 }
 
 .legal-contact-email i {

@@ -284,7 +284,7 @@
     "howto_item1": "<b>Contact us at the email address</b> below with details about your audience type, website/channel name...",
     "howto_item2": "We'll then create a <b>dedicated affiliate link</b> just for you.",
     "howto_item3": "You'll also receive access to <b>track your commissions</b> (via FirstPromoter).",
-    "contact_title": "Have a Question?",
+    "contact_title": "Any Questions?",
     "contact_desc": "Our team is here to help with any questions you may have."
   },
   "error404": {
@@ -329,13 +329,13 @@
     "section8_p1": "These legal notices are governed by French law. In case of dispute regarding their interpretation or execution, only the courts within the jurisdiction of OneBookLab™'s registered office shall have jurisdiction.",
     "section8_p2": "The reference language for dispute resolution is French.",
     "section8_p3": "For any questions regarding the site or these legal notices:",
-    "contact_title": "Have a Question?",
+    "contact_title": "Any Questions?",
     "contact_desc": "Our team is here to help with any questions you may have."
   },
   "cgu": {
     "last_updated": "Last updated: October 22, 2025",
     "title": "Terms of Use",
-    "contact_title": "Have a Question?",
+    "contact_title": "Any Questions?",
     "contact_desc": "Our team is here to help with any questions you may have.",
     "art1_title": "Article 1 — Purpose",
     "art1_p1": "These Terms of Use (hereinafter \"ToU\") define the terms and conditions for accessing and using the OneBookLab™ website, available at <b>https://www.onebooklab.com</b> (hereinafter \"the Site\"), as well as the AI-assisted literary content generation service (hereinafter \"the Service\"), published by SamCreation, Sole Proprietorship, registered with the Niort Trade and Companies Register under number 951241330, headquartered at 2 rue de Touraine 86530 Cenon sur Vienne.",
@@ -541,7 +541,7 @@
     "s11_p1": "Your data is processed and stored within the European Union. Any data transfer outside the EU, if applicable, will be carried out in compliance with applicable legal provisions and with appropriate safeguards.",
     "s12_title": "12. Privacy Policy Modifications",
     "s12_p1": "OneBookLab™ reserves the right to modify this privacy policy at any time. Changes will take effect upon publication on the site. We encourage users to regularly review this policy to stay informed of any updates.",
-    "contact_title": "Have a Question?",
+    "contact_title": "Any Questions?",
     "contact_desc": "Our team is here to help with any questions you may have."
   }
 }
