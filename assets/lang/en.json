@@ -124,7 +124,7 @@
   },
   "features2": {
     "title": "A workflow designed for publishing.",
-    "intro": "Every chapter knows what came before. No parallel text generation that ignores itself. Real coherence, not simulated.",
+    "intro": "Every chapter builds on the previous ones. No more blindly generated text. Real coherence, not simulated.",
     "f1_title": "Two modes, two expertises",
     "f1_desc": "Fiction or Non-fiction, each mode has its optimized workflow. Intelligent sequential generation adapted to your project.",
     "f2_title": "Stay in control",

@@ -124,7 +124,7 @@
   },
   "features2": {
     "title": "Un workflow pensé pour la publication.",
-    "intro": "Chaque chapitre connaît les précédents. Pas de texte généré en parallèle qui s'ignore. Une cohérence réelle, pas simulée.",
+    "intro": "Chaque chapitre s'appuie sur les précédents. Fini les textes générés à l'aveugle. Une cohérence réelle, pas simulée.",
     "f1_title": "Deux modes, deux expertises",
     "f1_desc": "Fiction ou Non-fiction, chaque mode possède son workflow optimisé. Génération séquentielle intelligente adaptée à votre projet.",
     "f2_title": "Gardez le contrôle",
