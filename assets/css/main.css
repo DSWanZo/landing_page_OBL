@@ -4281,6 +4281,7 @@ lite-youtube {
   border-bottom: none;
 }
 
+.content-section h2,
 .content-section h3 {
   font-size: 1.25rem;
   font-weight: 600;
