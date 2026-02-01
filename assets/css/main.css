@@ -4242,6 +4242,61 @@ lite-youtube {
 }
 
 /*--------------------------------------------------------------
+# Legal Pages (Terms, Privacy, etc.)
+--------------------------------------------------------------*/
+.tos-header {
+  padding: 3rem 0 2rem;
+}
+
+.tos-header .last-updated {
+  display: inline-block;
+  background: rgba(42, 157, 143, 0.1);
+  color: #2a9d8f;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.tos-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.tos-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.content-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.content-section:last-of-type {
+  border-bottom: none;
+}
+
+.content-section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #2a9d8f;
+  display: inline-block;
+}
+
+.content-section p {
+  margin-bottom: 0.75rem;
+  color: var(--default-color);
+}
+
+/*--------------------------------------------------------------
 # Legal Pages Contact Section
 --------------------------------------------------------------*/
 .legal-contact-section {
