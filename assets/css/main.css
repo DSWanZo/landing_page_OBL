@@ -4046,6 +4046,72 @@ lite-youtube {
   color: var(--default-color);
 }
 
+/* Publish More Section */
+.business-section .publish-more-section {
+  margin-top: 4rem;
+  padding: 3rem 0;
+}
+
+.business-section .publish-more-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 2.5rem;
+}
+
+.business-section .publish-more-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.business-section .publish-more-item {
+  flex: 1;
+  min-width: 250px;
+  max-width: 320px;
+  padding: 1.5rem;
+  background: var(--surface-color);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.business-section .publish-more-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.business-section .publish-more-item h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 0.75rem;
+}
+
+.business-section .publish-more-item p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.business-section .publish-more-closing {
+  margin-top: 2rem;
+}
+
+.business-section .publish-more-closing .closing-line1 {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.business-section .publish-more-closing .closing-line2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
 /*--------------------------------------------------------------
 # Business Section 2 - Publication Speed
 --------------------------------------------------------------*/

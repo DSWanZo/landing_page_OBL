@@ -78,7 +78,16 @@
     "solution2": "Il élimine le problème !",
     "solution3": "C'est une IA qui écrit des livres pour vous.",
     "solution4": "Du premier mot au dernier chapitre.",
-    "demo_btn": "Voir OneBookLab en action"
+    "demo_btn": "Voir OneBookLab en action",
+    "publish_title": "Publier plus, c'est :",
+    "publish_item1_title": "Tester plus",
+    "publish_item1_desc": "Essayez vos idées et validez vos concepts rapidement.",
+    "publish_item2_title": "Apprendre plus vite",
+    "publish_item2_desc": "Maîtrisez les techniques qui font vendre.",
+    "publish_item3_title": "Trouver la bonne niche",
+    "publish_item3_desc": "Celle qui fait vraiment décoller vos revenus.",
+    "publish_closing1": "Ce ne sont pas les meilleurs auteurs qui gagnent.",
+    "publish_closing2": "Ce sont les plus rapides."
   },
   "features": {
     "title1": "En autoédition, tout se joue sur une seule chose :",

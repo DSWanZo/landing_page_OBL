@@ -78,7 +78,16 @@
     "solution2": "It eliminates the problem entirely!",
     "solution3": "It's an AI that writes complete books for you.",
     "solution4": "From the first word to the final chapter.",
-    "demo_btn": "See OneBookLab in action"
+    "demo_btn": "See OneBookLab in action",
+    "publish_title": "Publishing more means:",
+    "publish_item1_title": "Testing more",
+    "publish_item1_desc": "Try your ideas and validate your concepts quickly.",
+    "publish_item2_title": "Learning faster",
+    "publish_item2_desc": "Master the techniques that sell.",
+    "publish_item3_title": "Finding the right niche",
+    "publish_item3_desc": "The one that truly skyrockets your income.",
+    "publish_closing1": "It's not the best authors who win.",
+    "publish_closing2": "It's the fastest."
   },
   "features": {
     "title1": "In self-publishing, success comes down to one thing:",
