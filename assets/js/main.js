@@ -204,6 +204,8 @@
             top: section.offsetTop - parseInt(scrollMarginTop),
             behavior: 'smooth'
           });
+          // Clean the URL after scrolling
+          history.replaceState(null, '', window.location.pathname);
         }, 600);
       }
     }
