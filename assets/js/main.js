@@ -2,6 +2,13 @@
   "use strict";
 
   /**
+   * Disable automatic scroll restoration for hash links
+   */
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+
+  /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
   function toggleScrolled() {
@@ -164,6 +171,11 @@
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
+  if (window.location.hash) {
+    // Immediately scroll to top to prevent flash at wrong position
+    window.scrollTo(0, 0);
+  }
+
   window.addEventListener('load', function(e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
@@ -175,7 +187,7 @@
             top: section.offsetTop - parseInt(scrollMarginTop),
             behavior: 'smooth'
           });
-        }, 500);
+        }, 600);
       }
     }
   });
