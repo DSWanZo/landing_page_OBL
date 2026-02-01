@@ -4384,6 +4384,14 @@ lite-youtube {
   margin-bottom: 1rem;
 }
 
+.business-section-2 .slow-badge {
+  color: var(--text-muted);
+}
+
+.business-section-2 .fast-badge {
+  color: var(--accent-color);
+}
+
 .business-section-2 .author-card h4 {
   font-size: 1.2rem;
   font-weight: 700;
