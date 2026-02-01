@@ -3144,6 +3144,7 @@ html[lang="en"] .demo-video-section {
   padding: 10px 20px;
   border-radius: 50px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  margin-top: 15px;
 }
 
 .pricing .pricing-toggle .monthly,
@@ -3362,8 +3363,8 @@ html[lang="en"] .demo-video-section {
   background: transparent;
   border-radius: 50%;
   overflow: hidden;
-  width: 80px;
-  height: 80px;
+  width: 95px;
+  height: 95px;
   padding: 5px;
 }
 
@@ -3378,13 +3379,12 @@ html[lang="en"] .demo-video-section {
 .pricing .icon.token-badge {
   border-radius: 50%;
   transform: none;
-  background: #1a1a1a;
-  border: 2px solid var(--accent-color);
+  background: var(--accent-color);
   box-shadow: 0 4px 15px rgba(42, 157, 143, 0.3);
 }
 
 .pricing .icon.token-badge span {
-  color: var(--accent-color);
+  color: #fff;
   font-size: 1.25rem;
   font-weight: 700;
 }
