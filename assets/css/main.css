@@ -2507,30 +2507,69 @@ section,
   font-size: 1rem;
 }
 
-/* Demo Video Section */
+/* Demo Video Section - Two Column Layout */
 .demo-video-section {
   margin-top: 4rem;
   padding-top: 3rem;
   border-top: 1px solid var(--border-color);
 }
 
-.demo-video-section h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
+.demo-text-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
   color: var(--heading-color);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
-.demo-video-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  border-radius: 12px;
+.demo-text-content .demo-description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.demo-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.demo-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  color: var(--default-color);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.demo-features li i {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+
+/* Video Frame with 3D effect */
+.demo-video-frame {
+  position: relative;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+  transform: perspective(1500px) rotateY(-8deg) rotateX(2deg);
+  transform-origin: left center;
+  transition: transform 0.4s ease;
 }
 
-.demo-video-wrapper lite-youtube {
-  border-radius: 12px;
+.demo-video-frame:hover {
+  transform: perspective(1500px) rotateY(-4deg) rotateX(1deg);
+}
+
+.demo-video-frame lite-youtube {
+  display: block;
+  width: 100%;
+  border-radius: 16px;
 }
 
 @media (max-width: 768px) {
@@ -2556,8 +2595,26 @@ section,
     padding-top: 2rem;
   }
 
-  .demo-video-section h3 {
-    font-size: 1.3rem;
+  .demo-text-content {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .demo-text-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .demo-features {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .demo-video-frame {
+    transform: none;
+  }
+
+  .demo-video-frame:hover {
+    transform: none;
   }
 }
 
