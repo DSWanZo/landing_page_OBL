@@ -12,14 +12,16 @@
   <link href="https://i.ibb.co/yc5PhYN6/Chat-GPT-Image-27-oct-2025-15-50-50-removebg-preview.png" rel="icon">
   <link href="https://i.ibb.co/yc5PhYN6/Chat-GPT-Image-27-oct-2025-15-50-50-removebg-preview.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
+  <!-- Preconnect -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Fonts - Inter (modern, professional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
@@ -39,7 +41,7 @@
 <body class="terms-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <div class="header-container container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <div class="brand d-flex align-items-center me-auto">
         <a href="index.html" class="logo d-flex align-items-center">
@@ -82,26 +84,26 @@
       <div class="container" data-aos="fade-up">
         <!-- Page Header -->
         <div class="tos-header text-center" data-aos="fade-up">
-          <h1><strong data-i18n="affiliate.title">Programme partenaire OneBookLab</strong></h1><br>
-          <p></p>
-          <h3 class="mt-3" data-i18n="affiliate.subtitle">Boostez vos revenus en devenant affilié(e) à la meilleure plateforme d'écriture IA.</h3><br><br>
+          <span class="last-updated">Programme Partenaire</span>
+          <h2 data-i18n="affiliate.title">Programme d'affiliation OneBookLab</h2>
+          <p class="intro-text" data-i18n="affiliate.subtitle">Boostez vos revenus en devenant affilié(e) à la meilleure plateforme d'écriture IA.</p>
         </div>
 
         <!-- Content -->
         <div class="tos-content" data-aos="fade-up" data-aos-delay="200">
           <!-- Gains Section -->
           <div id="rewards" class="content-section">
-            <h3><b data-i18n="affiliate.rewards_title">✅ Ce que vous gagnez</b></h3><br>
+            <h3 data-i18n="affiliate.rewards_title">Ce que vous gagnez</h3>
             <p data-i18n="affiliate.rewards_desc">Monétisez votre audience en profitant d'un programme de rémunération généreux et transparent.</p>
             <ul class="list-items">
               <li data-i18n-html="affiliate.rewards_item1"><strong>Jusqu'à 30% de commission</strong> sur chaque achat généré via votre lien d'affiliation et sur chaque renouvellement d'abonnement !</li>
-              <li class="mb-3" data-i18n-html="affiliate.rewards_item2"><strong>Un code promo exclusif de 15%</strong> à offrir à votre communauté (disponible sur demande).</li><br>
+              <li data-i18n-html="affiliate.rewards_item2"><strong>Un code promo exclusif de 15%</strong> à offrir à votre communauté (disponible sur demande).</li>
             </ul>
           </div>
 
           <!-- Recommendations Section -->
           <div id="recommendations" class="content-section">
-            <h3><b data-i18n="affiliate.reco_title">🚀 Nos recommandations pour maximiser vos gains</b></h3><br>
+            <h3 data-i18n="affiliate.reco_title">Maximiser vos gains</h3>
             <p data-i18n="affiliate.reco_desc">Adoptez ces réflexes pour booster vos conversions et augmenter vos revenus.</p>
             <ul class="list-items">
               <li data-i18n-html="affiliate.reco_item1"><b>Parlez de OneBookLab™</b> sur vos réseaux sociaux pour toucher un large public.</li>
@@ -109,7 +111,8 @@
               <li data-i18n-html="affiliate.reco_item3"><b>Optimisez votre SEO</b> en ciblant des requêtes stratégiques telles que :</li>
             </ul>
             <div class="info-box">
-              <ul class="list-items ps-4 mb-0 fst-italic">
+              <i class="bi bi-lightbulb"></i>
+              <ul class="list-items mb-0 fst-italic">
                 <li data-i18n="affiliate.seo_item1">Avis OneBookLab</li>
                 <li data-i18n="affiliate.seo_item2">Tuto OneBookLab</li>
                 <li data-i18n="affiliate.seo_item3">Test OneBookLab</li>
@@ -117,38 +120,45 @@
                 <li data-i18n="affiliate.seo_item5">Rédiger un livre avec IA</li>
               </ul>
             </div>
-            <br>
-            <p class="mb-0"><b data-i18n="affiliate.reco_conclusion">Plus votre contenu est visible, plus vos commissions augmentent ! 🚀</b></p><br><br>
-
+            <p class="mt-3" data-i18n="affiliate.reco_conclusion"><b>Plus votre contenu est visible, plus vos commissions augmentent !</b></p>
           </div>
 
           <!-- Prohibitions Section -->
           <div id="restrictions" class="content-section">
-            <h3><b data-i18n="affiliate.prohibited_title">❌ Ce qui est interdit</b></h3><br>
+            <h3 data-i18n="affiliate.prohibited_title">Ce qui est interdit</h3>
             <p data-i18n="affiliate.prohibited_desc">Pour préserver l'équité entre affiliés, certaines pratiques sont strictement interdites.</p>
             <ul class="list-items">
               <li data-i18n="affiliate.prohibited_item1">Brand bidding sur les moteurs de recherche.</li>
               <li data-i18n="affiliate.prohibited_item2">Usage d'un nom de domaine laissant croire que vous êtes le site officiel de OneBookLab™.</li>
-              <li data-i18n="affiliate.prohibited_item3">Auto-affiliation pour percevoir des commissions sur vos propres achats.</li><br>
+              <li data-i18n="affiliate.prohibited_item3">Auto-affiliation pour percevoir des commissions sur vos propres achats.</li>
             </ul>
           </div>
 
           <!-- How-to Section -->
           <div id="howto" class="content-section">
-            <h3><b data-i18n="affiliate.howto_title">👉 Comment faire ?</b></h3>
-            <br>
+            <h3 data-i18n="affiliate.howto_title">Comment devenir affilié ?</h3>
             <ul class="list-items">
-              <li data-i18n-html="affiliate.howto_item1"><b>Contactez nous l'adresse mail</b> ci dessous en nous indiquant votre type d'audience, le nom de votre site/chaine... </li>
+              <li data-i18n-html="affiliate.howto_item1"><b>Contactez-nous</b> à l'adresse mail ci-dessous en nous indiquant votre type d'audience, le nom de votre site/chaîne...</li>
               <li data-i18n-html="affiliate.howto_item2">Nous vous créerons ensuite un <b>lien d'affiliation</b> qui vous sera dédié.</li>
-              <li data-i18n-html="affiliate.howto_item3">Vous recevrez également vos accès pour <b>suivre vos commissions</b> (Via FirstPromoter).</li><br>
+              <li data-i18n-html="affiliate.howto_item3">Vous recevrez également vos accès pour <b>suivre vos commissions</b> (Via FirstPromoter).</li>
             </ul>
           </div>
 
           <!-- Contact Section -->
-          <div id="contact" class="content-section">
-            <h3><b data-i18n="affiliate.contact_title">📩 Des questions ?</b></h3><br>
-            <p data-i18n="affiliate.contact_desc">Nous sommes disponibles pour vous aider !</p>
-            <p><span data-i18n="affiliate.contact_email">Contactez-nous à l'adresse :</span><a href="mailto:contact@onebooklab.com" class="ms-1">contact@onebooklab.com</a></p>
+          <div class="legal-contact-section">
+            <div class="legal-contact-box">
+              <div class="legal-contact-icon">
+                <i class="bi bi-envelope-paper"></i>
+              </div>
+              <div class="legal-contact-content">
+                <h4 data-i18n="affiliate.contact_title">Une question ?</h4>
+                <p data-i18n="affiliate.contact_desc">Notre équipe est disponible pour répondre à toutes vos questions.</p>
+                <a href="mailto:contact@onebooklab.com" class="legal-contact-email">
+                  <i class="bi bi-send"></i>
+                  contact@onebooklab.com
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -180,9 +190,9 @@
             <li></li>
 
             <li><a href="terms.html" data-i18n="footer.legal">Mentions légales</a></li>
-            <li><a href="cgu.html" data-i18n="footer.terms">Conditions générales de vente et d'utilisation</a></li>
+            <li><a href="terms-of-use.html" data-i18n="footer.terms">Conditions générales de vente et d'utilisation</a></li>
             <li><a href="privacy.html" data-i18n="footer.privacy">Politique de confidentialité</a></li>
-            <li><a href="devenir-affilie.html" data-i18n="footer.affiliate">Devenir affilié</a></li>
+            <li><a href="affiliate.html" data-i18n="footer.affiliate">Devenir affilié</a></li>
           </ul>
         </div>
 

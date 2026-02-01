@@ -121,9 +121,9 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
   padding: 16px 0;
   transition: all 0.3s ease;
   z-index: 997;
@@ -131,7 +131,7 @@ h6 {
 }
 
 .header.scrolled {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.65);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
 }
@@ -2364,6 +2364,11 @@ section,
   border-top: 1px solid var(--border-color);
 }
 
+/* Hide video section in English (video is in French only) */
+html[lang="en"] .demo-video-section {
+  display: none;
+}
+
 .demo-text-content h3 {
   font-size: 1.8rem;
   font-weight: 700;
@@ -3126,6 +3131,10 @@ section,
   z-index: 1;
 }
 
+.pricing.section {
+  padding-top: 30px;
+}
+
 .pricing .pricing-toggle {
   position: relative;
   display: flex;
@@ -3135,6 +3144,7 @@ section,
   padding: 10px 20px;
   border-radius: 50px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  margin-top: 15px;
 }
 
 .pricing .pricing-toggle .monthly,
@@ -3347,6 +3357,38 @@ section,
   transform: rotate(-45deg);
 }
 
+/* Pack icon with image */
+.pricing .icon.pack-icon {
+  transform: none;
+  background: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 95px;
+  height: 95px;
+  padding: 5px;
+}
+
+.pricing .icon.pack-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0);
+}
+
+/* Token badge for top-up packs */
+.pricing .icon.token-badge {
+  border-radius: 50%;
+  transform: none;
+  background: var(--accent-color);
+  box-shadow: 0 4px 15px rgba(42, 157, 143, 0.3);
+}
+
+.pricing .icon.token-badge span {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
 .pricing .card-price {
   padding: 20px 30px;
   text-align: center;
@@ -3440,20 +3482,37 @@ section,
   transform: translateY(-3px);
 }
 
-.pricing .token-equivalence {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.pricing .token-equivalence-box {
-  display: inline-block;
-  padding: 16px 24px;
+/* Token Info Box */
+.token-info-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 1.25rem 2rem;
+  background: linear-gradient(135deg, rgba(42, 157, 143, 0.08) 0%, rgba(42, 157, 143, 0.04) 100%);
+  border: 1px solid rgba(42, 157, 143, 0.2);
   border-radius: 12px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.pricing .token-equivalence p {
-  margin-bottom: 8px;
+.token-info-icon {
+  color: #2a9d8f;
+  font-size: 1.5rem;
+}
+
+.token-info-content p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: var(--default-color);
+}
+
+.token-info-content p:first-child {
+  margin-top: 0;
+}
+
+.token-info-content p:last-child {
+  margin-bottom: 0;
 }
 
 .demo-modal .modal-content {
@@ -4233,5 +4292,172 @@ lite-youtube {
 
   .business-section-2 .powerful-question h2 {
     font-size: 1.4rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Legal Pages (Terms, Privacy, etc.)
+--------------------------------------------------------------*/
+.tos-header {
+  padding: 3rem 0 2rem;
+}
+
+.tos-header .last-updated {
+  display: inline-block;
+  background: rgba(42, 157, 143, 0.1);
+  color: #2a9d8f;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.tos-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.tos-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.content-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.content-section:last-of-type {
+  border-bottom: none;
+}
+
+.content-section h2,
+.content-section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #2a9d8f;
+  display: inline-block;
+}
+
+.content-section p {
+  margin-bottom: 0.75rem;
+  color: var(--default-color);
+}
+
+/*--------------------------------------------------------------
+# Legal Pages Contact Section
+--------------------------------------------------------------*/
+.legal-contact-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.legal-contact-box {
+  background: linear-gradient(135deg, rgba(42, 157, 143, 0.08) 0%, rgba(42, 157, 143, 0.04) 100%);
+  border: 1px solid rgba(42, 157, 143, 0.15);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.legal-contact-box:hover {
+  border-color: rgba(42, 157, 143, 0.3);
+  box-shadow: 0 8px 30px rgba(42, 157, 143, 0.1);
+  transform: translateY(-2px);
+}
+
+.legal-contact-icon {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  background: linear-gradient(135deg, #2a9d8f 0%, #40b4a6 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.legal-contact-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
+}
+
+.legal-contact-content p {
+  color: var(--default-color);
+  margin-bottom: 1rem;
+  opacity: 0.85;
+}
+
+.legal-contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  border: 1px solid rgba(42, 157, 143, 0.2);
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  color: #2a9d8f;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.legal-contact-email:hover {
+  background: #2a9d8f;
+  color: #fff;
+  border-color: #2a9d8f;
+}
+
+.legal-contact-email i {
+  font-size: 1.1rem;
+}
+
+/* Info box for legal pages */
+.info-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: rgba(42, 157, 143, 0.08);
+  border-left: 3px solid #2a9d8f;
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+}
+
+.info-box i {
+  color: #2a9d8f;
+  font-size: 1.25rem;
+  margin-top: 0.1rem;
+}
+
+.info-box p {
+  margin: 0;
+  color: var(--default-color);
+}
+
+@media (max-width: 576px) {
+  .legal-contact-box {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .legal-contact-email {
+    width: 100%;
+    justify-content: center;
   }
 }

@@ -12,14 +12,16 @@
   <link href="https://i.ibb.co/Ng9z6myj/Screenshot-2-removebg-preview.png" rel="icon">
   <link href="https://i.ibb.co/Ng9z6myj/Screenshot-2-removebg-preview.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
+  <!-- Preconnect -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Fonts - Inter (modern, professional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Main CSS File -->
@@ -30,7 +32,7 @@
 <body class="pricing-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <div class="header-container container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <div class="brand d-flex align-items-center me-auto">
         <a href="index.html" class="logo d-flex align-items-center">
@@ -85,7 +87,7 @@
     <!-- Pricing Section -->
     <section id="pricing" class="pricing section">
 
-      <div class="container pricing-toggle-container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container pricing-toggle-container" data-aos="fade-up" data-aos-delay="100" style="margin-top: -20px;">
 
         <!-- Pricing Toggle -->
         <div class="d-flex justify-content-center mb-5">
@@ -106,8 +108,8 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="pricing-item">
               <div class="card-header">
-                <div class="icon">
-                  <i class="bi bi-lightning"></i>
+                <div class="icon pack-icon">
+                  <img src="https://app.onebooklab.com/pack_decouverte.jpg" alt="Pack découverte">
                 </div>
                 <h3 data-i18n="pricing.discovery.title">Pack découverte</h3>
                 <p data-i18n="pricing.discovery.subtitle">Pour découvrir OneBookLab™ !</p>
@@ -140,8 +142,8 @@
             <div class="pricing-item featured">
               <div class="popular-badge" data-i18n="pricing.popular">Populaire</div>
               <div class="card-header">
-                <div class="icon">
-                  <i class="bi bi-rocket-takeoff"></i>
+                <div class="icon pack-icon">
+                  <img src="https://app.onebooklab.com/pack_auteur.jpg" alt="Pack Auteur">
                 </div>
                 <h3 data-i18n="pricing.author.title">Pack Auteur</h3>
                 <p data-i18n="pricing.author.subtitle">Pour les auteurs débutants et confirmés</p>
@@ -173,10 +175,10 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="pricing-item">
               <div class="card-header">
-                <div class="icon">
-                  <i class="bi bi-building"></i>
+                <div class="icon pack-icon">
+                  <img src="https://app.onebooklab.com/pack_pro.jpg" alt="Pack Pro">
                 </div>
-                <h3 data-i18n="pricing.pro.title">Pack Pro'</h3>
+                <h3 data-i18n="pricing.pro.title">Pack Pro</h3>
                 <p data-i18n="pricing.pro.subtitle">Pour les auteur(e)s prolifiques</p>
               </div>
               <div class="card-price">
@@ -207,8 +209,21 @@
         </div>
 
       </div>
+
+      <!-- Token Info Box -->
+      <div class="container" data-aos="fade-up">
+        <div class="token-info-box">
+          <div class="token-info-icon">
+            <i class="bi bi-info-circle"></i>
+          </div>
+          <div class="token-info-content">
+            <p data-i18n="pricing.token_equiv1">*10 Tokens = 1 Livre non fiction ou Nouvelle</p>
+            <p data-i18n="pricing.token_equiv2">*20 Tokens = 1 Roman de fiction</p>
+          </div>
+        </div>
+      </div>
+
       <div class="container section-title text-center upcoming-title" data-aos="fade-up">
-        <br><br><br>
         <h2 data-i18n="pricing.no_subscription">Sans abonnement</h2>
       </div>
 
@@ -218,8 +233,8 @@
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
           <div class="pricing-item">
             <div class="card-header">
-              <div class="icon">
-                <i class="bi bi-gear"></i>
+              <div class="icon token-badge">
+                <span>+10</span>
               </div>
               <h3 data-i18n="pricing.small_topup.title">Petite recharge de Tokens</h3>
               <p data-i18n="pricing.small_topup.subtitle">Pour écrire dès maintenant !</p>
@@ -251,8 +266,8 @@
           <div class="pricing-item price-highlight">
             <div class="popular-badge" data-i18n="pricing.popular">Populaire</div>
             <div class="card-header">
-              <div class="icon">
-                <i class="bi bi-lightning"></i>
+              <div class="icon token-badge">
+                <span>+20</span>
               </div>
               <h3 data-i18n="pricing.topup.title">Recharge de Tokens</h3>
               <p data-i18n="pricing.topup.subtitle">Pour un "One shot" !</p>
@@ -282,13 +297,7 @@
 
         </div>
       </div>
-<br>
-      <div class="token-equivalence">
-        <div class="token-equivalence-box">
-          <p><strong data-i18n="pricing.token_equiv1">*10 Tokens = 1 Livre non fiction ou Nouvelle</strong></p>
-          <p><strong data-i18n="pricing.token_equiv2">*20 Tokens = 1 Roman de fiction</strong></p>
-        </div>
-      </div>
+
     </section><!-- /Pricing Section -->
 
   </main>
@@ -314,10 +323,10 @@
           <h4 data-i18n="footer.useful_links">Liens utiles</h4>
           <ul>
             <li><a href="terms.html" data-i18n="footer.legal">Mentions légales</a></li>
-            <li><a href="cgu.html" data-i18n="footer.terms">Conditions générales de vente et d'utilisation</a></li>
+            <li><a href="terms-of-use.html" data-i18n="footer.terms">Conditions générales de vente et d'utilisation</a></li>
             <li><a href="privacy.html" data-i18n="footer.privacy">Politique de confidentialité</a></li>
             <li></li>
-            <li><a href="devenir-affilie.html" data-i18n="footer.affiliate">Devenir affilié</a></li>
+            <li><a href="affiliate.html" data-i18n="footer.affiliate">Devenir affilié</a></li>
           </ul>
         </div>
 

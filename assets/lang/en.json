@@ -118,8 +118,8 @@
     "intro": "Every chapter knows what came before. No parallel text generation that ignores itself. Real coherence, not simulated.",
     "f1_title": "Two modes, two expertises",
     "f1_desc": "Fiction or Non-fiction, each mode has its optimized workflow. Intelligent sequential generation adapted to your project.",
-    "f2_title": "Pick up where you left off",
-    "f2_desc": "Automatic save at every step. Edit your outline before generation. Validate each act of your story.",
+    "f2_title": "Stay in control",
+    "f2_desc": "Edit your plan at any time. Validate each act before continuing. You stay in control of your creation.",
     "f3_title": "Your style, not the AI's",
     "f3_desc": "Import a reference text or describe your desired tone. OneBookLab™ adapts to your voice.",
     "f4_title": "Character arcs that evolve logically",
@@ -258,13 +258,13 @@
     "play_testimonial": "Play testimonial"
   },
   "affiliate": {
-    "title": "OneBookLab Partner Program",
+    "title": "OneBookLab Affiliate Program",
     "subtitle": "Boost your income by becoming an affiliate for the best AI writing platform.",
-    "rewards_title": "✅ What You Earn",
+    "rewards_title": "What You Earn",
     "rewards_desc": "Monetize your audience with a generous and transparent commission program.",
     "rewards_item1": "<strong>Up to 30% commission</strong> on every purchase made through your affiliate link and on every subscription renewal!",
     "rewards_item2": "<strong>An exclusive 15% promo code</strong> to share with your community (available upon request).",
-    "reco_title": "🚀 Our Tips to Maximize Your Earnings",
+    "reco_title": "Maximize Your Earnings",
     "reco_desc": "Follow these best practices to boost your conversions and increase your revenue.",
     "reco_item1": "<b>Promote OneBookLab™</b> on your social media to reach a wide audience.",
     "reco_item2": "<b>Create YouTube content</b>: tutorials, reviews, demos... video format is perfect for AI tools!",
@@ -274,19 +274,18 @@
     "seo_item3": "OneBookLab test",
     "seo_item4": "Best AI writing tool",
     "seo_item5": "Write a book with AI",
-    "reco_conclusion": "The more visible your content, the higher your commissions! 🚀",
-    "prohibited_title": "❌ What's Prohibited",
+    "reco_conclusion": "The more visible your content, the higher your commissions!",
+    "prohibited_title": "What's Prohibited",
     "prohibited_desc": "To ensure fairness among affiliates, the following practices are strictly prohibited.",
     "prohibited_item1": "Brand bidding on search engines.",
     "prohibited_item2": "Using a domain name that suggests you are the official OneBookLab™ website.",
     "prohibited_item3": "Self-referral to earn commissions on your own purchases.",
-    "howto_title": "👉 How to Get Started?",
-    "howto_item1": "<b>Contact us at the email address</b> below with details about your audience type, website/channel name...",
+    "howto_title": "How to Become an Affiliate?",
+    "howto_item1": "<b>Contact us</b> at the email address below with details about your audience type, website/channel name...",
     "howto_item2": "We'll then create a <b>dedicated affiliate link</b> just for you.",
     "howto_item3": "You'll also receive access to <b>track your commissions</b> (via FirstPromoter).",
-    "contact_title": "📩 Have Questions?",
-    "contact_desc": "We're here to help!",
-    "contact_email": "Contact us at:"
+    "contact_title": "Any Questions?",
+    "contact_desc": "Our team is here to help with any questions you may have."
   },
   "error404": {
     "title": "Page Not Found",
@@ -330,16 +329,14 @@
     "section8_p1": "These legal notices are governed by French law. In case of dispute regarding their interpretation or execution, only the courts within the jurisdiction of OneBookLab™'s registered office shall have jurisdiction.",
     "section8_p2": "The reference language for dispute resolution is French.",
     "section8_p3": "For any questions regarding the site or these legal notices:",
-    "contact_title": "Have questions?",
-    "contact_desc": "If you have any questions, contact us by email below:",
-    "contact_link": "Contact support"
+    "contact_title": "Any Questions?",
+    "contact_desc": "Our team is here to help with any questions you may have."
   },
   "cgu": {
     "last_updated": "Last updated: October 22, 2025",
     "title": "Terms of Use",
-    "contact_title": "Have questions?",
-    "contact_desc": "If you have any questions, contact us by email below:",
-    "contact_link": "Contact support",
+    "contact_title": "Any Questions?",
+    "contact_desc": "Our team is here to help with any questions you may have.",
     "art1_title": "Article 1 — Purpose",
     "art1_p1": "These Terms of Use (hereinafter \"ToU\") define the terms and conditions for accessing and using the OneBookLab™ website, available at <b>https://www.onebooklab.com</b> (hereinafter \"the Site\"), as well as the AI-assisted literary content generation service (hereinafter \"the Service\"), published by SamCreation, Sole Proprietorship, registered with the Niort Trade and Companies Register under number 951241330, headquartered at 2 rue de Touraine 86530 Cenon sur Vienne.",
     "art2_title": "Article 2 — Definitions",
@@ -544,8 +541,7 @@
     "s11_p1": "Your data is processed and stored within the European Union. Any data transfer outside the EU, if applicable, will be carried out in compliance with applicable legal provisions and with appropriate safeguards.",
     "s12_title": "12. Privacy Policy Modifications",
     "s12_p1": "OneBookLab™ reserves the right to modify this privacy policy at any time. Changes will take effect upon publication on the site. We encourage users to regularly review this policy to stay informed of any updates.",
-    "contact_title": "Have questions?",
-    "contact_desc": "If you have any questions, contact us by email below:",
-    "contact_link": "Contact support"
+    "contact_title": "Any Questions?",
+    "contact_desc": "Our team is here to help with any questions you may have."
   }
 }

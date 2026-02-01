@@ -12,14 +12,16 @@
   <link href="https://i.ibb.co/Ng9z6myj/Screenshot-2-removebg-preview.png" rel="icon">
   <link href="https://i.ibb.co/Ng9z6myj/Screenshot-2-removebg-preview.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
+  <!-- Preconnect -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Fonts - Inter (modern, professional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
@@ -39,7 +41,7 @@
 <body class="terms-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <div class="header-container container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <div class="brand d-flex align-items-center me-auto">
         <a href="index.html" class="logo d-flex align-items-center">
@@ -173,15 +175,18 @@
           </div>
 
           <!-- Contact Section -->
-          <div class="tos-contact" data-aos="fade-up" data-aos-delay="300">
-            <div class="contact-box">
-              <div class="contact-icon">
-                <i class="bi bi-envelope"></i>
+          <div class="legal-contact-section" data-aos="fade-up" data-aos-delay="300">
+            <div class="legal-contact-box">
+              <div class="legal-contact-icon">
+                <i class="bi bi-envelope-paper"></i>
               </div>
-              <div class="contact-content">
-                <h4 data-i18n="legal.contact_title">Des questions ?</h4>
-                <p data-i18n="legal.contact_desc">Si vous avez des questions, contactez nous par mail ci dessous :</p>
-                <a href="mailto:contact@onebooklab.com" class="contact-link" data-i18n="legal.contact_link">Contacter le support</a>
+              <div class="legal-contact-content">
+                <h4 data-i18n="legal.contact_title">Une question ?</h4>
+                <p data-i18n="legal.contact_desc">Notre équipe est disponible pour répondre à toutes vos questions.</p>
+                <a href="mailto:contact@onebooklab.com" class="legal-contact-email">
+                  <i class="bi bi-send"></i>
+                  contact@onebooklab.com
+                </a>
               </div>
             </div>
           </div>
@@ -214,9 +219,9 @@
             <li></li>
 
             <li><a href="terms.html" data-i18n="footer.legal">Mentions légales</a></li>
-            <li><a href="cgu.html" data-i18n="footer.terms">Conditions générales de vente et d'utilisation</a></li>
+            <li><a href="terms-of-use.html" data-i18n="footer.terms">Conditions générales de vente et d'utilisation</a></li>
             <li><a href="privacy.html" data-i18n="footer.privacy">Politique de confidentialité</a></li>
-            <li><a href="devenir-affilie.html" data-i18n="footer.affiliate">Devenir affilié</a></li>
+            <li><a href="affiliate.html" data-i18n="footer.affiliate">Devenir affilié</a></li>
           </ul>
         </div>
 

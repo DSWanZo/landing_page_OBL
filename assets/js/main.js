@@ -2,6 +2,13 @@
   "use strict";
 
   /**
+   * Disable automatic scroll restoration for hash links
+   */
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+
+  /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
   function toggleScrolled() {
@@ -36,14 +43,31 @@
 
   /**
    * Hide mobile nav on same-page/hash links
+   * Also handle smooth scroll without changing URL
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
+    navmenu.addEventListener('click', (e) => {
       if (document.querySelector('.mobile-nav-active')) {
         mobileNavToogle();
       }
-    });
 
+      // Handle same-page hash links without changing URL
+      const href = navmenu.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        e.stopPropagation();
+        const section = document.querySelector(href);
+        if (section) {
+          const scrollMarginTop = getComputedStyle(section).scrollMarginTop;
+          window.scrollTo({
+            top: section.offsetTop - parseInt(scrollMarginTop),
+            behavior: 'smooth'
+          });
+          // Keep URL clean
+          history.replaceState(null, '', window.location.pathname);
+        }
+      }
+    });
   });
 
   /**
@@ -164,9 +188,15 @@
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
+  if (window.location.hash) {
+    // Immediately scroll to top to prevent flash at wrong position
+    window.scrollTo(0, 0);
+  }
+
   window.addEventListener('load', function(e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
+        // Wait for AOS animations to complete before scrolling
         setTimeout(() => {
           let section = document.querySelector(window.location.hash);
           let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
@@ -174,7 +204,9 @@
             top: section.offsetTop - parseInt(scrollMarginTop),
             behavior: 'smooth'
           });
-        }, 100);
+          // Clean the URL after scrolling
+          history.replaceState(null, '', window.location.pathname);
+        }, 600);
       }
     }
   });
