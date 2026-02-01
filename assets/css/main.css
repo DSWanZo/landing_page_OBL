@@ -3800,13 +3800,17 @@ section,
   font-size: 24px;
   color: var(--accent-color);
   font-weight: 700;
+  line-height: 1;
+  vertical-align: text-top;
 }
 
 .testimonial-card .testimonial-content p::after {
-  content: '"';
+  content: ' "';
   font-size: 24px;
   color: var(--accent-color);
   font-weight: 700;
+  line-height: 1;
+  vertical-align: text-bottom;
 }
 
 .testimonial-card .testimonial-author {
