@@ -43,14 +43,28 @@
 
   /**
    * Hide mobile nav on same-page/hash links
+   * Also handle smooth scroll without changing URL
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
+    navmenu.addEventListener('click', (e) => {
       if (document.querySelector('.mobile-nav-active')) {
         mobileNavToogle();
       }
-    });
 
+      // Handle same-page hash links without changing URL
+      const href = navmenu.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        const section = document.querySelector(href);
+        if (section) {
+          const scrollMarginTop = getComputedStyle(section).scrollMarginTop;
+          window.scrollTo({
+            top: section.offsetTop - parseInt(scrollMarginTop),
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
   });
 
   /**
