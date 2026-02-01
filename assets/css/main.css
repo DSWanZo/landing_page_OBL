@@ -4316,6 +4316,29 @@ lite-youtube {
   font-size: 1.1rem;
 }
 
+/* Info box for legal pages */
+.info-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: rgba(42, 157, 143, 0.08);
+  border-left: 3px solid #2a9d8f;
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+}
+
+.info-box i {
+  color: #2a9d8f;
+  font-size: 1.25rem;
+  margin-top: 0.1rem;
+}
+
+.info-box p {
+  margin: 0;
+  color: var(--default-color);
+}
+
 @media (max-width: 576px) {
   .legal-contact-box {
     flex-direction: column;
