@@ -2272,42 +2272,98 @@ section,
 
 .features-2 .feature-row {
   position: relative;
+  padding-bottom: 60px;
 }
 
-/* Connector lines from text blocks */
+.features-2 .feature-row:last-child {
+  padding-bottom: 0;
+}
+
+/* Connector lines between feature blocks */
 @media (min-width: 992px) {
   .features-2 .feature-text {
     padding: 20px 40px;
     position: relative;
   }
 
-  /* Connector after each row except the last */
+  /* Vertical line going down from text block */
   .features-2 .feature-row:not(:last-child) .feature-text::after {
     content: '';
     position: absolute;
-    width: 80px;
-    height: 80px;
-    border: 2px dashed #d1d5db;
-    border-radius: 50%;
+    width: 2px;
+    height: 60px;
+    background: linear-gradient(to bottom, #d1d5db 50%, transparent 50%);
+    background-size: 2px 8px;
     pointer-events: none;
+    bottom: -60px;
   }
 
-  /* Rows 1, 3, 5 (text on right) - connector goes bottom-left */
+  /* Horizontal connecting line at the bottom */
+  .features-2 .feature-row:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(to right, #d1d5db 50%, transparent 50%);
+    background-size: 8px 2px;
+    pointer-events: none;
+    bottom: 30px;
+    z-index: 1;
+  }
+
+  /* Rows 1, 3, 5 (text on right) - vertical line on left of text */
   .features-2 .feature-row:nth-child(odd):not(:last-child) .feature-text::after {
-    bottom: -100px;
-    left: 0;
-    border-right: none;
-    border-top: none;
-    transform: translateX(-50%);
+    left: 40px;
   }
 
-  /* Rows 2, 4 (text on left / reverse) - connector goes bottom-right */
-  .features-2 .feature-row:nth-child(even) .feature-text::after {
-    bottom: -100px;
-    right: 0;
-    border-left: none;
-    border-top: none;
-    transform: translateX(50%);
+  /* Rows 2, 4 (text on left / reverse) - vertical line on right of text */
+  .features-2 .feature-row:nth-child(even):not(:last-child) .feature-text::after {
+    right: 40px;
+  }
+
+  /* Row 1 → Row 2: horizontal line from right text to left text */
+  .features-2 .feature-row:nth-child(1)::after {
+    left: calc(50% + 40px);
+    right: 40px;
+  }
+
+  /* Row 2 → Row 3: horizontal line from left text to right text */
+  .features-2 .feature-row:nth-child(2)::after {
+    left: 40px;
+    right: calc(50% + 40px);
+  }
+
+  /* Row 3 → Row 4: horizontal line from right text to left text */
+  .features-2 .feature-row:nth-child(3)::after {
+    left: calc(50% + 40px);
+    right: 40px;
+  }
+
+  /* Row 4 → Row 5: horizontal line from left text to right text */
+  .features-2 .feature-row:nth-child(4)::after {
+    left: 40px;
+    right: calc(50% + 40px);
+  }
+
+  /* Vertical line going UP to connect to text block (on alternating rows) */
+  .features-2 .feature-row:not(:first-child) .feature-text::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 60px;
+    background: linear-gradient(to bottom, #d1d5db 50%, transparent 50%);
+    background-size: 2px 8px;
+    pointer-events: none;
+    top: -60px;
+  }
+
+  /* Rows 2, 4 (reverse) - vertical line comes in from right */
+  .features-2 .feature-row:nth-child(even) .feature-text::before {
+    right: 40px;
+  }
+
+  /* Rows 3, 5 - vertical line comes in from left */
+  .features-2 .feature-row:nth-child(odd):not(:first-child) .feature-text::before {
+    left: 40px;
   }
 }
 
