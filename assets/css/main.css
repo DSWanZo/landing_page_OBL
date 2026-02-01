@@ -4324,6 +4324,16 @@ lite-youtube {
   margin-bottom: 0.5rem;
 }
 
+.business-section-2 .author-difference p i.bi-x-circle {
+  color: #dc2626;
+  margin-right: 0.5rem;
+}
+
+.business-section-2 .author-difference p i.bi-check-circle-fill {
+  color: #16a34a;
+  margin-right: 0.5rem;
+}
+
 .business-section-2 .difference-highlight {
   font-size: 1.2rem;
   font-weight: 600;
