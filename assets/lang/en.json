@@ -96,13 +96,18 @@
     "conclusion2": "It's the fastest."
   },
   "features2": {
-    "title": "OneBookLab™ is built on a controlled structure.",
-    "intro": "Every generated book follows an architecture designed for publishing.",
-    "item1": "Well-balanced and proportioned chapters",
-    "item2": "Consistent tone from start to finish",
-    "item3": "Controlled narrative flow and smooth progression",
-    "conclusion": "Publish-ready books, every single time.",
-    "demo_title": "See OneBookLab™ in action"
+    "title": "A workflow designed for publishing.",
+    "intro": "Every chapter knows what came before. No parallel text generation that ignores itself. Real coherence, not simulated.",
+    "f1_title": "Two modes, two expertises",
+    "f1_desc": "Fiction or Non-fiction, each mode has its optimized workflow. Intelligent sequential generation adapted to your project.",
+    "f2_title": "Pick up where you left off",
+    "f2_desc": "Automatic save at every step. Edit your outline before generation. Validate each act of your story.",
+    "f3_title": "Your style, not the AI's",
+    "f3_desc": "Import a reference text or describe your desired tone. OneBookLab™ adapts to your voice.",
+    "f4_title": "Character arcs that evolve logically",
+    "f4_desc": "Character Ledger with 0-100% monotonic progression. Your characters grow consistently, chapter after chapter.",
+    "f5_title": "No narrative promise left hanging",
+    "f5_desc": "Promise Tracker that plants and pays off every promise. World Building Enricher for a universe that grows richer with each chapter."
   },
   "features3": {
     "title": "Access our tutorials and resources:",

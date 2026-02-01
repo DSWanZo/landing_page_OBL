@@ -96,13 +96,18 @@
     "conclusion2": "Ce sont les plus rapides."
   },
   "features2": {
-    "title": "OneBookLab™ repose sur une structure maîtrisée.",
-    "intro": "Chaque livre généré suit une architecture pensée pour la publication.",
-    "item1": "Chapitres équilibrés et bien proportionnés",
-    "item2": "Ton cohérent du début à la fin",
-    "item3": "Fil narratif maîtrisé et progression fluide",
-    "conclusion": "Des livres prêts à publier, à chaque génération.",
-    "demo_title": "Voir OneBookLab™ en action"
+    "title": "Un workflow pensé pour la publication.",
+    "intro": "Chaque chapitre connaît les précédents. Pas de texte généré en parallèle qui s'ignore. Une cohérence réelle, pas simulée.",
+    "f1_title": "Deux modes, deux expertises",
+    "f1_desc": "Fiction ou Non-fiction, chaque mode possède son workflow optimisé. Génération séquentielle intelligente adaptée à votre projet.",
+    "f2_title": "Reprenez où vous voulez",
+    "f2_desc": "Sauvegarde automatique à chaque étape. Modifiez votre plan avant la génération. Validez chaque acte de votre histoire.",
+    "f3_title": "Votre style, pas celui de l'IA",
+    "f3_desc": "Importez un texte de référence ou décrivez votre ton souhaité. OneBookLab™ s'adapte à votre voix.",
+    "f4_title": "Des arcs qui évoluent logiquement",
+    "f4_desc": "Character Ledger avec progression 0-100% monotonique. Vos personnages grandissent de façon cohérente, chapitre après chapitre.",
+    "f5_title": "Aucune promesse narrative laissée en suspens",
+    "f5_desc": "Promise Tracker qui plante et paie chaque promesse. World Building Enricher pour un univers qui s'enrichit à chaque chapitre."
   },
   "features3": {
     "title": "Un accès à nos tutoriels et ressources :",
