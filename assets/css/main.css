@@ -4003,28 +4003,57 @@ lite-youtube {
   font-size: 2rem;
   font-weight: 700;
   color: var(--heading-color);
-  margin-bottom: 2rem;
-}
-
-.business-section .problem-intro {
   margin-bottom: 1.5rem;
 }
 
-.business-section .problem-intro p {
-  font-size: 1.1rem;
-  color: var(--default-color);
+/* Problem intro list */
+.business-section .problem-intro-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.business-section .problem-intro-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  color: var(--text-muted);
   margin-bottom: 0.5rem;
 }
 
-.business-section .time-problem {
-  margin-bottom: 2rem;
+.business-section .problem-intro-list li i {
+  color: var(--accent-color);
+  font-size: 1rem;
 }
 
-.business-section .time-problem h3 {
+/* Time problem block */
+.business-section .time-problem {
+  background: var(--surface-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--accent-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.business-section .time-problem-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.business-section .time-problem-header i {
   font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.business-section .time-problem-header h3 {
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--heading-color);
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 .business-section .time-list {
@@ -4034,22 +4063,52 @@ lite-youtube {
 }
 
 .business-section .time-list li {
-  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
   color: var(--default-color);
   margin-bottom: 0.5rem;
 }
 
-.business-section .result-block h4 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--heading-color);
-  margin-bottom: 1rem;
+.business-section .time-list li i {
+  color: #f59e0b;
+  font-size: 1rem;
 }
 
-.business-section .result-block p {
+/* Result block */
+.business-section .result-block {
+  margin-bottom: 0;
+}
+
+.business-section .result-block h4 {
   font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 0.75rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.business-section .result-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.business-section .result-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
   color: #dc2626;
   margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.business-section .result-list li i {
+  color: #dc2626;
+  font-size: 1rem;
 }
 
 .business-section .business-image img {
