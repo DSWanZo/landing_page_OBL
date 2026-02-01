@@ -182,6 +182,15 @@
           }
         }
       }
+
+      // Handle language-specific images
+      document.querySelectorAll('.lang-image').forEach(img => {
+        const srcKey = `data-src-${this.currentLang}`;
+        const newSrc = img.getAttribute(srcKey);
+        if (newSrc && img.src !== newSrc) {
+          img.src = newSrc;
+        }
+      });
     },
 
     /**
