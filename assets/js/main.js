@@ -321,4 +321,118 @@
     });
   });
 
+  /**
+   * Workflow connecting line - Dynamic SVG path
+   * Creates a serpentine line connecting feature blocks
+   */
+  function initWorkflowLine() {
+    const section = document.querySelector('.features-2');
+    const svg = document.querySelector('.workflow-line');
+    const path = document.querySelector('.workflow-path');
+    const container = document.querySelector('.features-2-container');
+
+    if (!section || !svg || !path || !container) return;
+
+    // Only run on desktop (>991px)
+    if (window.innerWidth <= 991) return;
+
+    const featureTexts = container.querySelectorAll('.feature-text');
+    if (featureTexts.length < 2) return;
+
+    const sectionRect = section.getBoundingClientRect();
+    const sectionTop = section.offsetTop;
+
+    // Collect center points of each feature-text block
+    const points = [];
+    featureTexts.forEach((text, index) => {
+      const rect = text.getBoundingClientRect();
+      const row = text.closest('.feature-row');
+      const isReversed = row && row.classList.contains('reverse');
+
+      // Calculate position relative to section
+      const y = rect.top - sectionRect.top + rect.height / 2;
+
+      // X position: connect from the edge of text block toward the image
+      let x;
+      if (isReversed) {
+        // Text is on the left, line should come from the right side
+        x = rect.right - sectionRect.left + 30;
+      } else {
+        // Text is on the right, line should come from the left side
+        x = rect.left - sectionRect.left - 30;
+      }
+
+      points.push({ x, y, isReversed });
+    });
+
+    // Build SVG path with smooth curves
+    if (points.length < 2) return;
+
+    let d = `M ${points[0].x},${points[0].y}`;
+
+    for (let i = 1; i < points.length; i++) {
+      const prev = points[i - 1];
+      const curr = points[i];
+
+      // Calculate control points for smooth S-curve
+      const midY = (prev.y + curr.y) / 2;
+
+      // Control points create the S-curve effect
+      const cp1x = prev.x;
+      const cp1y = midY;
+      const cp2x = curr.x;
+      const cp2y = midY;
+
+      d += ` C ${cp1x},${cp1y} ${cp2x},${cp2y} ${curr.x},${curr.y}`;
+    }
+
+    path.setAttribute('d', d);
+
+    // Optional: Animate the line drawing on scroll
+    const pathLength = path.getTotalLength();
+    path.style.strokeDasharray = pathLength;
+    path.style.strokeDashoffset = pathLength;
+
+    // Animate when section is in view
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          path.style.transition = 'stroke-dashoffset 2s ease-in-out';
+          path.style.strokeDashoffset = '0';
+        }
+      });
+    }, { threshold: 0.2 });
+
+    observer.observe(section);
+  }
+
+  // Debounce helper
+  function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+
+  // Initialize workflow line
+  window.addEventListener('load', () => {
+    // Small delay to ensure layout is complete
+    setTimeout(initWorkflowLine, 100);
+  });
+
+  // Recalculate on resize (debounced)
+  window.addEventListener('resize', debounce(() => {
+    const path = document.querySelector('.workflow-path');
+    if (path) {
+      path.style.transition = 'none';
+      path.style.strokeDashoffset = '0';
+    }
+    initWorkflowLine();
+  }, 250));
+
 })();
