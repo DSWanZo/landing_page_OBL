@@ -323,7 +323,7 @@
 
   /**
    * Workflow connecting line - Dynamic SVG path
-   * Creates a serpentine line connecting feature blocks
+   * Creates a right-angled line connecting text blocks
    */
   function initWorkflowLine() {
     const section = document.querySelector('.features-2');
@@ -340,55 +340,57 @@
     if (featureTexts.length < 2) return;
 
     const sectionRect = section.getBoundingClientRect();
-    const sectionTop = section.offsetTop;
 
-    // Collect center points of each feature-text block
+    // Collect connection points for each text block
     const points = [];
-    featureTexts.forEach((text, index) => {
+    featureTexts.forEach((text) => {
       const rect = text.getBoundingClientRect();
       const row = text.closest('.feature-row');
       const isReversed = row && row.classList.contains('reverse');
 
-      // Calculate position relative to section
-      const y = rect.top - sectionRect.top + rect.height / 2;
+      // Position relative to section
+      const centerX = rect.left - sectionRect.left + rect.width / 2;
+      const top = rect.top - sectionRect.top;
+      const bottom = rect.bottom - sectionRect.top;
 
-      // X position: connect from the edge of text block toward the image
-      let x;
-      if (isReversed) {
-        // Text is on the left, line should come from the right side
-        x = rect.right - sectionRect.left + 30;
-      } else {
-        // Text is on the right, line should come from the left side
-        x = rect.left - sectionRect.left - 30;
-      }
-
-      points.push({ x, y, isReversed });
+      points.push({ centerX, top, bottom, isReversed });
     });
 
-    // Build SVG path with smooth curves
+    // Build SVG path with right angles (text to text)
     if (points.length < 2) return;
 
-    let d = `M ${points[0].x},${points[0].y}`;
+    let d = '';
 
-    for (let i = 1; i < points.length; i++) {
-      const prev = points[i - 1];
+    for (let i = 0; i < points.length - 1; i++) {
       const curr = points[i];
+      const next = points[i + 1];
 
-      // Calculate control points for smooth S-curve
-      const midY = (prev.y + curr.y) / 2;
+      // Start from bottom center of current text block
+      const startX = curr.centerX;
+      const startY = curr.bottom + 10;
 
-      // Control points create the S-curve effect
-      const cp1x = prev.x;
-      const cp1y = midY;
-      const cp2x = curr.x;
-      const cp2y = midY;
+      // End at top center of next text block
+      const endX = next.centerX;
+      const endY = next.top - 10;
 
-      d += ` C ${cp1x},${cp1y} ${cp2x},${cp2y} ${curr.x},${curr.y}`;
+      // Midpoint Y for the horizontal segment
+      const midY = (startY + endY) / 2;
+
+      if (i === 0) {
+        d = `M ${startX},${startY}`;
+      } else {
+        d += ` L ${startX},${startY}`;
+      }
+
+      // Right-angle path: down, horizontal, down
+      d += ` L ${startX},${midY}`;  // Vertical down to mid
+      d += ` L ${endX},${midY}`;    // Horizontal to align with next
+      d += ` L ${endX},${endY}`;    // Vertical down to next block
     }
 
     path.setAttribute('d', d);
 
-    // Optional: Animate the line drawing on scroll
+    // Animate the line drawing on scroll
     const pathLength = path.getTotalLength();
     path.style.strokeDasharray = pathLength;
     path.style.strokeDashoffset = pathLength;
@@ -397,11 +399,11 @@
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          path.style.transition = 'stroke-dashoffset 2s ease-in-out';
+          path.style.transition = 'stroke-dashoffset 2.5s ease-in-out';
           path.style.strokeDashoffset = '0';
         }
       });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.1 });
 
     observer.observe(section);
   }
