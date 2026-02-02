@@ -323,7 +323,7 @@
 
   /**
    * Workflow connecting line - Dynamic SVG path
-   * Creates a right-angled line connecting text blocks
+   * Creates right-angled lines connecting text blocks, avoiding images
    */
   function initWorkflowLine() {
     const section = document.querySelector('.features-2');
@@ -349,14 +349,20 @@
       const isReversed = row && row.classList.contains('reverse');
 
       // Position relative to section
-      const centerX = rect.left - sectionRect.left + rect.width / 2;
+      const left = rect.left - sectionRect.left;
+      const right = rect.right - sectionRect.left;
       const top = rect.top - sectionRect.top;
       const bottom = rect.bottom - sectionRect.top;
+      const centerX = left + rect.width / 2;
 
-      points.push({ centerX, top, bottom, isReversed });
+      // Text on RIGHT (normal): connect from LEFT edge
+      // Text on LEFT (reversed): connect from RIGHT edge
+      const connectX = isReversed ? right : left;
+
+      points.push({ left, right, top, bottom, centerX, connectX, isReversed });
     });
 
-    // Build SVG path with right angles (text to text)
+    // Build SVG path with right angles
     if (points.length < 2) return;
 
     let d = '';
@@ -365,47 +371,28 @@
       const curr = points[i];
       const next = points[i + 1];
 
-      // Start from bottom center of current text block
-      const startX = curr.centerX;
-      const startY = curr.bottom + 10;
+      // Start point: bottom of current text, at connection edge
+      const startX = curr.connectX;
+      const startY = curr.bottom + 15;
 
-      // End at top center of next text block
-      const endX = next.centerX;
-      const endY = next.top - 10;
+      // End point: top of next text, at connection edge
+      const endX = next.connectX;
+      const endY = next.top - 15;
 
-      // Midpoint Y for the horizontal segment
+      // Midpoint Y for horizontal segment (between the rows)
       const midY = (startY + endY) / 2;
 
       if (i === 0) {
         d = `M ${startX},${startY}`;
-      } else {
-        d += ` L ${startX},${startY}`;
       }
 
       // Right-angle path: down, horizontal, down
-      d += ` L ${startX},${midY}`;  // Vertical down to mid
-      d += ` L ${endX},${midY}`;    // Horizontal to align with next
-      d += ` L ${endX},${endY}`;    // Vertical down to next block
+      d += ` L ${startX},${midY}`;   // Vertical down to mid
+      d += ` L ${endX},${midY}`;     // Horizontal to align with next
+      d += ` L ${endX},${endY}`;     // Vertical down to next block
     }
 
     path.setAttribute('d', d);
-
-    // Animate the line drawing on scroll
-    const pathLength = path.getTotalLength();
-    path.style.strokeDasharray = pathLength;
-    path.style.strokeDashoffset = pathLength;
-
-    // Animate when section is in view
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          path.style.transition = 'stroke-dashoffset 2.5s ease-in-out';
-          path.style.strokeDashoffset = '0';
-        }
-      });
-    }, { threshold: 0.1 });
-
-    observer.observe(section);
   }
 
   // Debounce helper
@@ -428,13 +415,6 @@
   });
 
   // Recalculate on resize (debounced)
-  window.addEventListener('resize', debounce(() => {
-    const path = document.querySelector('.workflow-path');
-    if (path) {
-      path.style.transition = 'none';
-      path.style.strokeDashoffset = '0';
-    }
-    initWorkflowLine();
-  }, 250));
+  window.addEventListener('resize', debounce(initWorkflowLine, 250));
 
 })();
