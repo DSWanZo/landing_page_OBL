@@ -321,4 +321,114 @@
     });
   });
 
+  /**
+   * Theme Switcher - Color Preview Tool
+   */
+  window.ThemeSwitcher = {
+    themes: {
+      green: {
+        name: 'Vert',
+        accent: '#10b981',
+        accentHover: '#059669',
+        accentLight: '#d1fae5'
+      },
+      indigo: {
+        name: 'Indigo',
+        accent: '#6366f1',
+        accentHover: '#4f46e5',
+        accentLight: '#e0e7ff'
+      },
+      violet: {
+        name: 'Violet',
+        accent: '#8b5cf6',
+        accentHover: '#7c3aed',
+        accentLight: '#ede9fe'
+      },
+      blue: {
+        name: 'Bleu',
+        accent: '#3b82f6',
+        accentHover: '#2563eb',
+        accentLight: '#dbeafe'
+      },
+      orange: {
+        name: 'Orange',
+        accent: '#f97316',
+        accentHover: '#ea580c',
+        accentLight: '#ffedd5'
+      },
+      pink: {
+        name: 'Bordeaux',
+        accent: '#be185d',
+        accentHover: '#9d174d',
+        accentLight: '#fce7f3'
+      },
+      teal: {
+        name: 'Teal',
+        accent: '#14b8a6',
+        accentHover: '#0d9488',
+        accentLight: '#ccfbf1'
+      }
+    },
+
+    currentTheme: 'green',
+
+    toggle() {
+      const dropdown = document.getElementById('themeDropdown');
+      if (dropdown) {
+        dropdown.classList.toggle('show');
+      }
+    },
+
+    setTheme(themeName) {
+      const theme = this.themes[themeName];
+      if (!theme) return;
+
+      // Update CSS variables
+      document.documentElement.style.setProperty('--accent-color', theme.accent);
+      document.documentElement.style.setProperty('--accent-color-hover', theme.accentHover);
+      document.documentElement.style.setProperty('--accent-color-light', theme.accentLight);
+
+      // Update button text
+      const currentThemeSpan = document.querySelector('.current-theme');
+      if (currentThemeSpan) {
+        currentThemeSpan.textContent = theme.name;
+      }
+
+      // Update active state
+      document.querySelectorAll('.theme-option').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.dataset.theme === themeName) {
+          btn.classList.add('active');
+        }
+      });
+
+      this.currentTheme = themeName;
+      this.toggle(); // Close dropdown
+    },
+
+    init() {
+      // Add click handlers to theme options
+      document.querySelectorAll('.theme-option').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          this.setTheme(btn.dataset.theme);
+        });
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', (e) => {
+        const switcher = document.querySelector('.theme-switcher');
+        const dropdown = document.getElementById('themeDropdown');
+        if (switcher && dropdown && !switcher.contains(e.target)) {
+          dropdown.classList.remove('show');
+        }
+      });
+    }
+  };
+
+  // Initialize theme switcher on load
+  window.addEventListener('load', () => {
+    ThemeSwitcher.init();
+  });
+
 })();

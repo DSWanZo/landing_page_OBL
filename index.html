@@ -56,6 +56,43 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
+      <div class="theme-switcher">
+        <button class="theme-btn" onclick="ThemeSwitcher.toggle()" title="Changer le thème">
+          <i class="bi bi-palette"></i>
+          <span class="current-theme">Vert</span>
+        </button>
+        <div class="theme-dropdown" id="themeDropdown">
+          <button class="theme-option active" data-theme="green">
+            <span class="theme-dot" style="background: #10b981;"></span>
+            Vert (actuel)
+          </button>
+          <button class="theme-option" data-theme="indigo">
+            <span class="theme-dot" style="background: #6366f1;"></span>
+            Indigo
+          </button>
+          <button class="theme-option" data-theme="violet">
+            <span class="theme-dot" style="background: #8b5cf6;"></span>
+            Violet
+          </button>
+          <button class="theme-option" data-theme="blue">
+            <span class="theme-dot" style="background: #3b82f6;"></span>
+            Bleu
+          </button>
+          <button class="theme-option" data-theme="orange">
+            <span class="theme-dot" style="background: #f97316;"></span>
+            Orange
+          </button>
+          <button class="theme-option" data-theme="pink">
+            <span class="theme-dot" style="background: #be185d;"></span>
+            Bordeaux
+          </button>
+          <button class="theme-option" data-theme="teal">
+            <span class="theme-dot" style="background: #14b8a6;"></span>
+            Teal
+          </button>
+        </div>
+      </div>
+
       <div class="lang-switcher">
         <button class="lang-btn" onclick="I18n.toggleLanguage()" title="Switch language">
           <span class="current-lang">FR</span>
