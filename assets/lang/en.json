@@ -1,6 +1,7 @@
 {
   "nav": {
     "product": "Product",
+    "examples": "Examples",
     "pricing": "Pricing",
     "faq": "FAQ",
     "upcoming": "Coming Soon",
@@ -140,7 +141,8 @@
     "f4_title": "Character arcs that evolve logically",
     "f4_desc": "Track character development with 0-100% progression. Your characters grow consistently, chapter after chapter.",
     "f5_title": "No narrative promise left hanging",
-    "f5_desc": "Promise Tracker that sets up and delivers on every promise. World Building Enricher for a universe that grows richer with each chapter."
+    "f5_desc": "Promise Tracker that sets up and delivers on every promise. World Building Enricher for a universe that grows richer with each chapter.",
+    "examples_cta": "Discover examples of generated books"
   },
   "features3": {
     "title": "Access our tutorials and resources:",
