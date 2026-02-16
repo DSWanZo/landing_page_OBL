@@ -9,7 +9,7 @@
   },
   "hero": {
     "lead": "L'écriture n'est plus un frein.",
-    "title": "Générez des livres en 30min.",
+    "title": "Générez des livres en 30 minutes.",
     "typed_items": "Sans écrire,Sans corriger,Sans superviser",
     "tagline": "Publiez plus. Gagnez plus.",
     "cta": "Tester OneBookLab™ dès maintenant !",
@@ -74,7 +74,7 @@
     "result1": "vous publiez lentement,",
     "result2": "votre catalogue stagne",
     "result3": "vos revenus plafonnent.",
-    "solution1": "OneBookLab™ ne vous fait pas gagner du temps...",
+    "solution1": "OneBookLab™ ne vous fait pas gagner du temps.",
     "solution2": "Il élimine le problème !",
     "solution3": "C'est une IA qui écrit des livres pour vous.",
     "solution4": "Du premier mot au dernier chapitre.",
@@ -121,7 +121,7 @@
     "table_row3_revenue": "9 livres",
     "table_row6_revenue": "18 livres",
     "table_row12_revenue": "36 livres",
-    "snowball_note": "Et certains livres peuvent exploser à tout moment...",
+    "snowball_note": "Et certains livres peuvent exploser à tout moment.",
     "snowball_roi": "De quoi rentabiliser très rapidement votre abonnement.",
     "question": "Et si, dans 6 mois, vous aviez déjà 18 livres publiés ?",
     "question_sub": "Chaque livre est une nouvelle opportunité. Un nouveau point d'entrée. Une nouvelle source de revenus passifs.",
@@ -208,7 +208,7 @@
     "step3_desc": "Plus besoin de se rendre sur votre IA habituelle, vous pourrez explorer vos idées directement sur OneBookLab™ avant de créer votre livre.",
     "step4_title": "Outil de création de couverture",
     "step4_desc": "Quoi dire de plus... ? Enfin un outil tout en un qui vous guide de la rédaction à la publication !",
-    "conclusion": "Et bien plus encore..."
+    "conclusion": "Et bien plus encore."
   },
   "pricing": {
     "page_title": "Abonnements",
@@ -327,7 +327,7 @@
     "section3_title": "3. HEBERGEUR",
     "section3_p1": "OVH SAS – 2 rue Kellermann, 59100 Roubaix – France",
     "section3_p2": "Site : www.ovh.com",
-    "section3_p3": "Les informations relatives à l'hébergement du site OneBookLab™ sont réservées aux utilisateurs connectés",
+    "section3_p3": "Les informations relatives à l'hébergement du site OneBookLab™ sont réservées aux utilisateurs connectés.",
     "section4_title": "4. PROPRIETE INTELLECTUELLE",
     "section4_p1": "L'ensemble des éléments présents sur le site OneBookLab™ (textes, images, illustrations, logos) est la propriété exclusive de OneBookLab™ ou de ses partenaires. Toute reproduction, représentation, modification ou diffusion, même partielle, est strictement interdite sans l'autorisation écrite préalable de OneBookLab™, conformément aux dispositions du Code de la propriété intellectuelle.",
     "section5_title": "5. DONNEES PERSONNELLES",
@@ -507,7 +507,7 @@
     "s1_p4": "• <b>Responsable de traitement</b> : OneBookLab™, dont les coordonnées sont indiquées ci-dessous.",
     "s2_title": "2. Responsable de Traitement",
     "s2_p1": "Le responsable du traitement des données est :",
-    "s2_p2": "<b>Siège social</b> : 2 rue de Touraine, 86130 Cenon sur Vienne",
+    "s2_p2": "<b>Siège social</b> : 2 rue de Touraine, 86530 Cenon sur Vienne",
     "s2_p3": "<b>Email</b> : contact@onebooklab.com",
     "s3_title": "3. Durée de Conservation des Données",
     "s3_p1": "Les données personnelles sont conservées :",

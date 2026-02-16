@@ -9,7 +9,7 @@
   },
   "hero": {
     "lead": "Writing is no longer a barrier.",
-    "title": "Generate books in 30min.",
+    "title": "Generate books in 30 minutes.",
     "typed_items": "No writing,No editing,No supervision",
     "tagline": "Publish more. Earn more.",
     "cta": "Try OneBookLab™ now!",
@@ -34,7 +34,7 @@
     "step1": {
       "title": "Complete, coherent, and publish-ready books",
       "subtitle": "Fiction and non-fiction alike!",
-      "item1": "No more guiding every single sentence.",
+      "item1": "No more prompting every single sentence.",
       "item2": "No more hours spent editing.",
       "item3": "No more expensive ghostwriters."
     },
@@ -74,7 +74,7 @@
     "result1": "you publish slowly,",
     "result2": "your catalog stagnates,",
     "result3": "your income plateaus.",
-    "solution1": "OneBookLab™ doesn't save you time...",
+    "solution1": "OneBookLab™ doesn't save you time.",
     "solution2": "It eliminates the problem entirely!",
     "solution3": "It's an AI that writes complete books for you.",
     "solution4": "From the first word to the final chapter.",
@@ -85,7 +85,7 @@
     "publish_item2_title": "Learning faster",
     "publish_item2_desc": "Master the techniques that sell.",
     "publish_item3_title": "Finding the right niche",
-    "publish_item3_desc": "The one that truly skyrockets your income.",
+    "publish_item3_desc": "The one that significantly boosts your income.",
     "publish_closing1": "It's not the best authors who win.",
     "publish_closing2": "It's the fastest."
   },
@@ -121,7 +121,7 @@
     "table_row3_revenue": "9 books",
     "table_row6_revenue": "18 books",
     "table_row12_revenue": "36 books",
-    "snowball_note": "And any book could take off at any moment...",
+    "snowball_note": "And any book could take off at any moment.",
     "snowball_roi": "More than enough to quickly pay off your subscription.",
     "question": "What if, in 6 months, you already had 18 books published?",
     "question_sub": "Each book is a new opportunity. A new entry point. A new source of passive income.",
@@ -130,7 +130,7 @@
   },
   "features2": {
     "title": "A workflow designed for publishing.",
-    "intro": "Every chapter builds on the previous ones. No more blindly generated text. Real coherence, thanks to a complete system of multiple AIs.",
+    "intro": "Every chapter builds on the previous ones. No more random, disconnected text. Real coherence, thanks to a complete system of multiple AIs.",
     "f1_title": "Two modes, two expertises",
     "f1_desc": "Intelligent sequential generation adapted to your project. In both cases, you get a quality work, ready to be published after proofreading.",
     "f2_title": "Stay in control",
@@ -140,14 +140,14 @@
     "f4_title": "Character arcs that evolve logically",
     "f4_desc": "Track character development with 0-100% progression. Your characters grow consistently, chapter after chapter.",
     "f5_title": "No narrative promise left hanging",
-    "f5_desc": "Promise Tracker that plants and pays off every promise. World Building Enricher for a universe that grows richer with each chapter."
+    "f5_desc": "Promise Tracker that sets up and delivers on every promise. World Building Enricher for a universe that grows richer with each chapter."
   },
   "features3": {
     "title": "Access our tutorials and resources:",
     "subtitle": "Master the tool quickly, optimize your generations, and unlock its full potential.",
-    "card1_title": "Identify profitable niches and keywords,",
+    "card1_title": "Identify profitable niches and keywords.",
     "card1_desc": "Find niches that convert. Optimize your choices to maximize results.",
-    "card2_title": "Turn a book into an irresistible product,",
+    "card2_title": "Turn a book into an irresistible product.",
     "card2_desc": "Create books that captivate readers. Make every publication professional and compelling.",
     "card3_title": "Attract your first readers and boost visibility.",
     "card3_desc": "Get your books noticed fast. Grow your audience and increase sales.",
@@ -208,7 +208,7 @@
     "step3_desc": "No need for external AI tools. Explore your ideas directly on OneBookLab™ before creating your book.",
     "step4_title": "Cover design tool",
     "step4_desc": "What more could you ask for? Finally, an all-in-one tool from writing to publication!",
-    "conclusion": "And much more to come..."
+    "conclusion": "And much more to come."
   },
   "pricing": {
     "page_title": "Subscriptions",
@@ -327,7 +327,7 @@
     "section3_title": "3. HOSTING PROVIDER",
     "section3_p1": "OVH SAS – 2 rue Kellermann, 59100 Roubaix – France",
     "section3_p2": "Website: www.ovh.com",
-    "section3_p3": "Information regarding the hosting of the OneBookLab™ website is reserved for logged-in users",
+    "section3_p3": "Information regarding the hosting of the OneBookLab™ website is reserved for logged-in users.",
     "section4_title": "4. INTELLECTUAL PROPERTY",
     "section4_p1": "All elements on the OneBookLab™ website (texts, images, illustrations, logos) are the exclusive property of OneBookLab™ or its partners. Any reproduction, representation, modification, or distribution, even partial, is strictly prohibited without prior written authorization from OneBookLab™, in accordance with the provisions of the Intellectual Property Code.",
     "section5_title": "5. PERSONAL DATA",
@@ -507,7 +507,7 @@
     "s1_p4": "• <b>Data Controller</b>: OneBookLab™, whose contact details are provided below.",
     "s2_title": "2. Data Controller",
     "s2_p1": "The data controller is:",
-    "s2_p2": "<b>Headquarters</b>: 2 rue de Touraine, 86130 Cenon sur Vienne",
+    "s2_p2": "<b>Headquarters</b>: 2 rue de Touraine, 86530 Cenon sur Vienne",
     "s2_p3": "<b>Email</b>: contact@onebooklab.com",
     "s3_title": "3. Data Retention Period",
     "s3_p1": "Personal data is retained:",
